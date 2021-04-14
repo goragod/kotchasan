@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Kotchasan\Http\Request | Kotchasan</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Kotchasan.html">
+						Kotchasan<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Kotchasan.Cache.html">
+						Cache					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Kotchasan.Database.html">
+						Database					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-Kotchasan.Http.html">
+						Http					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Kotchasan.Log.html">
+						Log					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Kotchasan.Orm.html">
+						Orm					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Psr.html">
+						Psr<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Psr.Cache.html">
+						Cache					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Psr.Http.html">
+						Http<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Psr.Http.Message.html">
+						Message					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Psr.Log.html">
+						Log					</a>
+
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Kotchasan.Http.AbstractMessage.html">AbstractMessage</a></li>
+				<li><a href="class-Kotchasan.Http.AbstractRequest.html">AbstractRequest</a></li>
+				<li><a href="class-Kotchasan.Http.Message.html">Message</a></li>
+				<li><a href="class-Kotchasan.Http.NotFound.html">NotFound</a></li>
+				<li class="active"><a href="class-Kotchasan.Http.Request.html">Request</a></li>
+				<li><a href="class-Kotchasan.Http.Response.html">Response</a></li>
+				<li><a href="class-Kotchasan.Http.Stream.html">Stream</a></li>
+				<li><a href="class-Kotchasan.Http.UploadedFile.html">UploadedFile</a></li>
+				<li><a href="class-Kotchasan.Http.Uri.html">Uri</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Kotchasan.Http.html" title="Summary of Kotchasan\Http"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Request</h1>
+
+
+	<div class="description">
+	<p>คลาสสำหรับจัดการตัวแปรต่างๆจาก Server</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Kotchasan.Http.AbstractMessage.html"><span>Kotchasan\Http\AbstractMessage</span></a>
+			
+			 implements 
+				<a href="class-Psr.Http.Message.MessageInterface.html"><span>Psr\Http\Message\MessageInterface</span></a>
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+			<a href="class-Kotchasan.Http.AbstractRequest.html"><span>Kotchasan\Http\AbstractRequest</span></a>
+			
+			 implements 
+				<a href="class-Psr.Http.Message.RequestInterface.html"><span>Psr\Http\Message\RequestInterface</span></a>
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Kotchasan\Http\Request</span></b>			
+			 implements 
+				<a href="class-Psr.Http.Message.RequestInterface.html"><span>Psr\Http\Message\RequestInterface</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Kotchasan.html">Kotchasan</a>\<a href="namespace-Kotchasan.Http.html">Http</a><br>
+		
+
+				<b>Author:</b>
+				Goragod Wiriya <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x61;&#100;&#x6d;&#105;&#x6e;&#64;&#x67;&#111;&#x72;&#97;&#x67;&#111;&#x64;&#46;&#x63;&#111;&#x6d;">&#x61;&#100;&#x6d;&#105;&#x6e;&#64;&#x67;&#111;&#x72;&#97;&#x67;&#111;&#x64;&#46;&#x63;&#111;&#x6d;</a><br>
+				<b>Since:</b>
+				1.0<br>
+			<b>Located at</b> <a href="source-class-Kotchasan.Http.Request.html#13-588" title="Go to source code">Kotchasan/Http/Request.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="cookie" id="_cookie">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Kotchasan.InputItem.html">Kotchasan\InputItem</a></code>|<code><a href="class-Kotchasan.Inputs.html">Kotchasan\Inputs</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_cookie">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#55-67" title="Go to source code">cookie</a>( <span>string <var>$name</var></span>, <span>mixed <var>$default</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>อ่านค่าจากตัวแปร COOKIE
+คืนค่า InputItem หรือ Collection ของ InputItem.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>อ่านค่าจากตัวแปร COOKIE
+คืนค่า InputItem หรือ Collection ของ InputItem.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>ชื่อตัวแปร</dd>
+					<dt><var>$default</var></dt>
+					<dd>ค่าเริ่มต้นหากไม่พบตัวแปร</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Kotchasan.InputItem.html">Kotchasan\InputItem</a></code>|<code><a href="class-Kotchasan.Inputs.html">Kotchasan\Inputs</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createToken" id="_createToken">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createToken">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#69-82" title="Go to source code">createToken</a>( )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่นสร้าง token</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่นสร้าง token</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="get" id="_get">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Kotchasan.InputItem.html">Kotchasan\InputItem</a></code>|<code><a href="class-Kotchasan.Inputs.html">Kotchasan\Inputs</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_get">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#84-96" title="Go to source code">get</a>( <span>string <var>$name</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>อ่านค่าจากตัวแปร GET
+คืนค่า InputItem หรือ Collection ของ InputItem</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>อ่านค่าจากตัวแปร GET
+คืนค่า InputItem หรือ Collection ของ InputItem</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>ชื่อตัวแปร</dd>
+					<dt><var>$default</var></dt>
+					<dd>ค่าเริ่มต้นหากไม่พบตัวแปร</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Kotchasan.InputItem.html">Kotchasan\InputItem</a></code>|<code><a href="class-Kotchasan.Inputs.html">Kotchasan\Inputs</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAcceptableLanguages" id="_getAcceptableLanguages">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAcceptableLanguages">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#98-127" title="Go to source code">getAcceptableLanguages</a>( )</code>
+
+		<div class="description short">
+			<p>คืนค่ารายการภาษาที่รองรับ จาก HTTP header</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>คืนค่ารายการภาษาที่รองรับ จาก HTTP header</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAttribute" id="_getAttribute">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAttribute">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#129-140" title="Go to source code">getAttribute</a>( <span>string <var>$name</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>อ่านค่า attributes ที่ต้องการ</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>อ่านค่า attributes ที่ต้องการ</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>ชื่อของ attributes</dd>
+					<dt><var>$default</var></dt>
+					<dd>คืนค่า $default ถ้าไม่พบ</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAttributes" id="_getAttributes">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAttributes">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#142-150" title="Go to source code">getAttributes</a>( )</code>
+
+		<div class="description short">
+			<p>คืนค่า attributes ทั้งหมด</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>คืนค่า attributes ทั้งหมด</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getClientIp" id="_getClientIp">
+
+		<td class="attributes"><code>
+			 public 
+
+			string|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getClientIp">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#152-171" title="Go to source code">getClientIp</a>( )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่น อ่าน ip ของ client
+คืนค่า IP ที่อ่านได้</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่น อ่าน ip ของ client
+คืนค่า IP ที่อ่านได้</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string|null
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCookieParams" id="_getCookieParams">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCookieParams">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#173-184" title="Go to source code">getCookieParams</a>( )</code>
+
+		<div class="description short">
+			<p>คืนค่าจากตัวแปร $_COOKIE</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>คืนค่าจากตัวแปร $_COOKIE</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getParsedBody" id="_getParsedBody">
+
+		<td class="attributes"><code>
+			 public 
+
+			null|array|object
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getParsedBody">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#186-197" title="Go to source code">getParsedBody</a>( )</code>
+
+		<div class="description short">
+			<p>คืนค่าจากตัวแปร $_POST</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>คืนค่าจากตัวแปร $_POST</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					null|array|object
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getQueryParams" id="_getQueryParams">
+
+		<td class="attributes"><code>
+			 public 
+
+			null|array|object
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getQueryParams">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#199-210" title="Go to source code">getQueryParams</a>( )</code>
+
+		<div class="description short">
+			<p>คืนค่าจากตัวแปร $_GET</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>คืนค่าจากตัวแปร $_GET</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					null|array|object
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getServerParams" id="_getServerParams">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getServerParams">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#212-223" title="Go to source code">getServerParams</a>( )</code>
+
+		<div class="description short">
+			<p>คืนค่าจากตัวแปร $_SERVER</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>คืนค่าจากตัวแปร $_SERVER</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getUploadedFiles" id="_getUploadedFiles">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Kotchasan.Files.html">Kotchasan\Files</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getUploadedFiles">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#225-247" title="Go to source code">getUploadedFiles</a>( )</code>
+
+		<div class="description short">
+			<p>คืนค่าไฟล์อัปโหลด FILES</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>คืนค่าไฟล์อัปโหลด FILES</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Kotchasan.Files.html">Kotchasan\Files</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="globals" id="_globals">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Kotchasan.InputItem.html">Kotchasan\InputItem</a></code>|<code><a href="class-Kotchasan.Inputs.html">Kotchasan\Inputs</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_globals">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#249-277" title="Go to source code">globals</a>( <span>array <var>$keys</var></span>, <span>string <var>$name</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>อ่านค่าจากตัวแปร GLOBALS เช่น $_POST $_GET $_SESSION $_COOKIE ตามที่ระบุใน $keys ตามลำดับ
+เช่น array('POST', 'GET') หมายถึงอ่านจาก $_POST ก่อน ถ้าไม่พบจะอ่านจาก $_GET
+และถ้าไม่พบอีกจะคืนค่า $default</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>อ่านค่าจากตัวแปร GLOBALS เช่น $_POST $_GET $_SESSION $_COOKIE ตามที่ระบุใน $keys ตามลำดับ
+เช่น array('POST', 'GET') หมายถึงอ่านจาก $_POST ก่อน ถ้าไม่พบจะอ่านจาก $_GET
+และถ้าไม่พบอีกจะคืนค่า $default</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$keys</var></dt>
+					<dd>ชื่อตัวแปรที่ต้องการอ่าน ตัวพิมพ์ใหญ่ เช่น array('POST', 'GET')</dd>
+					<dt><var>$name</var></dt>
+					<dd>ชื่อตัวแปร</dd>
+					<dt><var>$default</var></dt>
+					<dd>ค่าเริ่มต้นหากไม่พบตัวแปร</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Kotchasan.InputItem.html">Kotchasan\InputItem</a></code>|<code><a href="class-Kotchasan.Inputs.html">Kotchasan\Inputs</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="initSession" id="_initSession">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_initSession">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#279-312" title="Go to source code">initSession</a>( )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่นเริ่มต้นใช้งาน session</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่นเริ่มต้นใช้งาน session</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isAjax" id="_isAjax">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isAjax">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#314-323" title="Go to source code">isAjax</a>( )</code>
+
+		<div class="description short">
+			<p>ตรวจสอบว่าเรียกมาโดย Ajax หรือไม่
+คืนค่า true ถ้าเรียกมาจาก Ajax (XMLHttpRequest).</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ตรวจสอบว่าเรียกมาโดย Ajax หรือไม่
+คืนค่า true ถ้าเรียกมาจาก Ajax (XMLHttpRequest).</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isReferer" id="_isReferer">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isReferer">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#325-341" title="Go to source code">isReferer</a>( )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่น ตรวจสอบ referer
+คืนค่า true ถ้า referer มาจากเว็บไซต์นี้</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่น ตรวจสอบ referer
+คืนค่า true ถ้า referer มาจากเว็บไซต์นี้</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isSafe" id="_isSafe">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isSafe">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#343-364" title="Go to source code">isSafe</a>( )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่น ตรวจสอบ token ที่มาจากฟอร์ม และ ตรวจสอบ Referer ด้วย
+รับค่าที่มาจาก $_POST เท่านั้น
+ฟังก์ชั่นนี้ต้องเรียกต่อจาก initSession() เสมอ
+อายุของ token กำหนดที่ TOKEN_LIMIT
+คืนค่า true ถ้า token ถูกต้องและไม่หมดอายุ</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่น ตรวจสอบ token ที่มาจากฟอร์ม และ ตรวจสอบ Referer ด้วย
+รับค่าที่มาจาก $_POST เท่านั้น
+ฟังก์ชั่นนี้ต้องเรียกต่อจาก initSession() เสมอ
+อายุของ token กำหนดที่ TOKEN_LIMIT
+คืนค่า true ถ้า token ถูกต้องและไม่หมดอายุ</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="post" id="_post">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Kotchasan.InputItem.html">Kotchasan\InputItem</a></code>|<code><a href="class-Kotchasan.Inputs.html">Kotchasan\Inputs</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_post">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#366-379" title="Go to source code">post</a>( <span>string <var>$name</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>อ่านค่าจากตัวแปร $_POST
+ถ้าไม่พบเลยคืนค่า $default
+คืนค่า InputItem หรือ แอเรย์ของ InputItem</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>อ่านค่าจากตัวแปร $_POST
+ถ้าไม่พบเลยคืนค่า $default
+คืนค่า InputItem หรือ แอเรย์ของ InputItem</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>ชื่อตัวแปร</dd>
+					<dt><var>$default</var></dt>
+					<dd>ค่าเริ่มต้นหากไม่พบตัวแปร</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Kotchasan.InputItem.html">Kotchasan\InputItem</a></code>|<code><a href="class-Kotchasan.Inputs.html">Kotchasan\Inputs</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="removeToken" id="_removeToken">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removeToken">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#381-390" title="Go to source code">removeToken</a>( )</code>
+
+		<div class="description short">
+			<p>ลบ token</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ลบ token</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="request" id="_request">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Kotchasan.InputItem.html">Kotchasan\InputItem</a></code>|<code><a href="class-Kotchasan.Inputs.html">Kotchasan\Inputs</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_request">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#392-410" title="Go to source code">request</a>( <span>string <var>$name</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span>, <span>mixed <var>$cookie</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			<p>อ่านค่าจากตัวแปร $_POST $_GET $_COOKIE(options) ตามลำดับ
+คืนค่ารายการแรกที่พบ ถ้าไม่พบเลยคืนค่า $default
+คืนค่า InputItem หรือ แอเรย์ของ InputItem</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>อ่านค่าจากตัวแปร $_POST $_GET $_COOKIE(options) ตามลำดับ
+คืนค่ารายการแรกที่พบ ถ้าไม่พบเลยคืนค่า $default
+คืนค่า InputItem หรือ แอเรย์ของ InputItem</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>ชื่อตัวแปร</dd>
+					<dt><var>$default</var></dt>
+					<dd>ค่าเริ่มต้นหากไม่พบตัวแปร</dd>
+					<dt><var>$cookie</var></dt>
+					<dd>false (default) ไม่อ่านจาก cookie, true อ่านจาก cookie ด้วย</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Kotchasan.InputItem.html">Kotchasan\InputItem</a></code>|<code><a href="class-Kotchasan.Inputs.html">Kotchasan\Inputs</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="server" id="_server">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_server">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#412-424" title="Go to source code">server</a>( <span>string <var>$name</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>อ่านค่าจากตัวแปร $_SERVER
+ถ้าไม่พบเลยคืนค่า $default</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>อ่านค่าจากตัวแปร $_SERVER
+ถ้าไม่พบเลยคืนค่า $default</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>ชื่อตัวแปร</dd>
+					<dt><var>$default</var></dt>
+					<dd>ค่าเริ่มต้นหากไม่พบตัวแปร</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="session" id="_session">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Kotchasan.InputItem.html">Kotchasan\InputItem</a></code>|<code><a href="class-Kotchasan.Inputs.html">Kotchasan\Inputs</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_session">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#426-439" title="Go to source code">session</a>( <span>string <var>$name</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>อ่านค่าจากตัวแปร $_SESSION
+ถ้าไม่พบเลยคืนค่า $default
+คืนค่า InputItem หรือ Collection ของ InputItem</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>อ่านค่าจากตัวแปร $_SESSION
+ถ้าไม่พบเลยคืนค่า $default
+คืนค่า InputItem หรือ Collection ของ InputItem</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>ชื่อตัวแปร</dd>
+					<dt><var>$default</var></dt>
+					<dd>ค่าเริ่มต้นหากไม่พบตัวแปร</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Kotchasan.InputItem.html">Kotchasan\InputItem</a></code>|<code><a href="class-Kotchasan.Inputs.html">Kotchasan\Inputs</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setSession" id="_setSession">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setSession">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#441-453" title="Go to source code">setSession</a>( <span>string <var>$name</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			<p>กำหนดค่าตัวแปร $_SESSION</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>กำหนดค่าตัวแปร $_SESSION</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>ชื่อตัวแปร</dd>
+					<dt><var>$value</var></dt>
+					<dd>ค่าของตัวแปร</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="withAttribute" id="_withAttribute">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_withAttribute">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#455-468" title="Go to source code">withAttribute</a>( <span>string <var>$name</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			<p>กำหนดค่า attributes</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>กำหนดค่า attributes</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>ชื่อของ attributes</dd>
+					<dt><var>$value</var></dt>
+					<dd>ค่าของ attribute</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="withCookieParams" id="_withCookieParams">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_withCookieParams">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#470-482" title="Go to source code">withCookieParams</a>( <span>array <var>$cookies</var></span> )</code>
+
+		<div class="description short">
+			<p>กำหนดค่า cookieParams</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>กำหนดค่า cookieParams</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$cookies</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="withParsedBody" id="_withParsedBody">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_withParsedBody">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#484-496" title="Go to source code">withParsedBody</a>( <span>mixed <var>$data</var></span> )</code>
+
+		<div class="description short">
+			<p>กำหนดค่า parsedBody</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>กำหนดค่า parsedBody</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="withQueryParams" id="_withQueryParams">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_withQueryParams">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#498-510" title="Go to source code">withQueryParams</a>( <span>array <var>$query</var></span> )</code>
+
+		<div class="description short">
+			<p>กำหนดค่า queryParams</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>กำหนดค่า queryParams</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="withUploadedFiles" id="_withUploadedFiles">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_withUploadedFiles">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#512-524" title="Go to source code">withUploadedFiles</a>( <span>array <var>$uploadedFiles</var></span> )</code>
+
+		<div class="description short">
+			<p>กำหนดค่า uploadedFiles</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>กำหนดค่า uploadedFiles</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$uploadedFiles</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="withoutAttribute" id="_withoutAttribute">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_withoutAttribute">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#526-544" title="Go to source code">withoutAttribute</a>( <span>string|array <var>$names</var></span> )</code>
+
+		<div class="description short">
+			<p>ลบ attributes</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ลบ attributes</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$names</var></dt>
+					<dd>ชื่อของ attributes ที่ต้องการลบ</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="filterRequestKey" id="_filterRequestKey">
+
+		<td class="attributes"><code>
+			 public static
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_filterRequestKey">#</a>
+		<code><a href="source-class-Kotchasan.Http.Request.html#567-587" title="Go to source code">filterRequestKey</a>( <span>array <var>$source</var></span> )</code>
+
+		<div class="description short">
+			<p>key ของ Input ต่างๆเป็น ตัวเลข ภาษาอังกฤษ และ [ ] _ - เท่านั้น</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>key ของ Input ต่างๆเป็น ตัวเลข ภาษาอังกฤษ และ [ ] _ - เท่านั้น</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$source</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Kotchasan.Http.AbstractRequest.html#methods">Kotchasan\Http\AbstractRequest</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Kotchasan.Http.AbstractRequest.html#_createUriWithGet">createUriWithGet()</a>, 
+			<a href="class-Kotchasan.Http.AbstractRequest.html#_createUriWithGlobals">createUriWithGlobals()</a>, 
+			<a href="class-Kotchasan.Http.AbstractRequest.html#_createUriWithPost">createUriWithPost()</a>, 
+			<a href="class-Kotchasan.Http.AbstractRequest.html#_getMethod">getMethod()</a>, 
+			<a href="class-Kotchasan.Http.AbstractRequest.html#_getRequestTarget">getRequestTarget()</a>, 
+			<a href="class-Kotchasan.Http.AbstractRequest.html#_getUri">getUri()</a>, 
+			<a href="class-Kotchasan.Http.AbstractRequest.html#_map">map()</a>, 
+			<a href="class-Kotchasan.Http.AbstractRequest.html#_withMethod">withMethod()</a>, 
+			<a href="class-Kotchasan.Http.AbstractRequest.html#_withRequestTarget">withRequestTarget()</a>, 
+			<a href="class-Kotchasan.Http.AbstractRequest.html#_withUri">withUri()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Kotchasan.Http.AbstractMessage.html#methods">Kotchasan\Http\AbstractMessage</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Kotchasan.Http.AbstractMessage.html#___construct">__construct()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_filterHeader">filterHeader()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_getBody">getBody()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_getHeader">getHeader()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_getHeaderLine">getHeaderLine()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_getHeaders">getHeaders()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_getProtocolVersion">getProtocolVersion()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_getRequestHeaders">getRequestHeaders()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_hasHeader">hasHeader()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_withAddedHeader">withAddedHeader()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_withBody">withBody()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_withHeader">withHeader()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_withHeaders">withHeaders()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_withProtocolVersion">withProtocolVersion()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_withoutHeader">withoutHeader()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Kotchasan.Http.AbstractRequest.html#properties">Kotchasan\Http\AbstractRequest</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Kotchasan.Http.AbstractRequest.html#$method"><var>$method</var></a>, 
+			<a href="class-Kotchasan.Http.AbstractRequest.html#$requestTarget"><var>$requestTarget</var></a>, 
+			<a href="class-Kotchasan.Http.AbstractRequest.html#$uri"><var>$uri</var></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Kotchasan.Http.AbstractMessage.html#properties">Kotchasan\Http\AbstractMessage</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Kotchasan.Http.AbstractMessage.html#$headers"><var>$headers</var></a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#$protocol"><var>$protocol</var></a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#$stream"><var>$stream</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Kotchasan API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

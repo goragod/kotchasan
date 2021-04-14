@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Kotchasan\Http\AbstractRequest | Kotchasan</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Kotchasan.html">
+						Kotchasan<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Kotchasan.Cache.html">
+						Cache					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Kotchasan.Database.html">
+						Database					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-Kotchasan.Http.html">
+						Http					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Kotchasan.Log.html">
+						Log					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Kotchasan.Orm.html">
+						Orm					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Psr.html">
+						Psr<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Psr.Cache.html">
+						Cache					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Psr.Http.html">
+						Http<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Psr.Http.Message.html">
+						Message					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Psr.Log.html">
+						Log					</a>
+
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Kotchasan.Http.AbstractMessage.html">AbstractMessage</a></li>
+				<li class="active"><a href="class-Kotchasan.Http.AbstractRequest.html">AbstractRequest</a></li>
+				<li><a href="class-Kotchasan.Http.Message.html">Message</a></li>
+				<li><a href="class-Kotchasan.Http.NotFound.html">NotFound</a></li>
+				<li><a href="class-Kotchasan.Http.Request.html">Request</a></li>
+				<li><a href="class-Kotchasan.Http.Response.html">Response</a></li>
+				<li><a href="class-Kotchasan.Http.Stream.html">Stream</a></li>
+				<li><a href="class-Kotchasan.Http.UploadedFile.html">UploadedFile</a></li>
+				<li><a href="class-Kotchasan.Http.Uri.html">Uri</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Kotchasan.Http.html" title="Summary of Kotchasan\Http"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class AbstractRequest</h1>
+
+
+	<div class="description">
+	<p>Class สำหรับจัดการ URL.</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Kotchasan.Http.AbstractMessage.html"><span>Kotchasan\Http\AbstractMessage</span></a>
+			
+			 implements 
+				<a href="class-Psr.Http.Message.MessageInterface.html"><span>Psr\Http\Message\MessageInterface</span></a>
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Kotchasan\Http\AbstractRequest</span></b>			
+			 implements 
+				<a href="class-Psr.Http.Message.RequestInterface.html"><span>Psr\Http\Message\RequestInterface</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-Kotchasan.Http.Request.html">Kotchasan\Http\Request</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Kotchasan.html">Kotchasan</a>\<a href="namespace-Kotchasan.Http.html">Http</a><br>
+		
+
+				<b>Author:</b>
+				Goragod Wiriya <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x61;&#100;&#x6d;&#105;&#x6e;&#64;&#x67;&#111;&#x72;&#97;&#x67;&#111;&#x64;&#46;&#x63;&#111;&#x6d;">&#x61;&#100;&#x6d;&#105;&#x6e;&#64;&#x67;&#111;&#x72;&#97;&#x67;&#111;&#x64;&#46;&#x63;&#111;&#x6d;</a><br>
+				<b>Since:</b>
+				1.0<br>
+			<b>Located at</b> <a href="source-class-Kotchasan.Http.AbstractRequest.html#13-206" title="Go to source code">Kotchasan/Http/AbstractRequest.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="createUriWithGet" id="_createUriWithGet">
+
+		<td class="attributes"><code>
+			 public static
+
+			<code><a href="class-Kotchasan.Http.Uri.html">Kotchasan\Http\Uri</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createUriWithGet">#</a>
+		<code><a href="source-class-Kotchasan.Http.AbstractRequest.html#35-51" title="Go to source code">createUriWithGet</a>( <span>string <var>$uri</var> = <span class="php-quote">'index.php'</span></span>, <span>array <var>$exclude</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>สร้างคลาสจากลิงค์ และ รวมค่าที่มาจาก $_GET ด้วย</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>สร้างคลาสจากลิงค์ และ รวมค่าที่มาจาก $_GET ด้วย</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$uri</var></dt>
+					<dd>ค่าเริ่มต้นคือ index.php</dd>
+					<dt><var>$exclude</var></dt>
+					<dd>รายการแอเรย์ของ $_GET ที่ไม่ต้องการให้รวมอยู่ใน URL</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Kotchasan.Http.Uri.html">Kotchasan\Http\Uri</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createUriWithGlobals" id="_createUriWithGlobals">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Kotchasan.Http.Uri.html">Kotchasan\Http\Uri</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createUriWithGlobals">#</a>
+		<code><a href="source-class-Kotchasan.Http.AbstractRequest.html#53-70" title="Go to source code">createUriWithGlobals</a>( <span>string <var>$uri</var> = <span class="php-quote">'index.php'</span></span>, <span>array <var>$exclude</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>สร้างคลาสจากลิงค์ และ รวมค่าที่มาจาก $_GET และ $_POST ด้วย</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>สร้างคลาสจากลิงค์ และ รวมค่าที่มาจาก $_GET และ $_POST ด้วย</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$uri</var></dt>
+					<dd>ค่าเริ่มต้นคือ index.php</dd>
+					<dt><var>$exclude</var></dt>
+					<dd>รายการแอเรย์ของ $_GET และ $_POST ที่ไม่ต้องการให้รวมอยู่ใน URL</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Kotchasan.Http.Uri.html">Kotchasan\Http\Uri</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createUriWithPost" id="_createUriWithPost">
+
+		<td class="attributes"><code>
+			 public static
+
+			<code><a href="class-Kotchasan.Http.Uri.html">Kotchasan\Http\Uri</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createUriWithPost">#</a>
+		<code><a href="source-class-Kotchasan.Http.AbstractRequest.html#72-88" title="Go to source code">createUriWithPost</a>( <span>string <var>$uri</var> = <span class="php-quote">'index.php'</span></span>, <span>array <var>$exclude</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>สร้างคลาสจากลิงค์ และ รวมค่าที่มาจาก $_POST ด้วย</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>สร้างคลาสจากลิงค์ และ รวมค่าที่มาจาก $_POST ด้วย</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$uri</var></dt>
+					<dd>ค่าเริ่มต้นคือ index.php</dd>
+					<dt><var>$exclude</var></dt>
+					<dd>รายการแอเรย์ของ $_POST ที่ไม่ต้องการให้รวมอยู่ใน URL</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Kotchasan.Http.Uri.html">Kotchasan\Http\Uri</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMethod" id="_getMethod">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMethod">#</a>
+		<code><a href="source-class-Kotchasan.Http.AbstractRequest.html#90-105" title="Go to source code">getMethod</a>( )</code>
+
+		<div class="description short">
+			<p>อ่านค่า HTTP method
+returns the request method.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>อ่านค่า HTTP method
+returns the request method.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Psr.Http.Message.RequestInterface.html#_getMethod">Psr\Http\Message\RequestInterface::getMethod()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRequestTarget" id="_getRequestTarget">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRequestTarget">#</a>
+		<code><a href="source-class-Kotchasan.Http.AbstractRequest.html#107-118" title="Go to source code">getRequestTarget</a>( )</code>
+
+		<div class="description short">
+			<p>อ่านค่า request target</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>อ่านค่า request target</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Psr.Http.Message.RequestInterface.html#_getRequestTarget">Psr\Http\Message\RequestInterface::getRequestTarget()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getUri" id="_getUri">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Kotchasan.Http.Uri.html">Kotchasan\Http\Uri</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getUri">#</a>
+		<code><a href="source-class-Kotchasan.Http.AbstractRequest.html#120-131" title="Go to source code">getUri</a>( )</code>
+
+		<div class="description short">
+			<p>อ่าน Uri</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>อ่าน Uri</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Kotchasan.Http.Uri.html">Kotchasan\Http\Uri</a></code>
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Psr.Http.Message.RequestInterface.html#_getUri">Psr\Http\Message\RequestInterface::getUri()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="map" id="_map">
+
+		<td class="attributes"><code>
+			 public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_map">#</a>
+		<code><a href="source-class-Kotchasan.Http.AbstractRequest.html#133-153" title="Go to source code">map</a>( <span>array <var>&amp; $result</var></span>, <span>array <var>$array</var></span>, <span>array <var>$exclude</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>รวมแอเรย์ $_GET $_POST เป็นข้อมูลเดียวกัน</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>รวมแอเรย์ $_GET $_POST เป็นข้อมูลเดียวกัน</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$result</var></dt>
+					<dd>ตัวแปรเก็บผลลัพท์ สำหรับนำไปใช้งานต่อ</dd>
+					<dt><var>$array</var></dt>
+					<dd>ตัวแปรที่ต้องการรวม เช่น $_GET $_POST</dd>
+					<dt><var>$exclude</var></dt>
+					<dd>รายการคีย์ของแอเรย์ ที่ไม่ต้องการให้รวมอยู่ในผลลัพท์</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="withMethod" id="_withMethod">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_withMethod">#</a>
+		<code><a href="source-class-Kotchasan.Http.AbstractRequest.html#155-167" title="Go to source code">withMethod</a>( <span>string <var>$method</var></span> )</code>
+
+		<div class="description short">
+			<p>กำหนดค่า HTTP method</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>กำหนดค่า HTTP method</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$method</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code><br>for invalid HTTP methods
+				</div>
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Psr.Http.Message.RequestInterface.html#_withMethod">Psr\Http\Message\RequestInterface::withMethod()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="withRequestTarget" id="_withRequestTarget">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_withRequestTarget">#</a>
+		<code><a href="source-class-Kotchasan.Http.AbstractRequest.html#169-181" title="Go to source code">withRequestTarget</a>( <span>mixed <var>$requestTarget</var></span> )</code>
+
+		<div class="description short">
+			<p>กำหนดค่า request target</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>กำหนดค่า request target</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$requestTarget</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Psr.Http.Message.RequestInterface.html#_withRequestTarget">Psr\Http\Message\RequestInterface::withRequestTarget()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="withUri" id="_withUri">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_withUri">#</a>
+		<code><a href="source-class-Kotchasan.Http.AbstractRequest.html#183-205" title="Go to source code">withUri</a>( <span><code><a href="class-Psr.Http.Message.UriInterface.html">Psr\Http\Message\UriInterface</a></code> <var>$uri</var></span>, <span>boolean <var>$preserveHost</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			<p>กำหนดค่า Uri</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>กำหนดค่า Uri</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$uri</var></dt>
+					<dd></dd>
+					<dt><var>$preserveHost</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Psr.Http.Message.RequestInterface.html#_withUri">Psr\Http\Message\RequestInterface::withUri()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Kotchasan.Http.AbstractMessage.html#methods">Kotchasan\Http\AbstractMessage</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Kotchasan.Http.AbstractMessage.html#___construct">__construct()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_filterHeader">filterHeader()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_getBody">getBody()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_getHeader">getHeader()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_getHeaderLine">getHeaderLine()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_getHeaders">getHeaders()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_getProtocolVersion">getProtocolVersion()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_getRequestHeaders">getRequestHeaders()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_hasHeader">hasHeader()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_withAddedHeader">withAddedHeader()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_withBody">withBody()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_withHeader">withHeader()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_withHeaders">withHeaders()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_withProtocolVersion">withProtocolVersion()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_withoutHeader">withoutHeader()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="method" id="$method">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Kotchasan.Http.AbstractRequest.html#22-25" title="Go to source code"><var>$method</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$method" class="anchor">#</a>
+				<code><span class="php-keyword1">null</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="requestTarget" id="$requestTarget">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Kotchasan.Http.AbstractRequest.html#26-29" title="Go to source code"><var>$requestTarget</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$requestTarget" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="uri" id="$uri">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-Kotchasan.Http.Uri.html">Kotchasan\Http\Uri</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Kotchasan.Http.AbstractRequest.html#30-33" title="Go to source code"><var>$uri</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$uri" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Kotchasan.Http.AbstractMessage.html#properties">Kotchasan\Http\AbstractMessage</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Kotchasan.Http.AbstractMessage.html#$headers"><var>$headers</var></a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#$protocol"><var>$protocol</var></a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#$stream"><var>$stream</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Kotchasan API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

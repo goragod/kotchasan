@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Kotchasan\Http\Response | Kotchasan</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Kotchasan.html">
+						Kotchasan<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Kotchasan.Cache.html">
+						Cache					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Kotchasan.Database.html">
+						Database					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-Kotchasan.Http.html">
+						Http					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Kotchasan.Log.html">
+						Log					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Kotchasan.Orm.html">
+						Orm					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Psr.html">
+						Psr<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Psr.Cache.html">
+						Cache					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Psr.Http.html">
+						Http<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Psr.Http.Message.html">
+						Message					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Psr.Log.html">
+						Log					</a>
+
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Kotchasan.Http.AbstractMessage.html">AbstractMessage</a></li>
+				<li><a href="class-Kotchasan.Http.AbstractRequest.html">AbstractRequest</a></li>
+				<li><a href="class-Kotchasan.Http.Message.html">Message</a></li>
+				<li><a href="class-Kotchasan.Http.NotFound.html">NotFound</a></li>
+				<li><a href="class-Kotchasan.Http.Request.html">Request</a></li>
+				<li class="active"><a href="class-Kotchasan.Http.Response.html">Response</a></li>
+				<li><a href="class-Kotchasan.Http.Stream.html">Stream</a></li>
+				<li><a href="class-Kotchasan.Http.UploadedFile.html">UploadedFile</a></li>
+				<li><a href="class-Kotchasan.Http.Uri.html">Uri</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Kotchasan.Http.html" title="Summary of Kotchasan\Http"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Response</h1>
+
+
+	<div class="description">
+	<p>Response Class.</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Kotchasan.Http.AbstractMessage.html"><span>Kotchasan\Http\AbstractMessage</span></a>
+			
+			 implements 
+				<a href="class-Psr.Http.Message.MessageInterface.html"><span>Psr\Http\Message\MessageInterface</span></a>
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+			<a href="class-Kotchasan.Http.Message.html"><span>Kotchasan\Http\Message</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Kotchasan\Http\Response</span></b>			
+			 implements 
+				<a href="class-Psr.Http.Message.ResponseInterface.html"><span>Psr\Http\Message\ResponseInterface</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-Kotchasan.Http.NotFound.html">Kotchasan\Http\NotFound</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Kotchasan.html">Kotchasan</a>\<a href="namespace-Kotchasan.Http.html">Http</a><br>
+		
+
+				<b>Author:</b>
+				Goragod Wiriya <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x61;&#100;&#x6d;&#105;&#x6e;&#64;&#x67;&#111;&#x72;&#97;&#x67;&#111;&#x64;&#46;&#x63;&#111;&#x6d;">&#x61;&#100;&#x6d;&#105;&#x6e;&#64;&#x67;&#111;&#x72;&#97;&#x67;&#111;&#x64;&#46;&#x63;&#111;&#x6d;</a><br>
+				<b>Since:</b>
+				1.0<br>
+			<b>Located at</b> <a href="source-class-Kotchasan.Http.Response.html#15-240" title="Go to source code">Kotchasan/Http/Response.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Kotchasan.Http.Response.html#106-116" title="Go to source code">__construct</a>( <span>integer <var>$code</var> = <span class="php-num">200</span></span>, <span>string||null <var>$reasonPhrase</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>create Response.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>create Response.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$code</var></dt>
+					<dd>status Code</dd>
+					<dt><var>$reasonPhrase</var></dt>
+					<dd>ถ้าไม่กำหนดจะใช้ข้อความจากระบบ</dd>
+				</dl></div>
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Kotchasan.Http.AbstractMessage.html#___construct">Kotchasan\Http\AbstractMessage::__construct()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getContent" id="_getContent">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getContent">#</a>
+		<code><a href="source-class-Kotchasan.Http.Response.html#118-126" title="Go to source code">getContent</a>( )</code>
+
+		<div class="description short">
+			<p>คืนค่าเนื้อหาของ Response.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>คืนค่าเนื้อหาของ Response.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getReasonPhrase" id="_getReasonPhrase">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getReasonPhrase">#</a>
+		<code><a href="source-class-Kotchasan.Http.Response.html#128-146" title="Go to source code">getReasonPhrase</a>( )</code>
+
+		<div class="description short">
+			<p>Gets the response reason phrase associated with the status code.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets the response reason phrase associated with the status code.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+				<h4>See</h4>
+				<div class="list">
+						http://tools.ietf.org/html/rfc7231#section-6<br>
+						http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml<br>
+				</div>
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Psr.Http.Message.ResponseInterface.html#_getReasonPhrase">Psr\Http\Message\ResponseInterface::getReasonPhrase()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getStatusCode" id="_getStatusCode">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getStatusCode">#</a>
+		<code><a href="source-class-Kotchasan.Http.Response.html#148-156" title="Go to source code">getStatusCode</a>( )</code>
+
+		<div class="description short">
+			<p>คืนค่า Response Status.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>คืนค่า Response Status.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Psr.Http.Message.ResponseInterface.html#_getStatusCode">Psr\Http\Message\ResponseInterface::getStatusCode()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="send" id="_send">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_send">#</a>
+		<code><a href="source-class-Kotchasan.Http.Response.html#158-169" title="Go to source code">send</a>( )</code>
+
+		<div class="description short">
+			<p>Sends HTTP headers and content.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Sends HTTP headers and content.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="withContent" id="_withContent">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_withContent">#</a>
+		<code><a href="source-class-Kotchasan.Http.Response.html#171-188" title="Go to source code">withContent</a>( <span>mixed <var>$content</var></span> )</code>
+
+		<div class="description short">
+			<p>กำหนดเนื้อหาให้กับ  Response.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>กำหนดเนื้อหาให้กับ  Response.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$content</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code><br>ถ้า $content ไม่ใช่ string
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="withStatus" id="_withStatus">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_withStatus">#</a>
+		<code><a href="source-class-Kotchasan.Http.Response.html#190-205" title="Go to source code">withStatus</a>( <span>integer <var>$code</var></span>, <span>string <var>$reasonPhrase</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>กำหนดค่า status code.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>กำหนดค่า status code.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$code</var></dt>
+					<dd></dd>
+					<dt><var>$reasonPhrase</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code><br>for invalid status code arguments
+				</div>
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Psr.Http.Message.ResponseInterface.html#_withStatus">Psr\Http\Message\ResponseInterface::withStatus()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sendContent" id="_sendContent">
+
+		<td class="attributes"><code>
+			 protected 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sendContent">#</a>
+		<code><a href="source-class-Kotchasan.Http.Response.html#207-219" title="Go to source code">sendContent</a>( )</code>
+
+		<div class="description short">
+			<p>ส่งออกเนื้อหา.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ส่งออกเนื้อหา.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sendHeaders" id="_sendHeaders">
+
+		<td class="attributes"><code>
+			 protected 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sendHeaders">#</a>
+		<code><a href="source-class-Kotchasan.Http.Response.html#221-239" title="Go to source code">sendHeaders</a>( )</code>
+
+		<div class="description short">
+			<p>ส่งออก HTTP headers.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ส่งออก HTTP headers.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Kotchasan.Http.AbstractMessage.html#methods">Kotchasan\Http\AbstractMessage</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_filterHeader">filterHeader()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_getBody">getBody()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_getHeader">getHeader()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_getHeaderLine">getHeaderLine()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_getHeaders">getHeaders()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_getProtocolVersion">getProtocolVersion()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_getRequestHeaders">getRequestHeaders()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_hasHeader">hasHeader()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_withAddedHeader">withAddedHeader()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_withBody">withBody()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_withHeader">withHeader()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_withHeaders">withHeaders()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_withProtocolVersion">withProtocolVersion()</a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#_withoutHeader">withoutHeader()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="statusTexts" id="$statusTexts">
+		<td class="attributes"><code>
+			public static 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Kotchasan.Http.Response.html#24-90" title="Go to source code"><var>$statusTexts</var></a>
+
+			<div class="description short">
+				<p>Status codes.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Status codes.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$statusTexts" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>(
+    <span class="php-num">100</span> =&gt; <span class="php-quote">'Continue'</span>,
+    <span class="php-num">101</span> =&gt; <span class="php-quote">'Switching Protocols'</span>,
+    <span class="php-num">102</span> =&gt; <span class="php-quote">'Processing'</span>, <span class="php-comment">// RFC2518</span>
+    <span class="php-num">200</span> =&gt; <span class="php-quote">'OK'</span>,
+    <span class="php-num">201</span> =&gt; <span class="php-quote">'Created'</span>,
+    <span class="php-num">202</span> =&gt; <span class="php-quote">'Accepted'</span>,
+    <span class="php-num">203</span> =&gt; <span class="php-quote">'Non-Authoritative Information'</span>,
+    <span class="php-num">204</span> =&gt; <span class="php-quote">'No Content'</span>,
+    <span class="php-num">205</span> =&gt; <span class="php-quote">'Reset Content'</span>,
+    <span class="php-num">206</span> =&gt; <span class="php-quote">'Partial Content'</span>,
+    <span class="php-num">207</span> =&gt; <span class="php-quote">'Multi-Status'</span>, <span class="php-comment">// RFC4918</span>
+    <span class="php-num">208</span> =&gt; <span class="php-quote">'Already Reported'</span>, <span class="php-comment">// RFC5842</span>
+    <span class="php-num">226</span> =&gt; <span class="php-quote">'IM Used'</span>, <span class="php-comment">// RFC3229</span>
+    <span class="php-num">300</span> =&gt; <span class="php-quote">'Multiple Choices'</span>,
+    <span class="php-num">301</span> =&gt; <span class="php-quote">'Moved Permanently'</span>,
+    <span class="php-num">302</span> =&gt; <span class="php-quote">'Found'</span>,
+    <span class="php-num">303</span> =&gt; <span class="php-quote">'See Other'</span>,
+    <span class="php-num">304</span> =&gt; <span class="php-quote">'Not Modified'</span>,
+    <span class="php-num">305</span> =&gt; <span class="php-quote">'Use Proxy'</span>,
+    <span class="php-num">306</span> =&gt; <span class="php-quote">'Reserved'</span>,
+    <span class="php-num">307</span> =&gt; <span class="php-quote">'Temporary Redirect'</span>,
+    <span class="php-num">308</span> =&gt; <span class="php-quote">'Permanent Redirect'</span>, <span class="php-comment">// RFC7238</span>
+    <span class="php-num">400</span> =&gt; <span class="php-quote">'Bad Request'</span>,
+    <span class="php-num">401</span> =&gt; <span class="php-quote">'Unauthorized'</span>,
+    <span class="php-num">402</span> =&gt; <span class="php-quote">'Payment Required'</span>,
+    <span class="php-num">403</span> =&gt; <span class="php-quote">'Forbidden'</span>,
+    <span class="php-num">404</span> =&gt; <span class="php-quote">'Not Found'</span>,
+    <span class="php-num">405</span> =&gt; <span class="php-quote">'Method Not Allowed'</span>,
+    <span class="php-num">406</span> =&gt; <span class="php-quote">'Not Acceptable'</span>,
+    <span class="php-num">407</span> =&gt; <span class="php-quote">'Proxy Authentication Required'</span>,
+    <span class="php-num">408</span> =&gt; <span class="php-quote">'Request Timeout'</span>,
+    <span class="php-num">409</span> =&gt; <span class="php-quote">'Conflict'</span>,
+    <span class="php-num">410</span> =&gt; <span class="php-quote">'Gone'</span>,
+    <span class="php-num">411</span> =&gt; <span class="php-quote">'Length Required'</span>,
+    <span class="php-num">412</span> =&gt; <span class="php-quote">'Precondition Failed'</span>,
+    <span class="php-num">413</span> =&gt; <span class="php-quote">'Request Entity Too Large'</span>,
+    <span class="php-num">414</span> =&gt; <span class="php-quote">'Request-URI Too Long'</span>,
+    <span class="php-num">415</span> =&gt; <span class="php-quote">'Unsupported Media Type'</span>,
+    <span class="php-num">416</span> =&gt; <span class="php-quote">'Requested Range Not Satisfiable'</span>,
+    <span class="php-num">417</span> =&gt; <span class="php-quote">'Expectation Failed'</span>,
+    <span class="php-num">418</span> =&gt; <span class="php-quote">'I\'m a teapot'</span>, <span class="php-comment">// RFC2324</span>
+    <span class="php-num">422</span> =&gt; <span class="php-quote">'Unprocessable Entity'</span>, <span class="php-comment">// RFC4918</span>
+    <span class="php-num">423</span> =&gt; <span class="php-quote">'Locked'</span>, <span class="php-comment">// RFC4918</span>
+    <span class="php-num">424</span> =&gt; <span class="php-quote">'Failed Dependency'</span>, <span class="php-comment">// RFC4918</span>
+    <span class="php-num">425</span> =&gt; <span class="php-quote">'Reserved for WebDAV advanced collections expired proposal'</span>, <span class="php-comment">// RFC2817</span>
+    <span class="php-num">426</span> =&gt; <span class="php-quote">'Upgrade Required'</span>, <span class="php-comment">// RFC2817</span>
+    <span class="php-num">428</span> =&gt; <span class="php-quote">'Precondition Required'</span>, <span class="php-comment">// RFC6585</span>
+    <span class="php-num">429</span> =&gt; <span class="php-quote">'Too Many Requests'</span>, <span class="php-comment">// RFC6585</span>
+    <span class="php-num">431</span> =&gt; <span class="php-quote">'Request Header Fields Too Large'</span>, <span class="php-comment">// RFC6585</span>
+    <span class="php-num">500</span> =&gt; <span class="php-quote">'Internal Server Error'</span>,
+    <span class="php-num">501</span> =&gt; <span class="php-quote">'Not Implemented'</span>,
+    <span class="php-num">502</span> =&gt; <span class="php-quote">'Bad Gateway'</span>,
+    <span class="php-num">503</span> =&gt; <span class="php-quote">'Service Unavailable'</span>,
+    <span class="php-num">504</span> =&gt; <span class="php-quote">'Gateway Timeout'</span>,
+    <span class="php-num">505</span> =&gt; <span class="php-quote">'HTTP Version Not Supported'</span>,
+    <span class="php-num">506</span> =&gt; <span class="php-quote">'Variant Also Negotiates (Experimental)'</span>, <span class="php-comment">// RFC2295</span>
+    <span class="php-num">507</span> =&gt; <span class="php-quote">'Insufficient Storage'</span>, <span class="php-comment">// RFC4918</span>
+    <span class="php-num">508</span> =&gt; <span class="php-quote">'Loop Detected'</span>, <span class="php-comment">// RFC5842</span>
+    <span class="php-num">510</span> =&gt; <span class="php-quote">'Not Extended'</span>, <span class="php-comment">// RFC2774</span>
+    <span class="php-num">511</span> =&gt; <span class="php-quote">'Network Authentication Required'</span>, <span class="php-comment">// RFC6585</span>
+)</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="content" id="$content">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Kotchasan.Http.Response.html#91-96" title="Go to source code"><var>$content</var></a>
+
+			<div class="description short">
+				<p>เนื้อหา.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>เนื้อหา.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$content" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="reasonPhrase" id="$reasonPhrase">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Kotchasan.Http.Response.html#97-100" title="Go to source code"><var>$reasonPhrase</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$reasonPhrase" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="statusCode" id="$statusCode">
+		<td class="attributes"><code>
+			protected  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Kotchasan.Http.Response.html#101-104" title="Go to source code"><var>$statusCode</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$statusCode" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Kotchasan.Http.AbstractMessage.html#properties">Kotchasan\Http\AbstractMessage</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Kotchasan.Http.AbstractMessage.html#$headers"><var>$headers</var></a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#$protocol"><var>$protocol</var></a>, 
+			<a href="class-Kotchasan.Http.AbstractMessage.html#$stream"><var>$stream</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Kotchasan API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

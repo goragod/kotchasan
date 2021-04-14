@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Kotchasan\Orm\Field | Kotchasan</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Kotchasan.html">
+						Kotchasan<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Kotchasan.Cache.html">
+						Cache					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Kotchasan.Database.html">
+						Database					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Kotchasan.Http.html">
+						Http					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Kotchasan.Log.html">
+						Log					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-Kotchasan.Orm.html">
+						Orm					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Psr.html">
+						Psr<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Psr.Cache.html">
+						Cache					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Psr.Http.html">
+						Http<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Psr.Http.Message.html">
+						Message					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Psr.Log.html">
+						Log					</a>
+
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Kotchasan.Orm.Field.html">Field</a></li>
+				<li><a href="class-Kotchasan.Orm.Recordset.html">Recordset</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Kotchasan.Orm.html" title="Summary of Kotchasan\Orm"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Field</h1>
+
+
+	<div class="description">
+	<p>ORM Field base class</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Kotchasan.KBase.html"><span>Kotchasan\KBase</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+			<a href="class-Kotchasan.Database.Db.html"><span>Kotchasan\Database\Db</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Kotchasan\Orm\Field</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Kotchasan.html">Kotchasan</a>\<a href="namespace-Kotchasan.Orm.html">Orm</a><br>
+		
+
+				<b>Author:</b>
+				Goragod Wiriya <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x61;&#100;&#x6d;&#105;&#x6e;&#64;&#x67;&#111;&#x72;&#97;&#x67;&#111;&#x64;&#46;&#x63;&#111;&#x6d;">&#x61;&#100;&#x6d;&#105;&#x6e;&#64;&#x67;&#111;&#x72;&#97;&#x67;&#111;&#x64;&#46;&#x63;&#111;&#x6d;</a><br>
+				<b>Since:</b>
+				1.0<br>
+			<b>Located at</b> <a href="source-class-Kotchasan.Orm.Field.html#13-193" title="Go to source code">Kotchasan/Orm/Field.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Kotchasan.Orm.Field.html#59-74" title="Go to source code">__construct</a>( <span>array|object <var>$param</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>class constructor</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>class constructor</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$param</var></dt>
+					<dd>ข้อมูลเริ่มต้น</dd>
+				</dl></div>
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Kotchasan.Database.Db.html#___construct">Kotchasan\Database\Db::__construct()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="create" id="_create">
+
+		<td class="attributes"><code>
+			 public static
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_create">#</a>
+		<code><a href="source-class-Kotchasan.Orm.Field.html#76-85" title="Go to source code">create</a>( )</code>
+
+		<div class="description short">
+			<p>สร้าง record</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>สร้าง record</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="delete" id="_delete">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delete">#</a>
+		<code><a href="source-class-Kotchasan.Orm.Field.html#87-94" title="Go to source code">delete</a>( )</code>
+
+		<div class="description short">
+			<p>ลบ record</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ลบ record</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getConn" id="_getConn">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getConn">#</a>
+		<code><a href="source-class-Kotchasan.Orm.Field.html#96-104" title="Go to source code">getConn</a>( )</code>
+
+		<div class="description short">
+			<p>อ่านค่าตัวแปร conn (ชื่อของการเชื่อมต่อ).</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>อ่านค่าตัวแปร conn (ชื่อของการเชื่อมต่อ).</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFullTableName" id="_getFullTableName">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFullTableName">#</a>
+		<code><a href="source-class-Kotchasan.Orm.Field.html#106-119" title="Go to source code">getFullTableName</a>( <span>string <var>$table</var></span> )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่นอ่านชื่อตารางจากการตั้งค่าฐานข้อมุล
+คืนค่าชื่อตารางรวม prefix ถ้าไม่มีชื่อกำหนดไว้ จะคืนค่า $table ครอบชื่อตารางด้วย ``</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่นอ่านชื่อตารางจากการตั้งค่าฐานข้อมุล
+คืนค่าชื่อตารางรวม prefix ถ้าไม่มีชื่อกำหนดไว้ จะคืนค่า $table ครอบชื่อตารางด้วย ``</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd>ชื่อตารางตามที่กำหนดใน settings/datasbase.php</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPrimarykey" id="_getPrimarykey">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPrimarykey">#</a>
+		<code><a href="source-class-Kotchasan.Orm.Field.html#121-129" title="Go to source code">getPrimarykey</a>( )</code>
+
+		<div class="description short">
+			<p>คืนค่าชื่อฟิลด์ที่เป็น Primary Key</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>คืนค่าชื่อฟิลด์ที่เป็น Primary Key</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTableName" id="_getTableName">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTableName">#</a>
+		<code><a href="source-class-Kotchasan.Orm.Field.html#131-139" title="Go to source code">getTableName</a>( )</code>
+
+		<div class="description short">
+			<p>อ่านชื่อตาราง</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>อ่านชื่อตาราง</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTableWithAlias" id="_getTableWithAlias">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTableWithAlias">#</a>
+		<code><a href="source-class-Kotchasan.Orm.Field.html#141-151" title="Go to source code">getTableWithAlias</a>( <span>string|null <var>$alias</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>อ่านชื่อตารางรวม Alias</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>อ่านชื่อตารางรวม Alias</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$alias</var></dt>
+					<dd>Alias ที่ต้องการ ถ้าไม่ระบุจะใช้ Alias ตามที่กำหนดไว้</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="initTableName" id="_initTableName">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_initTableName">#</a>
+		<code><a href="source-class-Kotchasan.Orm.Field.html#153-179" title="Go to source code">initTableName</a>( <span><code><a href="class-Kotchasan.Database.Query.html">Kotchasan\Database\Query</a></code> <var>$db</var></span> )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่นตรวจสอบชื่อตารางและชื่อรอง</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่นตรวจสอบชื่อตารางและชื่อรอง</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$db</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="save" id="_save">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_save">#</a>
+		<code><a href="source-class-Kotchasan.Orm.Field.html#181-192" title="Go to source code">save</a>( )</code>
+
+		<div class="description short">
+			<p>insert or update record</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>insert or update record</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Kotchasan.Database.Db.html#methods">Kotchasan\Database\Db</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Kotchasan.Database.Db.html#_db">db()</a>, 
+			<a href="class-Kotchasan.Database.Db.html#_getSetting">getSetting()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="table_alias" id="$table_alias">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Kotchasan.Orm.Field.html#22-27" title="Go to source code"><var>$table_alias</var></a>
+
+			<div class="description short">
+				<p>ชื่อรองของตาราง</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>ชื่อรองของตาราง</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$table_alias" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="table_name" id="$table_name">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Kotchasan.Orm.Field.html#28-33" title="Go to source code"><var>$table_name</var></a>
+
+			<div class="description short">
+				<p>ชื่อตาราง</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>ชื่อตาราง</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$table_name" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="conn" id="$conn">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Kotchasan.Orm.Field.html#34-39" title="Go to source code"><var>$conn</var></a>
+
+			<div class="description short">
+				<p>ชื่อของการเชื่อมต่อ ใช้สำหรับโหลด config จาก settings/database.php</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>ชื่อของการเชื่อมต่อ ใช้สำหรับโหลด config จาก settings/database.php</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$conn" class="anchor">#</a>
+				<code><span class="php-quote">'mysql'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="exists" id="$exists">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Kotchasan.Orm.Field.html#40-45" title="Go to source code"><var>$exists</var></a>
+
+			<div class="description short">
+				<p>true ถ้ามาจากการ query, false ถ้าเป็นรายการใหม่</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>true ถ้ามาจากการ query, false ถ้าเป็นรายการใหม่</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$exists" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="primaryKey" id="$primaryKey">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Kotchasan.Orm.Field.html#46-51" title="Go to source code"><var>$primaryKey</var></a>
+
+			<div class="description short">
+				<p>ชื่อฟิลด์ที่จะใช้เป็น Primary Key INT(11) AUTO_INCREMENT</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>ชื่อฟิลด์ที่จะใช้เป็น Primary Key INT(11) AUTO_INCREMENT</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$primaryKey" class="anchor">#</a>
+				<code><span class="php-quote">'id'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="table" id="$table">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Kotchasan.Orm.Field.html#52-57" title="Go to source code"><var>$table</var></a>
+
+			<div class="description short">
+				<p>ชื่อตาราง</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>ชื่อตาราง</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$table" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Kotchasan.Database.Db.html#properties">Kotchasan\Database\Db</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Kotchasan.Database.Db.html#$db"><var>$db</var></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Kotchasan.KBase.html#properties">Kotchasan\KBase</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Kotchasan.KBase.html#$cfg"><var>$cfg</var></a>, 
+			<a href="class-Kotchasan.KBase.html#$request"><var>$request</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Kotchasan API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

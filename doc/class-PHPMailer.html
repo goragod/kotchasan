@@ -1,0 +1,6659 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class PHPMailer | Kotchasan</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li>
+					<a href="namespace-Kotchasan.html">
+						Kotchasan<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Kotchasan.Cache.html">
+						Cache					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Kotchasan.Database.html">
+						Database					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Kotchasan.Http.html">
+						Http					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Kotchasan.Log.html">
+						Log					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Kotchasan.Orm.html">
+						Orm					</a>
+
+						</li>
+							</ul></li>
+				<li class="active">
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Psr.html">
+						Psr<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Psr.Cache.html">
+						Cache					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Psr.Http.html">
+						Http<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Psr.Http.Message.html">
+						Message					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Psr.Log.html">
+						Log					</a>
+
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Kotchasan.html">Kotchasan</a></li>
+				<li class="active"><a href="class-PHPMailer.html">PHPMailer</a></li>
+				<li><a href="class-SMTP.html">SMTP</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-phpmailerException.html">phpmailerException</a></li>
+			</ul>
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-createClass.html">createClass</a></li>
+				<li><a href="function-debug.html">debug</a></li>
+				<li><a href="function-getClassPath.html">getClassPath</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-None.html" title="Summary of None"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class PHPMailer</h1>
+
+
+	<div class="description">
+	<p>PHPMailer - PHP email creation and transport class.</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		
+
+				<b>Copyright:</b>
+				2012 - 2014 Marcus Bointon<br>
+				<b>Copyright:</b>
+				2010 - 2012 Jim Jagielski<br>
+				<b>Copyright:</b>
+				2004 - 2009 Andy Prevost<br>
+				<b>License:</b>
+				<a href="http://www.gnu.org/copyleft/lesser.html">GNU Lesser General Public License</a><br>
+				<b>Author:</b>
+				Marcus Bointon (Synchro/coolbru) <a href="&#109;&#97;&#105;&#x6c;&#x74;o&#58;&#112;&#104;&#x70;&#x6d;a&#105;&#108;&#101;&#x72;&#x40;s&#121;&#110;&#x63;&#x68;&#x72;o&#109;&#101;&#x64;&#x69;&#x61;&#46;&#99;&#111;&#x2e;&#x75;&#x6b;">&#112;&#104;&#x70;&#x6d;a&#105;&#108;&#101;&#x72;&#x40;s&#121;&#110;&#x63;&#x68;&#x72;o&#109;&#101;&#x64;&#x69;&#x61;&#46;&#99;&#111;&#x2e;&#x75;&#x6b;</a><br>
+				<b>Author:</b>
+				Jim Jagielski (jimjag) <a href="&#109;&#97;&#x69;&#x6c;&#116;&#111;&#x3a;&#x6a;&#105;&#109;&#x6a;&#x61;&#103;&#64;&#x67;&#x6d;a&#105;&#x6c;&#x2e;c&#111;&#109;">&#x6a;&#105;&#109;&#x6a;&#x61;&#103;&#64;&#x67;&#x6d;a&#105;&#x6c;&#x2e;c&#111;&#109;</a><br>
+				<b>Author:</b>
+				Andy Prevost (codeworxtech) <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x63;o&#100;&#x65;&#119;&#x6f;&#114;&#x78;&#116;&#x65;&#99;&#104;&#x40;&#117;&#x73;&#101;&#x72;&#115;&#x2e;&#115;&#x6f;u&#114;&#x63;&#101;&#x66;&#111;&#x72;&#103;&#x65;&#46;&#110;&#x65;&#116;">&#x63;o&#100;&#x65;&#119;&#x6f;&#114;&#x78;&#116;&#x65;&#99;&#104;&#x40;&#117;&#x73;&#101;&#x72;&#115;&#x2e;&#115;&#x6f;u&#114;&#x63;&#101;&#x66;&#111;&#x72;&#103;&#x65;&#46;&#110;&#x65;&#116;</a><br>
+				<b>Author:</b>
+				Brent R. Matzelle (original founder)<br>
+			<b>Located at</b> <a href="source-class-PHPMailer.html#23-4093" title="Go to source code">Kotchasan/PHPMailer/class.phpmailer.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-PHPMailer.html#644-654" title="Go to source code">__construct</a>( <span>boolean <var>$exceptions</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Constructor.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Constructor.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$exceptions</var></dt>
+					<dd>Should we throw external exceptions?</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__destruct" id="___destruct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___destruct">#</a>
+		<code><a href="source-class-PHPMailer.html#656-663" title="Go to source code">__destruct</a>( )</code>
+
+		<div class="description short">
+			<p>Destructor.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Destructor.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="edebug" id="_edebug">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_edebug">#</a>
+		<code><a href="source-class-PHPMailer.html#699-739" title="Go to source code">edebug</a>( <span>string <var>$str</var></span> )</code>
+
+		<div class="description short">
+			<p>Output debugging info via user-defined method.
+Only generates output if SMTP debug output is enabled (@see SMTP::$do_debug).</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Output debugging info via user-defined method.
+Only generates output if SMTP debug output is enabled (@see SMTP::$do_debug).</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$str</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+				<h4>See</h4>
+				<div class="list">
+						<code><a href="class-PHPMailer.html#$Debugoutput">PHPMailer::<var>$Debugoutput</var></a></code><br>
+						<code><a href="class-PHPMailer.html#$SMTPDebug">PHPMailer::<var>$SMTPDebug</var></a></code><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isHTML" id="_isHTML">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isHTML">#</a>
+		<code><a href="source-class-PHPMailer.html#741-753" title="Go to source code">isHTML</a>( <span>boolean <var>$isHtml</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			<p>Sets message type to HTML or plain.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Sets message type to HTML or plain.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$isHtml</var></dt>
+					<dd>true for HTML mode</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isSMTP" id="_isSMTP">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isSMTP">#</a>
+		<code><a href="source-class-PHPMailer.html#755-761" title="Go to source code">isSMTP</a>( )</code>
+
+		<div class="description short">
+			<p>Send messages using SMTP.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Send messages using SMTP.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isMail" id="_isMail">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isMail">#</a>
+		<code><a href="source-class-PHPMailer.html#763-769" title="Go to source code">isMail</a>( )</code>
+
+		<div class="description short">
+			<p>Send messages using PHP's mail() function.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Send messages using PHP's mail() function.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isSendmail" id="_isSendmail">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isSendmail">#</a>
+		<code><a href="source-class-PHPMailer.html#771-784" title="Go to source code">isSendmail</a>( )</code>
+
+		<div class="description short">
+			<p>Send messages using $Sendmail.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Send messages using $Sendmail.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isQmail" id="_isQmail">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isQmail">#</a>
+		<code><a href="source-class-PHPMailer.html#786-799" title="Go to source code">isQmail</a>( )</code>
+
+		<div class="description short">
+			<p>Send messages using qmail.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Send messages using qmail.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addAddress" id="_addAddress">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addAddress">#</a>
+		<code><a href="source-class-PHPMailer.html#801-812" title="Go to source code">addAddress</a>( <span>string <var>$address</var></span>, <span>string <var>$name</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Add a "To" address.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Add a "To" address.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$address</var></dt>
+					<dd>The email address to send to</dd>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>true on success, false if address already used or invalid in some way
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addCC" id="_addCC">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addCC">#</a>
+		<code><a href="source-class-PHPMailer.html#814-827" title="Go to source code">addCC</a>( <span>string <var>$address</var></span>, <span>string <var>$name</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Add a "CC" address.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Add a "CC" address.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$address</var></dt>
+					<dd>The email address to send to</dd>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>true on success, false if address already used or invalid in some way
+				</div>
+
+
+				<h4>Note:</h4>
+				<div class="list">
+						This function works with the SMTP mailer on win32, not with the "mail" mailer.<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addBCC" id="_addBCC">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addBCC">#</a>
+		<code><a href="source-class-PHPMailer.html#829-842" title="Go to source code">addBCC</a>( <span>string <var>$address</var></span>, <span>string <var>$name</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Add a "BCC" address.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Add a "BCC" address.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$address</var></dt>
+					<dd>The email address to send to</dd>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>true on success, false if address already used or invalid in some way
+				</div>
+
+
+				<h4>Note:</h4>
+				<div class="list">
+						This function works with the SMTP mailer on win32, not with the "mail" mailer.<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addReplyTo" id="_addReplyTo">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addReplyTo">#</a>
+		<code><a href="source-class-PHPMailer.html#844-855" title="Go to source code">addReplyTo</a>( <span>string <var>$address</var></span>, <span>string <var>$name</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Add a "Reply-To" address.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Add a "Reply-To" address.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$address</var></dt>
+					<dd>The email address to reply to</dd>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>true on success, false if address already used or invalid in some way
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addOrEnqueueAnAddress" id="_addOrEnqueueAnAddress">
+
+		<td class="attributes"><code>
+			 protected 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addOrEnqueueAnAddress">#</a>
+		<code><a href="source-class-PHPMailer.html#857-908" title="Go to source code">addOrEnqueueAnAddress</a>( <span>string <var>$kind</var></span>, <span>string <var>$address</var></span>, <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			<p>Add an address to one of the recipient arrays or to the ReplyTo array. Because PHPMailer
+can't validate addresses with an IDN without knowing the PHPMailer::$CharSet (that can still
+be modified after calling this function), addition of such addresses is delayed until send().
+Addresses that have been added already return false, but do not throw exceptions.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Add an address to one of the recipient arrays or to the ReplyTo array. Because PHPMailer
+can't validate addresses with an IDN without knowing the PHPMailer::$CharSet (that can still
+be modified after calling this function), addition of such addresses is delayed until send().
+Addresses that have been added already return false, but do not throw exceptions.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$kind</var></dt>
+					<dd>One of 'to', 'cc', 'bcc', or 'ReplyTo'</dd>
+					<dt><var>$address</var></dt>
+					<dd>The email address to send, resp. to reply to</dd>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>true on success, false if address already used or invalid in some way
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-phpmailerException.html">phpmailerException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addAnAddress" id="_addAnAddress">
+
+		<td class="attributes"><code>
+			 protected 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addAnAddress">#</a>
+		<code><a href="source-class-PHPMailer.html#910-960" title="Go to source code">addAnAddress</a>( <span>string <var>$kind</var></span>, <span>string <var>$address</var></span>, <span>string <var>$name</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Add an address to one of the recipient arrays or to the ReplyTo array.
+Addresses that have been added already return false, but do not throw exceptions.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Add an address to one of the recipient arrays or to the ReplyTo array.
+Addresses that have been added already return false, but do not throw exceptions.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$kind</var></dt>
+					<dd>One of 'to', 'cc', 'bcc', or 'ReplyTo'</dd>
+					<dt><var>$address</var></dt>
+					<dd>The email address to send, resp. to reply to</dd>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>true on success, false if address already used or invalid in some way
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-phpmailerException.html">phpmailerException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseAddresses" id="_parseAddresses">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseAddresses">#</a>
+		<code><a href="source-class-PHPMailer.html#962-1019" title="Go to source code">parseAddresses</a>( <span>string <var>$addrstr</var></span>, <span>boolean <var>$useimap</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			<p>Parse and validate a string containing one or more RFC822-style comma-separated email addresses
+of the form "display name</p>
+
+<p>&lt;</p>
+
+<p>address>" into an array of name/address pairs.
+Uses the imap_rfc822_parse_adrlist function if the IMAP extension is available.
+Note that quotes in the name part are removed.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Parse and validate a string containing one or more RFC822-style comma-separated email addresses
+of the form "display name</p>
+
+<p>&lt;</p>
+
+<p>address>" into an array of name/address pairs.
+Uses the imap_rfc822_parse_adrlist function if the IMAP extension is available.
+Note that quotes in the name part are removed.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$addrstr</var></dt>
+					<dd>The address list string</dd>
+					<dt><var>$useimap</var></dt>
+					<dd>Whether to use the IMAP extension to parse the list</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+				<h4>See</h4>
+				<div class="list">
+						http://www.andrew.cmu.edu/user/agreen1/testing/mrbs/web/Mail/RFC822.php A more careful implementation<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setFrom" id="_setFrom">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setFrom">#</a>
+		<code><a href="source-class-PHPMailer.html#1021-1056" title="Go to source code">setFrom</a>( <span>string <var>$address</var></span>, <span>string <var>$name</var> = <span class="php-quote">''</span></span>, <span>boolean <var>$auto</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			<p>Set the From and FromName properties.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set the From and FromName properties.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$address</var></dt>
+					<dd></dd>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+					<dt><var>$auto</var></dt>
+					<dd>Whether to also set the Sender address, defaults to true</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-phpmailerException.html">phpmailerException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getLastMessageID" id="_getLastMessageID">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getLastMessageID">#</a>
+		<code><a href="source-class-PHPMailer.html#1058-1069" title="Go to source code">getLastMessageID</a>( )</code>
+
+		<div class="description short">
+			<p>Return the Message-ID header of the last email.
+Technically this is the value from the last time the headers were created,
+but it's also the message ID of the last sent message except in
+pathological cases.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return the Message-ID header of the last email.
+Technically this is the value from the last time the headers were created,
+but it's also the message ID of the last sent message except in
+pathological cases.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validateAddress" id="_validateAddress">
+
+		<td class="attributes"><code>
+			 public static
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validateAddress">#</a>
+		<code><a href="source-class-PHPMailer.html#1071-1179" title="Go to source code">validateAddress</a>( <span>string <var>$address</var></span>, <span>string|callable <var>$patternselect</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Check that a string looks like an email address.
+ <code>auto</code> Pick best pattern automatically;
+ <code>pcre8</code> Use the squiloople.com pattern, requires PCRE > 8.0, PHP >= 5.3.2, 5.2.14;
+ <code>pcre</code> Use old PCRE implementation;
+ <code>php</code> Use PHP built-in FILTER_VALIDATE_EMAIL;
+ <code>html5</code> Use the pattern given by the HTML5 spec for 'email' type form input elements.
+ <code>noregex</code> Don't use a regex: super fast, really dumb.
+Alternatively you may pass in a callable to inject your own validator, for example:
+PHPMailer::validateAddress('user@example.com', function($address) {
+    return (strpos($address, '@') !== false);
+});
+You can also set the PHPMailer::$validator static to a callable, allowing built-in methods to use your validator.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Check that a string looks like an email address. <code>auto</code> Pick best pattern automatically; <code>pcre8</code> Use the squiloople.com pattern, requires PCRE > 8.0, PHP >= 5.3.2, 5.2.14; <code>pcre</code> Use old PCRE implementation; <code>php</code> Use PHP built-in FILTER_VALIDATE_EMAIL; <code>html5</code> Use the pattern given by the HTML5 spec for 'email' type form input elements. <code>noregex</code> Don't use a regex: super fast, really dumb.
+Alternatively you may pass in a callable to inject your own validator, for example:
+PHPMailer::validateAddress('user@example.com', function($address) { return (strpos($address, '@') !== false);
+});
+You can also set the PHPMailer::$validator static to a callable, allowing built-in methods to use your validator.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$address</var></dt>
+					<dd>The email address to check</dd>
+					<dt><var>$patternselect</var></dt>
+					<dd>A selector for the validation pattern to use :</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="idnSupported" id="_idnSupported">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_idnSupported">#</a>
+		<code><a href="source-class-PHPMailer.html#1181-1191" title="Go to source code">idnSupported</a>( )</code>
+
+		<div class="description short">
+			<p>Tells whether IDNs (Internationalized Domain Names) are supported or not. This requires the
+"intl" and "mbstring" PHP extensions.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Tells whether IDNs (Internationalized Domain Names) are supported or not. This requires the
+"intl" and "mbstring" PHP extensions.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>"true" if required functions for IDN support are present
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="punyencodeAddress" id="_punyencodeAddress">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_punyencodeAddress">#</a>
+		<code><a href="source-class-PHPMailer.html#1193-1224" title="Go to source code">punyencodeAddress</a>( <span>string <var>$address</var></span> )</code>
+
+		<div class="description short">
+			<p>Converts IDN in given email address to its ASCII form, also known as punycode, if possible.
+Important: Address must be passed in same encoding as currently set in PHPMailer::$CharSet.
+This function silently returns unmodified address if:
+- No conversion is necessary (i.e. domain name is not an IDN, or is already in ASCII form)
+- Conversion to punycode is impossible (e.g. required PHP functions are not available)
+  or fails for any reason (e.g. domain has characters not allowed in an IDN).</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Converts IDN in given email address to its ASCII form, also known as punycode, if possible.
+Important: Address must be passed in same encoding as currently set in PHPMailer::$CharSet.
+This function silently returns unmodified address if:
+- No conversion is necessary (i.e. domain name is not an IDN, or is already in ASCII form)
+- Conversion to punycode is impossible (e.g. required PHP functions are not available) or fails for any reason (e.g. domain has characters not allowed in an IDN).</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$address</var></dt>
+					<dd>The email address to convert</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>The encoded address in ASCII form
+				</div>
+
+
+				<h4>See</h4>
+				<div class="list">
+						<code><a href="class-PHPMailer.html#$CharSet">PHPMailer::<var>$CharSet</var></a></code><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="send" id="_send">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_send">#</a>
+		<code><a href="source-class-PHPMailer.html#1226-1251" title="Go to source code">send</a>( )</code>
+
+		<div class="description short">
+			<p>Create a message and send it.
+Uses the sending method specified by $Mailer.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Create a message and send it.
+Uses the sending method specified by $Mailer.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>false on error - See the ErrorInfo property for details of the error
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-phpmailerException.html">phpmailerException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="preSend" id="_preSend">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_preSend">#</a>
+		<code><a href="source-class-PHPMailer.html#1253-1346" title="Go to source code">preSend</a>( )</code>
+
+		<div class="description short">
+			<p>Prepare a message for sending.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Prepare a message for sending.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-phpmailerException.html">phpmailerException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="postSend" id="_postSend">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_postSend">#</a>
+		<code><a href="source-class-PHPMailer.html#1348-1385" title="Go to source code">postSend</a>( )</code>
+
+		<div class="description short">
+			<p>Actually send a message.
+Send the email via the selected mechanism.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Actually send a message.
+Send the email via the selected mechanism.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-phpmailerException.html">phpmailerException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sendmailSend" id="_sendmailSend">
+
+		<td class="attributes"><code>
+			 protected 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sendmailSend">#</a>
+		<code><a href="source-class-PHPMailer.html#1387-1451" title="Go to source code">sendmailSend</a>( <span>string <var>$header</var></span>, <span>string <var>$body</var></span> )</code>
+
+		<div class="description short">
+			<p>Send mail using the $Sendmail program.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Send mail using the $Sendmail program.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$header</var></dt>
+					<dd>The message headers</dd>
+					<dt><var>$body</var></dt>
+					<dd>The message body</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-phpmailerException.html">phpmailerException</a></code>
+				</div>
+
+				<h4>See</h4>
+				<div class="list">
+						<code><a href="class-PHPMailer.html#$Sendmail">PHPMailer::<var>$Sendmail</var></a></code><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isShellSafe" id="_isShellSafe">
+
+		<td class="attributes"><code>
+			 protected static
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isShellSafe">#</a>
+		<code><a href="source-class-PHPMailer.html#1453-1487" title="Go to source code">isShellSafe</a>( <span>string <var>$string</var></span> )</code>
+
+		<div class="description short">
+			<p>Fix CVE-2016-10033 and CVE-2016-10045 by disallowing potentially unsafe shell characters.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Fix CVE-2016-10033 and CVE-2016-10045 by disallowing potentially unsafe shell characters.</p>
+
+<p>Note that escapeshellarg and escapeshellcmd are inadequate for our purposes, especially on Windows.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$string</var></dt>
+					<dd>The string to be validated</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+				<h4>See</h4>
+				<div class="list">
+						https://github.com/PHPMailer/PHPMailer/issues/924 CVE-2016-10045 bug report<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="mailSend" id="_mailSend">
+
+		<td class="attributes"><code>
+			 protected 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_mailSend">#</a>
+		<code><a href="source-class-PHPMailer.html#1489-1539" title="Go to source code">mailSend</a>( <span>string <var>$header</var></span>, <span>string <var>$body</var></span> )</code>
+
+		<div class="description short">
+			<p>Send mail using the PHP mail() function.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Send mail using the PHP mail() function.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$header</var></dt>
+					<dd>The message headers</dd>
+					<dt><var>$body</var></dt>
+					<dd>The message body</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-phpmailerException.html">phpmailerException</a></code>
+				</div>
+
+				<h4>See</h4>
+				<div class="list">
+						http://www.php.net/manual/en/book.mail.php<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSMTPInstance" id="_getSMTPInstance">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-SMTP.html">SMTP</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSMTPInstance">#</a>
+		<code><a href="source-class-PHPMailer.html#1541-1554" title="Go to source code">getSMTPInstance</a>( )</code>
+
+		<div class="description short">
+			<p>Get an instance to use for SMTP operations.
+Override this function to load your own SMTP implementation.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get an instance to use for SMTP operations.
+Override this function to load your own SMTP implementation.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-SMTP.html">SMTP</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="smtpSend" id="_smtpSend">
+
+		<td class="attributes"><code>
+			 protected 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_smtpSend">#</a>
+		<code><a href="source-class-PHPMailer.html#1556-1624" title="Go to source code">smtpSend</a>( <span>string <var>$header</var></span>, <span>string <var>$body</var></span> )</code>
+
+		<div class="description short">
+			<p>Send mail via SMTP.
+Returns false if there is a bad MAIL FROM, RCPT, or DATA input.
+Uses the PHPMailerSMTP class by default.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Send mail via SMTP.
+Returns false if there is a bad MAIL FROM, RCPT, or DATA input.
+Uses the PHPMailerSMTP class by default.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$header</var></dt>
+					<dd>The message headers</dd>
+					<dt><var>$body</var></dt>
+					<dd>The message body</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-phpmailerException.html">phpmailerException</a></code>
+				</div>
+
+				<h4>See</h4>
+				<div class="list">
+						PHPMailer::getSMTPInstance() to use a different class.<br>
+				</div>
+				<h4>Uses</h4>
+				<div class="list">
+						<code><a href="class-SMTP.html">SMTP</a></code><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="smtpConnect" id="_smtpConnect">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_smtpConnect">#</a>
+		<code><a href="source-class-PHPMailer.html#1626-1747" title="Go to source code">smtpConnect</a>( <span>array <var>$options</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Initiate a connection to an SMTP server.
+Returns false if the operation failed.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Initiate a connection to an SMTP server.
+Returns false if the operation failed.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$options</var></dt>
+					<dd>An array of options compatible with stream_context_create()</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-phpmailerException.html">phpmailerException</a></code>
+				</div>
+
+				<h4>Uses</h4>
+				<div class="list">
+						<code><a href="class-SMTP.html">SMTP</a></code><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="smtpClose" id="_smtpClose">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_smtpClose">#</a>
+		<code><a href="source-class-PHPMailer.html#1749-1760" title="Go to source code">smtpClose</a>( )</code>
+
+		<div class="description short">
+			<p>Close the active SMTP session if one exists.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Close the active SMTP session if one exists.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setLanguage" id="_setLanguage">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setLanguage">#</a>
+		<code><a href="source-class-PHPMailer.html#1762-1833" title="Go to source code">setLanguage</a>( <span>string <var>$langcode</var> = <span class="php-quote">'en'</span></span>, <span>string <var>$lang_path</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Set the language for error messages.
+Returns false if it cannot load the language file.
+The default language is English.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set the language for error messages.
+Returns false if it cannot load the language file.
+The default language is English.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$langcode</var></dt>
+					<dd>ISO 639-1 2-character language code (e.g. French is "fr")</dd>
+					<dt><var>$lang_path</var></dt>
+					<dd>Path to the language file directory, with trailing separator (slash)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTranslations" id="_getTranslations">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTranslations">#</a>
+		<code><a href="source-class-PHPMailer.html#1835-1843" title="Go to source code">getTranslations</a>( )</code>
+
+		<div class="description short">
+			<p>Get the array of strings for the current language.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get the array of strings for the current language.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addrAppend" id="_addrAppend">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addrAppend">#</a>
+		<code><a href="source-class-PHPMailer.html#1845-1861" title="Go to source code">addrAppend</a>( <span>string <var>$type</var></span>, <span>array <var>$addr</var></span> )</code>
+
+		<div class="description short">
+			<p>Create recipient headers.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Create recipient headers.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$type</var></dt>
+					<dd></dd>
+					<dt><var>$addr</var></dt>
+					<dd>An array of recipient,</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addrFormat" id="_addrFormat">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addrFormat">#</a>
+		<code><a href="source-class-PHPMailer.html#1863-1879" title="Go to source code">addrFormat</a>( <span>array <var>$addr</var></span> )</code>
+
+		<div class="description short">
+			<p>Format an address for use in a message header.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Format an address for use in a message header.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$addr</var></dt>
+					<dd>A 2-element indexed array, element containing an address, element 1 containing a name</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="wrapText" id="_wrapText">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_wrapText">#</a>
+		<code><a href="source-class-PHPMailer.html#1881-1981" title="Go to source code">wrapText</a>( <span>string <var>$message</var></span>, <span>integer <var>$length</var></span>, <span>boolean <var>$qp_mode</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			<p>Word-wrap message.
+For use with mailers that do not automatically perform wrapping
+and for quoted-printable encoded messages.
+Original written by philippe.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Word-wrap message.
+For use with mailers that do not automatically perform wrapping
+and for quoted-printable encoded messages.
+Original written by philippe.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$message</var></dt>
+					<dd>The message to wrap</dd>
+					<dt><var>$length</var></dt>
+					<dd>The line length to wrap to</dd>
+					<dt><var>$qp_mode</var></dt>
+					<dd>Whether to run in Quoted-Printable mode</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="utf8CharBoundary" id="_utf8CharBoundary">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_utf8CharBoundary">#</a>
+		<code><a href="source-class-PHPMailer.html#1983-2029" title="Go to source code">utf8CharBoundary</a>( <span>string <var>$encodedText</var></span>, <span>integer <var>$maxLength</var></span> )</code>
+
+		<div class="description short">
+			<p>Find the last character boundary prior to $maxLength in a utf-8
+quoted-printable encoded string.
+Original written by Colin Brown.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Find the last character boundary prior to $maxLength in a utf-8
+quoted-printable encoded string.
+Original written by Colin Brown.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$encodedText</var></dt>
+					<dd>utf-8 QP text</dd>
+					<dt><var>$maxLength</var></dt>
+					<dd>Find the last character boundary prior to this length</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setWordWrap" id="_setWordWrap">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setWordWrap">#</a>
+		<code><a href="source-class-PHPMailer.html#2031-2054" title="Go to source code">setWordWrap</a>( )</code>
+
+		<div class="description short">
+			<p>Apply word wrapping to the message body.
+Wraps the message body to the number of chars set in the WordWrap property.
+You should only do this to plain-text bodies as wrapping HTML tags may break them.
+This is called automatically by createBody(), so you don't need to call it yourself.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Apply word wrapping to the message body.
+Wraps the message body to the number of chars set in the WordWrap property.
+You should only do this to plain-text bodies as wrapping HTML tags may break them.
+This is called automatically by createBody(), so you don't need to call it yourself.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createHeader" id="_createHeader">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createHeader">#</a>
+		<code><a href="source-class-PHPMailer.html#2056-2150" title="Go to source code">createHeader</a>( )</code>
+
+		<div class="description short">
+			<p>Assemble message headers.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Assemble message headers.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>The assembled headers
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMailMIME" id="_getMailMIME">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMailMIME">#</a>
+		<code><a href="source-class-PHPMailer.html#2152-2202" title="Go to source code">getMailMIME</a>( )</code>
+
+		<div class="description short">
+			<p>Get the message MIME type headers.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get the message MIME type headers.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSentMIMEMessage" id="_getSentMIMEMessage">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSentMIMEMessage">#</a>
+		<code><a href="source-class-PHPMailer.html#2204-2216" title="Go to source code">getSentMIMEMessage</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the whole MIME message.
+Includes complete headers and body.
+Only valid post preSend().</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the whole MIME message.
+Includes complete headers and body.
+Only valid post preSend().</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+				<h4>See</h4>
+				<div class="list">
+						<code><a href="class-PHPMailer.html#_preSend">PHPMailer::preSend()</a></code><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="generateId" id="_generateId">
+
+		<td class="attributes"><code>
+			 protected 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_generateId">#</a>
+		<code><a href="source-class-PHPMailer.html#2218-2226" title="Go to source code">generateId</a>( )</code>
+
+		<div class="description short">
+			<p>Create unique ID.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Create unique ID.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createBody" id="_createBody">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createBody">#</a>
+		<code><a href="source-class-PHPMailer.html#2228-2430" title="Go to source code">createBody</a>( )</code>
+
+		<div class="description short">
+			<p>Assemble the message body.
+Returns an empty string on failure.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Assemble the message body.
+Returns an empty string on failure.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>The assembled message body
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-phpmailerException.html">phpmailerException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBoundary" id="_getBoundary">
+
+		<td class="attributes"><code>
+			 protected 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBoundary">#</a>
+		<code><a href="source-class-PHPMailer.html#2432-2464" title="Go to source code">getBoundary</a>( <span>string <var>$boundary</var></span>, <span>string <var>$charSet</var></span>, <span>string <var>$contentType</var></span>, <span>string <var>$encoding</var></span> )</code>
+
+		<div class="description short">
+			<p>Return the start of a message boundary.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return the start of a message boundary.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$boundary</var></dt>
+					<dd></dd>
+					<dt><var>$charSet</var></dt>
+					<dd></dd>
+					<dt><var>$contentType</var></dt>
+					<dd></dd>
+					<dt><var>$encoding</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="endBoundary" id="_endBoundary">
+
+		<td class="attributes"><code>
+			 protected 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_endBoundary">#</a>
+		<code><a href="source-class-PHPMailer.html#2466-2476" title="Go to source code">endBoundary</a>( <span>string <var>$boundary</var></span> )</code>
+
+		<div class="description short">
+			<p>Return the end of a message boundary.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return the end of a message boundary.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$boundary</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setMessageType" id="_setMessageType">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setMessageType">#</a>
+		<code><a href="source-class-PHPMailer.html#2478-2499" title="Go to source code">setMessageType</a>( )</code>
+
+		<div class="description short">
+			<p>Set the message type.
+PHPMailer only supports some preset message types, not arbitrary MIME structures.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set the message type.
+PHPMailer only supports some preset message types, not arbitrary MIME structures.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="headerLine" id="_headerLine">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_headerLine">#</a>
+		<code><a href="source-class-PHPMailer.html#2501-2512" title="Go to source code">headerLine</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var></span> )</code>
+
+		<div class="description short">
+			<p>Format a header line.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Format a header line.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+					<dt><var>$value</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="textLine" id="_textLine">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_textLine">#</a>
+		<code><a href="source-class-PHPMailer.html#2514-2524" title="Go to source code">textLine</a>( <span>string <var>$value</var></span> )</code>
+
+		<div class="description short">
+			<p>Return a formatted mail line.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return a formatted mail line.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addAttachment" id="_addAttachment">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addAttachment">#</a>
+		<code><a href="source-class-PHPMailer.html#2526-2578" title="Go to source code">addAttachment</a>( <span>string <var>$path</var></span>, <span>string <var>$name</var> = <span class="php-quote">''</span></span>, <span>string <var>$encoding</var> = <span class="php-quote">'base64'</span></span>, <span>string <var>$type</var> = <span class="php-quote">''</span></span>, <span>string <var>$disposition</var> = <span class="php-quote">'attachment'</span></span> )</code>
+
+		<div class="description short">
+			<p>Add an attachment from a path on the filesystem.
+Returns false if the file could not be found or read.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Add an attachment from a path on the filesystem.
+Returns false if the file could not be found or read.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd>path to the attachment</dd>
+					<dt><var>$name</var></dt>
+					<dd>overrides the attachment name</dd>
+					<dt><var>$encoding</var></dt>
+					<dd>file encoding (see $Encoding)</dd>
+					<dt><var>$type</var></dt>
+					<dd>file extension (MIME) type</dd>
+					<dt><var>$disposition</var></dt>
+					<dd>Disposition to use</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-phpmailerException.html">phpmailerException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAttachments" id="_getAttachments">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAttachments">#</a>
+		<code><a href="source-class-PHPMailer.html#2580-2588" title="Go to source code">getAttachments</a>( )</code>
+
+		<div class="description short">
+			<p>Return the array of attachments.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return the array of attachments.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="attachAll" id="_attachAll">
+
+		<td class="attributes"><code>
+			 protected 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_attachAll">#</a>
+		<code><a href="source-class-PHPMailer.html#2590-2700" title="Go to source code">attachAll</a>( <span>string <var>$disposition_type</var></span>, <span>string <var>$boundary</var></span> )</code>
+
+		<div class="description short">
+			<p>Attach all file, string, and binary attachments to the message.
+Returns an empty string on failure.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Attach all file, string, and binary attachments to the message.
+Returns an empty string on failure.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$disposition_type</var></dt>
+					<dd></dd>
+					<dt><var>$boundary</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="encodeFile" id="_encodeFile">
+
+		<td class="attributes"><code>
+			 protected 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_encodeFile">#</a>
+		<code><a href="source-class-PHPMailer.html#2702-2746" title="Go to source code">encodeFile</a>( <span>string <var>$path</var></span>, <span>string <var>$encoding</var> = <span class="php-quote">'base64'</span></span> )</code>
+
+		<div class="description short">
+			<p>Encode a file attachment in requested format.
+Returns an empty string on failure.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Encode a file attachment in requested format.
+Returns an empty string on failure.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd>The full path to the file</dd>
+					<dt><var>$encoding</var></dt>
+					<dd>The encoding to use; one of 'base64', '7bit', '8bit', 'binary', 'quoted-printable'</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-phpmailerException.html">phpmailerException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="encodeString" id="_encodeString">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_encodeString">#</a>
+		<code><a href="source-class-PHPMailer.html#2748-2784" title="Go to source code">encodeString</a>( <span>string <var>$str</var></span>, <span>string <var>$encoding</var> = <span class="php-quote">'base64'</span></span> )</code>
+
+		<div class="description short">
+			<p>Encode a string in requested format.
+Returns an empty string on failure.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Encode a string in requested format.
+Returns an empty string on failure.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$str</var></dt>
+					<dd>The text to encode</dd>
+					<dt><var>$encoding</var></dt>
+					<dd>The encoding to use; one of 'base64', '7bit', '8bit', 'binary', 'quoted-printable'</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="encodeHeader" id="_encodeHeader">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_encodeHeader">#</a>
+		<code><a href="source-class-PHPMailer.html#2786-2854" title="Go to source code">encodeHeader</a>( <span>string <var>$str</var></span>, <span>string <var>$position</var> = <span class="php-quote">'text'</span></span> )</code>
+
+		<div class="description short">
+			<p>Encode a header string optimally.
+Picks shortest of Q, B, quoted-printable or none.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Encode a header string optimally.
+Picks shortest of Q, B, quoted-printable or none.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$str</var></dt>
+					<dd></dd>
+					<dt><var>$position</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasMultiBytes" id="_hasMultiBytes">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasMultiBytes">#</a>
+		<code><a href="source-class-PHPMailer.html#2856-2870" title="Go to source code">hasMultiBytes</a>( <span>string <var>$str</var></span> )</code>
+
+		<div class="description short">
+			<p>Check if a string contains multi-byte characters.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Check if a string contains multi-byte characters.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$str</var></dt>
+					<dd>multi-byte text to wrap encode</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="has8bitChars" id="_has8bitChars">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_has8bitChars">#</a>
+		<code><a href="source-class-PHPMailer.html#2872-2882" title="Go to source code">has8bitChars</a>( <span>string <var>$text</var></span> )</code>
+
+		<div class="description short">
+			<p>Does a string contain any 8-bit chars (in any charset)?</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Does a string contain any 8-bit chars (in any charset)?</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$text</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="base64EncodeWrapMB" id="_base64EncodeWrapMB">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_base64EncodeWrapMB">#</a>
+		<code><a href="source-class-PHPMailer.html#2884-2928" title="Go to source code">base64EncodeWrapMB</a>( <span>string <var>$str</var></span>, <span>string <var>$linebreak</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Encode and wrap long multibyte strings for mail headers
+without breaking lines within a character.
+Adapted from a function by paravoid.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Encode and wrap long multibyte strings for mail headers
+without breaking lines within a character.
+Adapted from a function by paravoid.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$str</var></dt>
+					<dd>multi-byte text to wrap encode</dd>
+					<dt><var>$linebreak</var></dt>
+					<dd>string to use as linefeed/end-of-line</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+				<h4>See</h4>
+				<div class="list">
+						http://www.php.net/manual/en/function.mb-encode-mimeheader.php#60283<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="encodeQP" id="_encodeQP">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_encodeQP">#</a>
+		<code><a href="source-class-PHPMailer.html#2930-2953" title="Go to source code">encodeQP</a>( <span>string <var>$string</var></span>, <span>integer <var>$line_max</var> = <span class="php-num">76</span></span> )</code>
+
+		<div class="description short">
+			<p>Encode a string in quoted-printable format.
+According to RFC2045 section 6.7.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Encode a string in quoted-printable format.
+According to RFC2045 section 6.7.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$string</var></dt>
+					<dd>The text to encode</dd>
+					<dt><var>$line_max</var></dt>
+					<dd>Number of chars allowed on a line before wrapping</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+				<h4>See</h4>
+				<div class="list">
+						http://www.php.net/manual/en/function.quoted-printable-decode.php#89417 Adapted from this comment<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="encodeQPphp" id="_encodeQPphp" class="deprecated">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_encodeQPphp">#</a>
+		<code><a href="source-class-PHPMailer.html#2955-2974" title="Go to source code">encodeQPphp</a>( <span>string <var>$string</var></span>, <span>integer <var>$line_max</var> = <span class="php-num">76</span></span>, <span>boolean <var>$space_conv</var> = <span class="php-keyword1">false</span> </span> )</code>
+
+		<div class="description short">
+			<p>Backward compatibility wrapper for an old QP encoding function that was removed.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Backward compatibility wrapper for an old QP encoding function that was removed.</p>
+
+				<h4>Deprecated</h4>
+				<div class="list">
+						use encodeQP instead<br>
+				</div>
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$string</var></dt>
+					<dd></dd>
+					<dt><var>$line_max</var></dt>
+					<dd></dd>
+					<dt><var>$space_conv</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+				<h4>See</h4>
+				<div class="list">
+						<code><a href="class-PHPMailer.html#_encodeQP">PHPMailer::encodeQP()</a></code><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="encodeQ" id="_encodeQ">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_encodeQ">#</a>
+		<code><a href="source-class-PHPMailer.html#2976-3028" title="Go to source code">encodeQ</a>( <span>string <var>$str</var></span>, <span>string <var>$position</var> = <span class="php-quote">'text'</span></span> )</code>
+
+		<div class="description short">
+			<p>Encode a string using Q encoding.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Encode a string using Q encoding.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$str</var></dt>
+					<dd>the text to encode</dd>
+					<dt><var>$position</var></dt>
+					<dd>Where the text is going to be used, see the RFC for what that means</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+				<h4>See</h4>
+				<div class="list">
+						http://tools.ietf.org/html/rfc2047<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addStringAttachment" id="_addStringAttachment">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addStringAttachment">#</a>
+		<code><a href="source-class-PHPMailer.html#3030-3059" title="Go to source code">addStringAttachment</a>( <span>string <var>$string</var></span>, <span>string <var>$filename</var></span>, <span>string <var>$encoding</var> = <span class="php-quote">'base64'</span></span>, <span>string <var>$type</var> = <span class="php-quote">''</span></span>, <span>string <var>$disposition</var> = <span class="php-quote">'attachment'</span> </span> )</code>
+
+		<div class="description short">
+			<p>Add a string or binary attachment (non-filesystem).
+This method can be used to attach ascii or binary data,
+such as a BLOB record from a database.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Add a string or binary attachment (non-filesystem).
+This method can be used to attach ascii or binary data,
+such as a BLOB record from a database.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$string</var></dt>
+					<dd>string attachment data</dd>
+					<dt><var>$filename</var></dt>
+					<dd>name of the attachment</dd>
+					<dt><var>$encoding</var></dt>
+					<dd>file encoding (see $Encoding)</dd>
+					<dt><var>$type</var></dt>
+					<dd>file extension (MIME) type</dd>
+					<dt><var>$disposition</var></dt>
+					<dd>Disposition to use</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addEmbeddedImage" id="_addEmbeddedImage">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addEmbeddedImage">#</a>
+		<code><a href="source-class-PHPMailer.html#3061-3110" title="Go to source code">addEmbeddedImage</a>( <span>string <var>$path</var></span>, <span>string <var>$cid</var></span>, <span>string <var>$name</var> = <span class="php-quote">''</span></span>, <span>string <var>$encoding</var> = <span class="php-quote">'base64'</span></span>, <span>string <var>$type</var> = <span class="php-quote">''</span></span>, <span>string <var>$disposition</var> = <span class="php-quote">'inline'</span></span> )</code>
+
+		<div class="description short">
+			<p>Add an embedded (inline) attachment from a file.
+This can include images, sounds, and just about any other document type.
+These differ from 'regular' attachments in that they are intended to be
+displayed inline with the message, not just attached for download.
+This is used in HTML messages that embed the images
+the HTML refers to using the $cid value.
+       the content when using an embedded image in HTML.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Add an embedded (inline) attachment from a file.
+This can include images, sounds, and just about any other document type.
+These differ from 'regular' attachments in that they are intended to be
+displayed inline with the message, not just attached for download.
+This is used in HTML messages that embed the images
+the HTML refers to using the $cid value. the content when using an embedded image in HTML.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd>path to the attachment</dd>
+					<dt><var>$cid</var></dt>
+					<dd>Content ID of the attachment; Use this to reference</dd>
+					<dt><var>$name</var></dt>
+					<dd>overrides the attachment name</dd>
+					<dt><var>$encoding</var></dt>
+					<dd>file encoding (see $Encoding)</dd>
+					<dt><var>$type</var></dt>
+					<dd>file MIME type</dd>
+					<dt><var>$disposition</var></dt>
+					<dd>Disposition to use</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>True on successfully adding an attachment
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addStringEmbeddedImage" id="_addStringEmbeddedImage">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addStringEmbeddedImage">#</a>
+		<code><a href="source-class-PHPMailer.html#3112-3149" title="Go to source code">addStringEmbeddedImage</a>( <span>string <var>$string</var></span>, <span>string <var>$cid</var></span>, <span>string <var>$name</var> = <span class="php-quote">''</span></span>, <span>string <var>$encoding</var> = <span class="php-quote">'base64'</span></span>, <span>string <var>$type</var> = <span class="php-quote">''</span></span>, <span>string <var>$disposition</var> = <span class="php-quote">'inline'</span> </span> )</code>
+
+		<div class="description short">
+			<p>Add an embedded stringified attachment.
+This can include images, sounds, and just about any other document type.
+Be sure to set the $type to an image type for images:
+JPEG images use 'image/jpeg', GIF uses 'image/gif', PNG uses 'image/png'.
+       the content when using an embedded image in HTML.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Add an embedded stringified attachment.
+This can include images, sounds, and just about any other document type.
+Be sure to set the $type to an image type for images:
+JPEG images use 'image/jpeg', GIF uses 'image/gif', PNG uses 'image/png'. the content when using an embedded image in HTML.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$string</var></dt>
+					<dd>the attachment binary data</dd>
+					<dt><var>$cid</var></dt>
+					<dd>Content ID of the attachment; Use this to reference</dd>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+					<dt><var>$encoding</var></dt>
+					<dd>file encoding (see $Encoding)</dd>
+					<dt><var>$type</var></dt>
+					<dd>MIME type</dd>
+					<dt><var>$disposition</var></dt>
+					<dd>Disposition to use</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>True on successfully adding an attachment
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="inlineImageExists" id="_inlineImageExists">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_inlineImageExists">#</a>
+		<code><a href="source-class-PHPMailer.html#3151-3165" title="Go to source code">inlineImageExists</a>( )</code>
+
+		<div class="description short">
+			<p>Check if an inline attachment is present.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Check if an inline attachment is present.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="attachmentExists" id="_attachmentExists">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_attachmentExists">#</a>
+		<code><a href="source-class-PHPMailer.html#3167-3181" title="Go to source code">attachmentExists</a>( )</code>
+
+		<div class="description short">
+			<p>Check if an attachment (non-inline) is present.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Check if an attachment (non-inline) is present.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="alternativeExists" id="_alternativeExists">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_alternativeExists">#</a>
+		<code><a href="source-class-PHPMailer.html#3183-3191" title="Go to source code">alternativeExists</a>( )</code>
+
+		<div class="description short">
+			<p>Check if this message has an alternative body set.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Check if this message has an alternative body set.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="clearQueuedAddresses" id="_clearQueuedAddresses">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_clearQueuedAddresses">#</a>
+		<code><a href="source-class-PHPMailer.html#3193-3206" title="Go to source code">clearQueuedAddresses</a>( <span>string <var>$kind</var></span> )</code>
+
+		<div class="description short">
+			<p>Clear queued addresses of given kind.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Clear queued addresses of given kind.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$kind</var></dt>
+					<dd>'to', 'cc', or 'bcc'</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="clearAddresses" id="_clearAddresses">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_clearAddresses">#</a>
+		<code><a href="source-class-PHPMailer.html#3208-3218" title="Go to source code">clearAddresses</a>( )</code>
+
+		<div class="description short">
+			<p>Clear all To recipients.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Clear all To recipients.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="clearCCs" id="_clearCCs">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_clearCCs">#</a>
+		<code><a href="source-class-PHPMailer.html#3220-3230" title="Go to source code">clearCCs</a>( )</code>
+
+		<div class="description short">
+			<p>Clear all CC recipients.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Clear all CC recipients.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="clearBCCs" id="_clearBCCs">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_clearBCCs">#</a>
+		<code><a href="source-class-PHPMailer.html#3232-3242" title="Go to source code">clearBCCs</a>( )</code>
+
+		<div class="description short">
+			<p>Clear all BCC recipients.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Clear all BCC recipients.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="clearReplyTos" id="_clearReplyTos">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_clearReplyTos">#</a>
+		<code><a href="source-class-PHPMailer.html#3244-3251" title="Go to source code">clearReplyTos</a>( )</code>
+
+		<div class="description short">
+			<p>Clear all ReplyTo recipients.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Clear all ReplyTo recipients.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="clearAllRecipients" id="_clearAllRecipients">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_clearAllRecipients">#</a>
+		<code><a href="source-class-PHPMailer.html#3253-3263" title="Go to source code">clearAllRecipients</a>( )</code>
+
+		<div class="description short">
+			<p>Clear all recipient types.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Clear all recipient types.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="clearAttachments" id="_clearAttachments">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_clearAttachments">#</a>
+		<code><a href="source-class-PHPMailer.html#3265-3271" title="Go to source code">clearAttachments</a>( )</code>
+
+		<div class="description short">
+			<p>Clear all filesystem, string, and binary attachments.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Clear all filesystem, string, and binary attachments.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="clearCustomHeaders" id="_clearCustomHeaders">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_clearCustomHeaders">#</a>
+		<code><a href="source-class-PHPMailer.html#3273-3279" title="Go to source code">clearCustomHeaders</a>( )</code>
+
+		<div class="description short">
+			<p>Clear all custom headers.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Clear all custom headers.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setError" id="_setError">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setError">#</a>
+		<code><a href="source-class-PHPMailer.html#3281-3305" title="Go to source code">setError</a>( <span>string <var>$msg</var></span> )</code>
+
+		<div class="description short">
+			<p>Add an error message to the error container.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Add an error message to the error container.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$msg</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="rfcDate" id="_rfcDate">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_rfcDate">#</a>
+		<code><a href="source-class-PHPMailer.html#3307-3321" title="Go to source code">rfcDate</a>( )</code>
+
+		<div class="description short">
+			<p>Return an RFC 822 formatted date.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return an RFC 822 formatted date.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="serverHostname" id="_serverHostname">
+
+		<td class="attributes"><code>
+			 protected 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_serverHostname">#</a>
+		<code><a href="source-class-PHPMailer.html#3323-3343" title="Go to source code">serverHostname</a>( )</code>
+
+		<div class="description short">
+			<p>Get the server hostname.
+Returns 'localhost.localdomain' if unknown.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get the server hostname.
+Returns 'localhost.localdomain' if unknown.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="lang" id="_lang">
+
+		<td class="attributes"><code>
+			 protected 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_lang">#</a>
+		<code><a href="source-class-PHPMailer.html#3345-3371" title="Go to source code">lang</a>( <span>string <var>$key</var></span> )</code>
+
+		<div class="description short">
+			<p>Get an error message in the current language.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get an error message in the current language.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isError" id="_isError">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isError">#</a>
+		<code><a href="source-class-PHPMailer.html#3373-3381" title="Go to source code">isError</a>( )</code>
+
+		<div class="description short">
+			<p>Check if an error occurred.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Check if an error occurred.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>true if an error did occur
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fixEOL" id="_fixEOL">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fixEOL">#</a>
+		<code><a href="source-class-PHPMailer.html#3383-3401" title="Go to source code">fixEOL</a>( <span>string <var>$str</var></span> )</code>
+
+		<div class="description short">
+			<p>Ensure consistent line endings in a string.
+Changes every end of line from CRLF, CR or LF to $this->LE.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Ensure consistent line endings in a string.
+Changes every end of line from CRLF, CR or LF to $this->LE.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$str</var></dt>
+					<dd>String to fixEOL</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addCustomHeader" id="_addCustomHeader">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addCustomHeader">#</a>
+		<code><a href="source-class-PHPMailer.html#3403-3419" title="Go to source code">addCustomHeader</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Add a custom header.
+$name value can be overloaded to contain
+both header name and value (name:value).</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Add a custom header.
+$name value can be overloaded to contain
+both header name and value (name:value).</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>Custom header name</dd>
+					<dt><var>$value</var></dt>
+					<dd>Header value</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCustomHeaders" id="_getCustomHeaders">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCustomHeaders">#</a>
+		<code><a href="source-class-PHPMailer.html#3421-3429" title="Go to source code">getCustomHeaders</a>( )</code>
+
+		<div class="description short">
+			<p>Returns all custom headers.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns all custom headers.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="msgHTML" id="_msgHTML">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_msgHTML">#</a>
+		<code><a href="source-class-PHPMailer.html#3431-3500" title="Go to source code">msgHTML</a>( <span>string <var>$message</var></span>, <span>string <var>$basedir</var> = <span class="php-quote">''</span></span>, <span>boolean|callable <var>$advanced</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			<p>Create a message body from an HTML string.
+Automatically inlines images and creates a plain-text version by converting the HTML,
+overwriting any existing values in Body and AltBody.
+$basedir is used when handling relative image paths, e.g. <img src="images/a.png">
+will look for an image file in $basedir/images/a.png and convert it to inline.
+If you don't want to apply these transformations to your HTML, just set Body and AltBody yourself.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Create a message body from an HTML string.
+Automatically inlines images and creates a plain-text version by converting the HTML,
+overwriting any existing values in Body and AltBody.
+$basedir is used when handling relative image paths, e.g. <img src="images/a.png">
+will look for an image file in $basedir/images/a.png and convert it to inline.
+If you don't want to apply these transformations to your HTML, just set Body and AltBody yourself.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$message</var></dt>
+					<dd>HTML message string</dd>
+					<dt><var>$basedir</var></dt>
+					<dd>base directory for relative paths to images</dd>
+					<dt><var>$advanced</var></dt>
+					<dd>Whether to use the internal HTML to text converter</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>$message The transformed message Body
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="html2text" id="_html2text">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_html2text">#</a>
+		<code><a href="source-class-PHPMailer.html#3502-3533" title="Go to source code">html2text</a>( <span>string <var>$html</var></span>, <span>boolean|callable <var>$advanced</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			<p>Convert an HTML string into plain text.
+This is used by msgHTML().
+Note - older versions of this function used a bundled advanced converter
+which was been removed for license reasons in #232.
+Example usage:</p>
+
+<pre><span class="php-comment">// Use default conversion</span>
+<span class="php-var">$plain</span> = <span class="php-var">$mail</span>-&gt;html2text(<span class="php-var">$html</span>);
+<span class="php-comment">// Use your own custom converter</span>
+<span class="php-var">$plain</span> = <span class="php-var">$mail</span>-&gt;html2text(<span class="php-var">$html</span>, <span class="php-keyword1">function</span>(<span class="php-var">$html</span>) {
+    <span class="php-var">$converter</span> = <span class="php-keyword1">new</span> MyHtml2text(<span class="php-var">$html</span>);
+    <span class="php-keyword1">return</span> <span class="php-var">$converter</span>-&gt;get_text();
+});</pre>
+
+<p>or provide your own callable for custom conversion.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Convert an HTML string into plain text.
+This is used by msgHTML().
+Note - older versions of this function used a bundled advanced converter
+which was been removed for license reasons in #232.
+Example usage:</p>
+
+<pre><span class="php-comment">// Use default conversion</span>
+<span class="php-var">$plain</span> = <span class="php-var">$mail</span>-&gt;html2text(<span class="php-var">$html</span>);
+<span class="php-comment">// Use your own custom converter</span>
+<span class="php-var">$plain</span> = <span class="php-var">$mail</span>-&gt;html2text(<span class="php-var">$html</span>, <span class="php-keyword1">function</span>(<span class="php-var">$html</span>) {
+    <span class="php-var">$converter</span> = <span class="php-keyword1">new</span> MyHtml2text(<span class="php-var">$html</span>);
+    <span class="php-keyword1">return</span> <span class="php-var">$converter</span>-&gt;get_text();
+});</pre>
+
+<p>or provide your own callable for custom conversion.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$html</var></dt>
+					<dd>The HTML text to convert</dd>
+					<dt><var>$advanced</var></dt>
+					<dd>Any boolean value to use the internal converter,</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_mime_types" id="__mime_types">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__mime_types">#</a>
+		<code><a href="source-class-PHPMailer.html#3535-3651" title="Go to source code">_mime_types</a>( <span>string <var>$ext</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Get the MIME type for a file extension.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get the MIME type for a file extension.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$ext</var></dt>
+					<dd>File extension</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>MIME type of file
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="filenameToType" id="_filenameToType">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_filenameToType">#</a>
+		<code><a href="source-class-PHPMailer.html#3653-3673" title="Go to source code">filenameToType</a>( <span>string <var>$filename</var></span> )</code>
+
+		<div class="description short">
+			<p>Map a file name to a MIME type.
+Defaults to 'application/octet-stream', i.e.. arbitrary binary data.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Map a file name to a MIME type.
+Defaults to 'application/octet-stream', i.e.. arbitrary binary data.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filename</var></dt>
+					<dd>A file name or full path, does not need to exist as a file</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="mb_pathinfo" id="_mb_pathinfo">
+
+		<td class="attributes"><code>
+			 public static
+
+			string|array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_mb_pathinfo">#</a>
+		<code><a href="source-class-PHPMailer.html#3675-3724" title="Go to source code">mb_pathinfo</a>( <span>string <var>$path</var></span>, <span>integer|string <var>$options</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Multi-byte-safe pathinfo replacement.
+Drop-in replacement for pathinfo(), but multibyte-safe, cross-platform-safe, old-version-safe.
+Works similarly to the one in PHP >= 5.2.0
+     or a string name to return only the specified piece, allows 'filename' to work on PHP &lt; 5.2.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Multi-byte-safe pathinfo replacement.
+Drop-in replacement for pathinfo(), but multibyte-safe, cross-platform-safe, old-version-safe.
+Works similarly to the one in PHP >= 5.2.0 or a string name to return only the specified piece, allows 'filename' to work on PHP &lt; 5.2.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd>A filename or path, does not need to exist as a file</dd>
+					<dt><var>$options</var></dt>
+					<dd>Either a PATHINFO_* constant,</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string|array
+				</div>
+
+
+				<h4>See</h4>
+				<div class="list">
+						http://www.php.net/manual/en/function.pathinfo.php#107461<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="set" id="_set">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_set">#</a>
+		<code><a href="source-class-PHPMailer.html#3726-3753" title="Go to source code">set</a>( <span>string <var>$name</var></span>, <span>mixed <var>$value</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Set or reset instance properties.
+You should avoid this function - it's more verbose, less efficient, more error-prone and
+harder to debug than setting properties directly.
+Usage Example:
+<code>$mail-&gt;set('SMTPSecure', 'tls');</code>
+  is the same as:
+<code>$mail-&gt;SMTPSecure = 'tls';</code>.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set or reset instance properties.
+You should avoid this function - it's more verbose, less efficient, more error-prone and
+harder to debug than setting properties directly.
+Usage Example:
+<code>$mail-&gt;set('SMTPSecure', 'tls');</code> is the same as:
+<code>$mail-&gt;SMTPSecure = 'tls';</code>.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>The property name to set</dd>
+					<dt><var>$value</var></dt>
+					<dd>The value to set the property to</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="secureHeader" id="_secureHeader">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_secureHeader">#</a>
+		<code><a href="source-class-PHPMailer.html#3755-3765" title="Go to source code">secureHeader</a>( <span>string <var>$str</var></span> )</code>
+
+		<div class="description short">
+			<p>Strip newlines to prevent header injection.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Strip newlines to prevent header injection.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$str</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="normalizeBreaks" id="_normalizeBreaks">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_normalizeBreaks">#</a>
+		<code><a href="source-class-PHPMailer.html#3767-3782" title="Go to source code">normalizeBreaks</a>( <span>string <var>$text</var></span>, <span>string <var>$breaktype</var> = <span class="php-quote">&quot;\r\n&quot;</span></span> )</code>
+
+		<div class="description short">
+			<p>Normalize line breaks in a string.
+Converts UNIX LF, Mac CR and Windows CRLF line breaks into a single line break format.
+Defaults to CRLF (for message bodies) and preserves consecutive breaks.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Normalize line breaks in a string.
+Converts UNIX LF, Mac CR and Windows CRLF line breaks into a single line break format.
+Defaults to CRLF (for message bodies) and preserves consecutive breaks.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$text</var></dt>
+					<dd></dd>
+					<dt><var>$breaktype</var></dt>
+					<dd>What kind of line break to use, defaults to CRLF</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sign" id="_sign">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sign">#</a>
+		<code><a href="source-class-PHPMailer.html#3784-3798" title="Go to source code">sign</a>( <span>string <var>$cert_filename</var></span>, <span>string <var>$key_filename</var></span>, <span>string <var>$key_pass</var></span>, <span>string <var>$extracerts_filename</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Set the public and private key files and password for S/MIME signing.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set the public and private key files and password for S/MIME signing.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$cert_filename</var></dt>
+					<dd></dd>
+					<dt><var>$key_filename</var></dt>
+					<dd></dd>
+					<dt><var>$key_pass</var></dt>
+					<dd>Password for private key</dd>
+					<dt><var>$extracerts_filename</var></dt>
+					<dd>Optional path to chain certificate</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="DKIM_QP" id="_DKIM_QP">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_DKIM_QP">#</a>
+		<code><a href="source-class-PHPMailer.html#3800-3820" title="Go to source code">DKIM_QP</a>( <span>string <var>$txt</var></span> )</code>
+
+		<div class="description short">
+			<p>Quoted-Printable-encode a DKIM header.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Quoted-Printable-encode a DKIM header.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$txt</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="DKIM_Sign" id="_DKIM_Sign">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_DKIM_Sign">#</a>
+		<code><a href="source-class-PHPMailer.html#3822-3873" title="Go to source code">DKIM_Sign</a>( <span>string <var>$signHeader</var></span> )</code>
+
+		<div class="description short">
+			<p>Generate a DKIM signature.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Generate a DKIM signature.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$signHeader</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>The DKIM signature value
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-phpmailerException.html">phpmailerException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="DKIM_HeaderC" id="_DKIM_HeaderC">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_DKIM_HeaderC">#</a>
+		<code><a href="source-class-PHPMailer.html#3875-3895" title="Go to source code">DKIM_HeaderC</a>( <span>string <var>$signHeader</var></span> )</code>
+
+		<div class="description short">
+			<p>Generate a DKIM canonicalization header.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Generate a DKIM canonicalization header.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$signHeader</var></dt>
+					<dd>Header</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="DKIM_BodyC" id="_DKIM_BodyC">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_DKIM_BodyC">#</a>
+		<code><a href="source-class-PHPMailer.html#3897-3918" title="Go to source code">DKIM_BodyC</a>( <span>string <var>$body</var></span> )</code>
+
+		<div class="description short">
+			<p>Generate a DKIM canonicalization body.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Generate a DKIM canonicalization body.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$body</var></dt>
+					<dd>Message Body</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="DKIM_Add" id="_DKIM_Add">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_DKIM_Add">#</a>
+		<code><a href="source-class-PHPMailer.html#3920-3998" title="Go to source code">DKIM_Add</a>( <span>string <var>$headers_line</var></span>, <span>string <var>$subject</var></span>, <span>string <var>$body</var></span> )</code>
+
+		<div class="description short">
+			<p>Create the DKIM header and body in a new message header.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Create the DKIM header and body in a new message header.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$headers_line</var></dt>
+					<dd>Header lines</dd>
+					<dt><var>$subject</var></dt>
+					<dd>Subject</dd>
+					<dt><var>$body</var></dt>
+					<dd>Body</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasLineLongerThanMax" id="_hasLineLongerThanMax">
+
+		<td class="attributes"><code>
+			 public static
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasLineLongerThanMax">#</a>
+		<code><a href="source-class-PHPMailer.html#4000-4013" title="Go to source code">hasLineLongerThanMax</a>( <span>string <var>$str</var></span> )</code>
+
+		<div class="description short">
+			<p>Detect if a string contains a line longer than the maximum line length allowed.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Detect if a string contains a line longer than the maximum line length allowed.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$str</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getToAddresses" id="_getToAddresses">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getToAddresses">#</a>
+		<code><a href="source-class-PHPMailer.html#4015-4025" title="Go to source code">getToAddresses</a>( )</code>
+
+		<div class="description short">
+			<p>Allows for public read access to 'to' property.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Allows for public read access to 'to' property.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+				<h4>Note:</h4>
+				<div class="list">
+						Before the send() call, queued addresses (i.e. with IDN) are not yet included.<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCcAddresses" id="_getCcAddresses">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCcAddresses">#</a>
+		<code><a href="source-class-PHPMailer.html#4027-4037" title="Go to source code">getCcAddresses</a>( )</code>
+
+		<div class="description short">
+			<p>Allows for public read access to 'cc' property.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Allows for public read access to 'cc' property.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+				<h4>Note:</h4>
+				<div class="list">
+						Before the send() call, queued addresses (i.e. with IDN) are not yet included.<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBccAddresses" id="_getBccAddresses">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBccAddresses">#</a>
+		<code><a href="source-class-PHPMailer.html#4039-4049" title="Go to source code">getBccAddresses</a>( )</code>
+
+		<div class="description short">
+			<p>Allows for public read access to 'bcc' property.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Allows for public read access to 'bcc' property.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+				<h4>Note:</h4>
+				<div class="list">
+						Before the send() call, queued addresses (i.e. with IDN) are not yet included.<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getReplyToAddresses" id="_getReplyToAddresses">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getReplyToAddresses">#</a>
+		<code><a href="source-class-PHPMailer.html#4051-4061" title="Go to source code">getReplyToAddresses</a>( )</code>
+
+		<div class="description short">
+			<p>Allows for public read access to 'ReplyTo' property.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Allows for public read access to 'ReplyTo' property.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+				<h4>Note:</h4>
+				<div class="list">
+						Before the send() call, queued addresses (i.e. with IDN) are not yet included.<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAllRecipientAddresses" id="_getAllRecipientAddresses">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAllRecipientAddresses">#</a>
+		<code><a href="source-class-PHPMailer.html#4063-4073" title="Go to source code">getAllRecipientAddresses</a>( )</code>
+
+		<div class="description short">
+			<p>Allows for public read access to 'all_recipients' property.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Allows for public read access to 'all_recipients' property.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+				<h4>Note:</h4>
+				<div class="list">
+						Before the send() call, queued addresses (i.e. with IDN) are not yet included.<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="doCallback" id="_doCallback">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_doCallback">#</a>
+		<code><a href="source-class-PHPMailer.html#4075-4092" title="Go to source code">doCallback</a>( <span>boolean <var>$isSent</var></span>, <span>array <var>$to</var></span>, <span>array <var>$cc</var></span>, <span>array <var>$bcc</var></span>, <span>string <var>$subject</var></span>, <span>string <var>$body</var></span>, <span>string <var>$from</var></span> )</code>
+
+		<div class="description short">
+			<p>Perform a callback.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Perform a callback.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$isSent</var></dt>
+					<dd></dd>
+					<dt><var>$to</var></dt>
+					<dd></dd>
+					<dt><var>$cc</var></dt>
+					<dd></dd>
+					<dt><var>$bcc</var></dt>
+					<dd></dd>
+					<dt><var>$subject</var></dt>
+					<dd></dd>
+					<dt><var>$body</var></dt>
+					<dd></dd>
+					<dt><var>$from</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary constants" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="STOP_MESSAGE" id="STOP_MESSAGE">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-PHPMailer.html#621-624" title="Go to source code"><b>STOP_MESSAGE</b></a>
+			</code>
+
+			<div class="description short">
+				<p>Error severity: message only, continue processing.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Error severity: message only, continue processing.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#STOP_MESSAGE" class="anchor">#</a>
+				<code><span class="php-num">0</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="STOP_CONTINUE" id="STOP_CONTINUE">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-PHPMailer.html#625-628" title="Go to source code"><b>STOP_CONTINUE</b></a>
+			</code>
+
+			<div class="description short">
+				<p>Error severity: message, likely ok to continue processing.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Error severity: message, likely ok to continue processing.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#STOP_CONTINUE" class="anchor">#</a>
+				<code><span class="php-num">1</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="STOP_CRITICAL" id="STOP_CRITICAL">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-PHPMailer.html#629-632" title="Go to source code"><b>STOP_CRITICAL</b></a>
+			</code>
+
+			<div class="description short">
+				<p>Error severity: message, plus full stop, critical error reached.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Error severity: message, plus full stop, critical error reached.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#STOP_CRITICAL" class="anchor">#</a>
+				<code><span class="php-num">2</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="CRLF" id="CRLF">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-PHPMailer.html#633-636" title="Go to source code"><b>CRLF</b></a>
+			</code>
+
+			<div class="description short">
+				<p>SMTP RFC standard line ending.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>SMTP RFC standard line ending.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#CRLF" class="anchor">#</a>
+				<code><span class="php-quote">&quot;\r\n&quot;</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="MAX_LINE_LENGTH" id="MAX_LINE_LENGTH">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-PHPMailer.html#637-642" title="Go to source code"><b>MAX_LINE_LENGTH</b></a>
+			</code>
+
+			<div class="description short">
+				<p>The maximum line length allowed by RFC 2822 section 2.1.1.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The maximum line length allowed by RFC 2822 section 2.1.1.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#MAX_LINE_LENGTH" class="anchor">#</a>
+				<code><span class="php-num">998</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="Version" id="$Version">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#33-38" title="Go to source code"><var>$Version</var></a>
+
+			<div class="description short">
+				<p>The PHPMailer Version number.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The PHPMailer Version number.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Version" class="anchor">#</a>
+				<code><span class="php-quote">'5.2.21'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Priority" id="$Priority">
+		<td class="attributes"><code>
+			public  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#39-46" title="Go to source code"><var>$Priority</var></a>
+
+			<div class="description short">
+				<p>Email priority.
+Options: null (default), 1 = High, 3 = Normal, 5 = low.
+When null, the header is not set at all.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Email priority.
+Options: null (default), 1 = High, 3 = Normal, 5 = low.
+When null, the header is not set at all.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Priority" class="anchor">#</a>
+				<code><span class="php-keyword1">null</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="CharSet" id="$CharSet">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#47-52" title="Go to source code"><var>$CharSet</var></a>
+
+			<div class="description short">
+				<p>The character set of the message.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The character set of the message.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$CharSet" class="anchor">#</a>
+				<code><span class="php-quote">'iso-8859-1'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ContentType" id="$ContentType">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#53-58" title="Go to source code"><var>$ContentType</var></a>
+
+			<div class="description short">
+				<p>The MIME Content-type of the message.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The MIME Content-type of the message.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$ContentType" class="anchor">#</a>
+				<code><span class="php-quote">'text/plain'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Encoding" id="$Encoding">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#59-65" title="Go to source code"><var>$Encoding</var></a>
+
+			<div class="description short">
+				<p>The message encoding.
+Options: "8bit", "7bit", "binary", "base64", and "quoted-printable".</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The message encoding.
+Options: "8bit", "7bit", "binary", "base64", and "quoted-printable".</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Encoding" class="anchor">#</a>
+				<code><span class="php-quote">'8bit'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ErrorInfo" id="$ErrorInfo">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#66-71" title="Go to source code"><var>$ErrorInfo</var></a>
+
+			<div class="description short">
+				<p>Holds the most recent mailer error message.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Holds the most recent mailer error message.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$ErrorInfo" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="From" id="$From">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#72-77" title="Go to source code"><var>$From</var></a>
+
+			<div class="description short">
+				<p>The From email address for the message.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The From email address for the message.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$From" class="anchor">#</a>
+				<code><span class="php-quote">'root@localhost'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="FromName" id="$FromName">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#78-83" title="Go to source code"><var>$FromName</var></a>
+
+			<div class="description short">
+				<p>The From name of the message.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The From name of the message.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$FromName" class="anchor">#</a>
+				<code><span class="php-quote">'Root User'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Sender" id="$Sender">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#84-90" title="Go to source code"><var>$Sender</var></a>
+
+			<div class="description short">
+				<p>The Sender email (Return-Path) of the message.
+If not empty, will be sent via -f to sendmail or as 'MAIL FROM' in smtp mode.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The Sender email (Return-Path) of the message.
+If not empty, will be sent via -f to sendmail or as 'MAIL FROM' in smtp mode.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Sender" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ReturnPath" id="$ReturnPath">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#91-101" title="Go to source code"><var>$ReturnPath</var></a>
+
+			<div class="description short">
+				<p>The Return-Path of the message.
+If empty, it will be set to either From or Sender.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The Return-Path of the message.
+If empty, it will be set to either From or Sender.</p>
+
+					<h4>Deprecated</h4>
+					<div class="list">
+							Email senders should never set a return-path header;<br>
+					</div>
+					<h4>See</h4>
+					<div class="list">
+							https://tools.ietf.org/html/rfc5321#section-4.4 RFC5321 reference<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$ReturnPath" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Subject" id="$Subject">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#102-107" title="Go to source code"><var>$Subject</var></a>
+
+			<div class="description short">
+				<p>The Subject of the message.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The Subject of the message.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Subject" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Body" id="$Body">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#108-114" title="Go to source code"><var>$Body</var></a>
+
+			<div class="description short">
+				<p>An HTML or plain text message body.
+If HTML then call isHTML(true).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An HTML or plain text message body.
+If HTML then call isHTML(true).</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Body" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="AltBody" id="$AltBody">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#115-123" title="Go to source code"><var>$AltBody</var></a>
+
+			<div class="description short">
+				<p>The plain-text message body.
+This body can be read by mail clients that do not have HTML email
+capability such as mutt &amp; Eudora.
+Clients that can read HTML will view the normal Body.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The plain-text message body.
+This body can be read by mail clients that do not have HTML email
+capability such as mutt &amp; Eudora.
+Clients that can read HTML will view the normal Body.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$AltBody" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Ical" id="$Ical">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#124-134" title="Go to source code"><var>$Ical</var></a>
+
+			<div class="description short">
+				<p>An iCal message part body.
+Only supported in simple alt or alt_inline message types
+To generate iCal events, use the bundled extras/EasyPeasyICS.php class or iCalcreator.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An iCal message part body.
+Only supported in simple alt or alt_inline message types
+To generate iCal events, use the bundled extras/EasyPeasyICS.php class or iCalcreator.</p>
+
+					<h4>See</h4>
+					<div class="list">
+							http://sprain.ch/blog/downloads/php-class-easypeasyics-create-ical-files-with-php/<br>
+							http://kigkonsult.se/iCalcreator/<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Ical" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="MIMEBody" id="$MIMEBody">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#135-140" title="Go to source code"><var>$MIMEBody</var></a>
+
+			<div class="description short">
+				<p>The complete compiled MIME message body.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The complete compiled MIME message body.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$MIMEBody" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="MIMEHeader" id="$MIMEHeader">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#141-146" title="Go to source code"><var>$MIMEHeader</var></a>
+
+			<div class="description short">
+				<p>The complete compiled MIME message headers.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The complete compiled MIME message headers.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$MIMEHeader" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="mailHeader" id="$mailHeader">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#147-152" title="Go to source code"><var>$mailHeader</var></a>
+
+			<div class="description short">
+				<p>Extra headers that createHeader() doesn't fold in.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Extra headers that createHeader() doesn't fold in.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$mailHeader" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="WordWrap" id="$WordWrap">
+		<td class="attributes"><code>
+			public  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#153-159" title="Go to source code"><var>$WordWrap</var></a>
+
+			<div class="description short">
+				<p>Word-wrap the message body to this number of chars.
+Set to 0 to not wrap. A useful value here is 78, for RFC2822 section 2.1.1 compliance.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Word-wrap the message body to this number of chars.
+Set to 0 to not wrap. A useful value here is 78, for RFC2822 section 2.1.1 compliance.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$WordWrap" class="anchor">#</a>
+				<code><span class="php-num">0</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Mailer" id="$Mailer">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#160-166" title="Go to source code"><var>$Mailer</var></a>
+
+			<div class="description short">
+				<p>Which method to use to send mail.
+Options: "mail", "sendmail", or "smtp".</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Which method to use to send mail.
+Options: "mail", "sendmail", or "smtp".</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Mailer" class="anchor">#</a>
+				<code><span class="php-quote">'mail'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Sendmail" id="$Sendmail">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#167-172" title="Go to source code"><var>$Sendmail</var></a>
+
+			<div class="description short">
+				<p>The path to the sendmail program.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The path to the sendmail program.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Sendmail" class="anchor">#</a>
+				<code><span class="php-quote">'/usr/sbin/sendmail'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="UseSendmailOptions" id="$UseSendmailOptions">
+		<td class="attributes"><code>
+			public  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#173-179" title="Go to source code"><var>$UseSendmailOptions</var></a>
+
+			<div class="description short">
+				<p>Whether mail() uses a fully sendmail-compatible MTA.
+One which supports sendmail's "-oi -f" options.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Whether mail() uses a fully sendmail-compatible MTA.
+One which supports sendmail's "-oi -f" options.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$UseSendmailOptions" class="anchor">#</a>
+				<code><span class="php-keyword1">true</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="PluginDir" id="$PluginDir">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#180-188" title="Go to source code"><var>$PluginDir</var></a>
+
+			<div class="description short">
+				<p>Path to PHPMailer plugins.
+Useful if the SMTP class is not in the PHP include path.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Path to PHPMailer plugins.
+Useful if the SMTP class is not in the PHP include path.</p>
+
+					<h4>Deprecated</h4>
+					<div class="list">
+							should not be needed now there is an autoloader<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$PluginDir" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ConfirmReadingTo" id="$ConfirmReadingTo">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#189-194" title="Go to source code"><var>$ConfirmReadingTo</var></a>
+
+			<div class="description short">
+				<p>The email address that a reading confirmation should be sent to, also known as read receipt.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The email address that a reading confirmation should be sent to, also known as read receipt.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$ConfirmReadingTo" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Hostname" id="$Hostname">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#195-203" title="Go to source code"><var>$Hostname</var></a>
+
+			<div class="description short">
+				<p>The hostname to use in the Message-ID header and as default HELO string.
+If empty, PHPMailer attempts to find one with, in order,
+$_SERVER['SERVER_NAME'], gethostname(), php_uname('n'), or the value
+'localhost.localdomain'.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The hostname to use in the Message-ID header and as default HELO string.
+If empty, PHPMailer attempts to find one with, in order,
+$_SERVER['SERVER_NAME'], gethostname(), php_uname('n'), or the value
+'localhost.localdomain'.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Hostname" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="MessageID" id="$MessageID">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#204-214" title="Go to source code"><var>$MessageID</var></a>
+
+			<div class="description short">
+				<p>An ID to be used in the Message-ID header.
+If empty, a unique id will be generated.
+You can set your own, but it must be in the format "&lt;id@domain>",
+as defined in RFC5322 section 3.6.4 or it will be ignored.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An ID to be used in the Message-ID header.
+If empty, a unique id will be generated.
+You can set your own, but it must be in the format "&lt;id@domain>",
+as defined in RFC5322 section 3.6.4 or it will be ignored.</p>
+
+					<h4>See</h4>
+					<div class="list">
+							https://tools.ietf.org/html/rfc5322#section-3.6.4<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$MessageID" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="MessageDate" id="$MessageDate">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#215-221" title="Go to source code"><var>$MessageDate</var></a>
+
+			<div class="description short">
+				<p>The message Date to be used in the Date header.
+If empty, the current date will be added.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The message Date to be used in the Date header.
+If empty, the current date will be added.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$MessageDate" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Host" id="$Host">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#222-234" title="Go to source code"><var>$Host</var></a>
+
+			<div class="description short">
+				<p>SMTP hosts.
+Either a single hostname or multiple semicolon-delimited hostnames.
+You can also specify a different port
+for each host by using this format: [hostname:port]
+(e.g. "smtp1.example.com:25;smtp2.example.com").
+You can also specify encryption type, for example:
+(e.g. "tls://smtp1.example.com:587;ssl://smtp2.example.com:465").
+Hosts will be tried in order.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>SMTP hosts.
+Either a single hostname or multiple semicolon-delimited hostnames.
+You can also specify a different port
+for each host by using this format: [hostname:port]
+(e.g. "smtp1.example.com:25;smtp2.example.com").
+You can also specify encryption type, for example:
+(e.g. "tls://smtp1.example.com:587;ssl://smtp2.example.com:465").
+Hosts will be tried in order.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Host" class="anchor">#</a>
+				<code><span class="php-quote">'localhost'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Port" id="$Port">
+		<td class="attributes"><code>
+			public  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#235-241" title="Go to source code"><var>$Port</var></a>
+
+			<div class="description short">
+				<p>The default SMTP server port.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The default SMTP server port.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Port" class="anchor">#</a>
+				<code><span class="php-num">25</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Helo" id="$Helo">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#242-251" title="Go to source code"><var>$Helo</var></a>
+
+			<div class="description short">
+				<p>The SMTP HELO of the message.
+Default is $Hostname. If $Hostname is empty, PHPMailer attempts to find
+one with the same method described above for $Hostname.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The SMTP HELO of the message.
+Default is $Hostname. If $Hostname is empty, PHPMailer attempts to find
+one with the same method described above for $Hostname.</p>
+
+					<h4>See</h4>
+					<div class="list">
+							<code><a href="class-PHPMailer.html#$Hostname">PHPMailer::<var>$Hostname</var></a></code><br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Helo" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="SMTPSecure" id="$SMTPSecure">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#252-258" title="Go to source code"><var>$SMTPSecure</var></a>
+
+			<div class="description short">
+				<p>What kind of encryption to use on the SMTP connection.
+Options: '', 'ssl' or 'tls'.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>What kind of encryption to use on the SMTP connection.
+Options: '', 'ssl' or 'tls'.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$SMTPSecure" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="SMTPAutoTLS" id="$SMTPAutoTLS">
+		<td class="attributes"><code>
+			public  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#259-266" title="Go to source code"><var>$SMTPAutoTLS</var></a>
+
+			<div class="description short">
+				<p>Whether to enable TLS encryption automatically if a server supports it,
+even if <code>SMTPSecure</code> is not set to 'tls'.
+Be aware that in PHP >= 5.6 this requires that the server's certificates are valid.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Whether to enable TLS encryption automatically if a server supports it,
+even if <code>SMTPSecure</code> is not set to 'tls'.
+Be aware that in PHP >= 5.6 this requires that the server's certificates are valid.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$SMTPAutoTLS" class="anchor">#</a>
+				<code><span class="php-keyword1">true</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="SMTPAuth" id="$SMTPAuth">
+		<td class="attributes"><code>
+			public  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#267-276" title="Go to source code"><var>$SMTPAuth</var></a>
+
+			<div class="description short">
+				<p>Whether to use SMTP authentication.
+Uses the Username and Password properties.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Whether to use SMTP authentication.
+Uses the Username and Password properties.</p>
+
+					<h4>See</h4>
+					<div class="list">
+							<code><a href="class-PHPMailer.html#$Username">PHPMailer::<var>$Username</var></a></code><br>
+							<code><a href="class-PHPMailer.html#$Password">PHPMailer::<var>$Password</var></a></code><br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$SMTPAuth" class="anchor">#</a>
+				<code><span class="php-keyword1">false</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="SMTPOptions" id="$SMTPOptions">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#277-282" title="Go to source code"><var>$SMTPOptions</var></a>
+
+			<div class="description short">
+				<p>Options array passed to stream_context_create when connecting via SMTP.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Options array passed to stream_context_create when connecting via SMTP.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$SMTPOptions" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Username" id="$Username">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#283-288" title="Go to source code"><var>$Username</var></a>
+
+			<div class="description short">
+				<p>SMTP username.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>SMTP username.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Username" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Password" id="$Password">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#289-294" title="Go to source code"><var>$Password</var></a>
+
+			<div class="description short">
+				<p>SMTP password.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>SMTP password.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Password" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="AuthType" id="$AuthType">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#295-301" title="Go to source code"><var>$AuthType</var></a>
+
+			<div class="description short">
+				<p>SMTP auth type.
+Options are CRAM-MD5, LOGIN, PLAIN, NTLM, XOAUTH2, attempted in that order if not specified.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>SMTP auth type.
+Options are CRAM-MD5, LOGIN, PLAIN, NTLM, XOAUTH2, attempted in that order if not specified.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$AuthType" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Realm" id="$Realm">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#302-308" title="Go to source code"><var>$Realm</var></a>
+
+			<div class="description short">
+				<p>SMTP realm.
+Used for NTLM auth.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>SMTP realm.
+Used for NTLM auth.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Realm" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Workstation" id="$Workstation">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#309-315" title="Go to source code"><var>$Workstation</var></a>
+
+			<div class="description short">
+				<p>SMTP workstation.
+Used for NTLM auth.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>SMTP workstation.
+Used for NTLM auth.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Workstation" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Timeout" id="$Timeout">
+		<td class="attributes"><code>
+			public  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#316-322" title="Go to source code"><var>$Timeout</var></a>
+
+			<div class="description short">
+				<p>The SMTP server timeout in seconds.
+Default of 5 minutes (300sec) is from RFC2821 section 4.5.3.2.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The SMTP server timeout in seconds.
+Default of 5 minutes (300sec) is from RFC2821 section 4.5.3.2.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Timeout" class="anchor">#</a>
+				<code><span class="php-num">300</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="SMTPDebug" id="$SMTPDebug">
+		<td class="attributes"><code>
+			public  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#323-337" title="Go to source code"><var>$SMTPDebug</var></a>
+
+			<div class="description short">
+				<p>SMTP class debug output mode.
+Debug output level.
+Options:
+ <code>0</code> No output
+ <code>1</code> Commands
+ <code>2</code> Data and commands
+ <code>3</code> As 2 plus connection status
+ <code>4</code> Low-level data output.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>SMTP class debug output mode.
+Debug output level.
+Options: <code>0</code> No output <code>1</code> Commands <code>2</code> Data and commands <code>3</code> As 2 plus connection status <code>4</code> Low-level data output.</p>
+
+					<h4>See</h4>
+					<div class="list">
+							<code><a href="class-SMTP.html#$do_debug">SMTP::<var>$do_debug</var></a></code><br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$SMTPDebug" class="anchor">#</a>
+				<code><span class="php-num">0</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Debugoutput" id="$Debugoutput">
+		<td class="attributes"><code>
+			public  
+			string|callable
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#338-354" title="Go to source code"><var>$Debugoutput</var></a>
+
+			<div class="description short">
+				<p>How to handle debug output.
+Options:
+ <code>echo</code> Output plain-text as-is, appropriate for CLI
+ <code>html</code> Output escaped, line breaks converted to <code>&lt;br&gt;</code>, appropriate for browser output
+ <code>error_log</code> Output to error log as configured in php.ini.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>How to handle debug output.
+Options: <code>echo</code> Output plain-text as-is, appropriate for CLI <code>html</code> Output escaped, line breaks converted to <code>&lt;br&gt;</code>, appropriate for browser output <code>error_log</code> Output to error log as configured in php.ini.</p>
+
+<p>Alternatively, you can provide a callable expecting two params: a message string and the debug level:</p>
+
+<pre><span class="php-var">$mail</span>-&gt;Debugoutput = <span class="php-keyword1">function</span>(<span class="php-var">$str</span>, <span class="php-var">$level</span>) {<span class="php-keyword1">echo</span> <span class="php-quote">&quot;debug level </span><span class="php-var">$level</span><span class="php-quote">; message: </span><span class="php-var">$str</span><span class="php-quote">&quot;</span>;};</pre>
+
+					<h4>See</h4>
+					<div class="list">
+							<code><a href="class-SMTP.html#$Debugoutput">SMTP::<var>$Debugoutput</var></a></code><br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Debugoutput" class="anchor">#</a>
+				<code><span class="php-quote">'echo'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="SMTPKeepAlive" id="$SMTPKeepAlive">
+		<td class="attributes"><code>
+			public  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#355-362" title="Go to source code"><var>$SMTPKeepAlive</var></a>
+
+			<div class="description short">
+				<p>Whether to keep SMTP connection open after each message.
+If this is set to true then to close the connection
+requires an explicit call to smtpClose().</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Whether to keep SMTP connection open after each message.
+If this is set to true then to close the connection
+requires an explicit call to smtpClose().</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$SMTPKeepAlive" class="anchor">#</a>
+				<code><span class="php-keyword1">false</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="SingleTo" id="$SingleTo">
+		<td class="attributes"><code>
+			public  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#363-370" title="Go to source code"><var>$SingleTo</var></a>
+
+			<div class="description short">
+				<p>Whether to split multiple to addresses into multiple messages
+or send them all in one message.
+Only supported in <code>mail</code> and <code>sendmail</code> transports, not in SMTP.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Whether to split multiple to addresses into multiple messages
+or send them all in one message.
+Only supported in <code>mail</code> and <code>sendmail</code> transports, not in SMTP.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$SingleTo" class="anchor">#</a>
+				<code><span class="php-keyword1">false</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="SingleToArray" id="$SingleToArray">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#371-377" title="Go to source code"><var>$SingleToArray</var></a>
+
+			<div class="description short">
+				<p>Storage for addresses when SingleTo is enabled.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Storage for addresses when SingleTo is enabled.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$SingleToArray" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="do_verp" id="$do_verp">
+		<td class="attributes"><code>
+			public  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#378-387" title="Go to source code"><var>$do_verp</var></a>
+
+			<div class="description short">
+				<p>Whether to generate VERP addresses on send.
+Only applicable when sending via SMTP.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Whether to generate VERP addresses on send.
+Only applicable when sending via SMTP.</p>
+
+					<h4>See</h4>
+					<div class="list">
+							https://en.wikipedia.org/wiki/Variable_envelope_return_path<br>
+							http://www.postfix.org/VERP_README.html Postfix VERP info<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$do_verp" class="anchor">#</a>
+				<code><span class="php-keyword1">false</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="AllowEmpty" id="$AllowEmpty">
+		<td class="attributes"><code>
+			public  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#388-393" title="Go to source code"><var>$AllowEmpty</var></a>
+
+			<div class="description short">
+				<p>Whether to allow sending messages with an empty body.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Whether to allow sending messages with an empty body.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$AllowEmpty" class="anchor">#</a>
+				<code><span class="php-keyword1">false</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="LE" id="$LE">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#394-402" title="Go to source code"><var>$LE</var></a>
+
+			<div class="description short">
+				<p>The default line ending.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The default line ending.</p>
+
+					<h4>Note</h4>
+					<div class="list">
+							<p>The default remains "\n". We force CRLF where we know
+       it must be used via self::CRLF.</p><br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$LE" class="anchor">#</a>
+				<code><span class="php-quote">&quot;\n&quot;</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="DKIM_selector" id="$DKIM_selector">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#403-408" title="Go to source code"><var>$DKIM_selector</var></a>
+
+			<div class="description short">
+				<p>DKIM selector.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>DKIM selector.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$DKIM_selector" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="DKIM_identity" id="$DKIM_identity">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#409-415" title="Go to source code"><var>$DKIM_identity</var></a>
+
+			<div class="description short">
+				<p>DKIM Identity.
+Usually the email address used as the source of the email.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>DKIM Identity.
+Usually the email address used as the source of the email.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$DKIM_identity" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="DKIM_passphrase" id="$DKIM_passphrase">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#416-422" title="Go to source code"><var>$DKIM_passphrase</var></a>
+
+			<div class="description short">
+				<p>DKIM passphrase.
+Used if your key is encrypted.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>DKIM passphrase.
+Used if your key is encrypted.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$DKIM_passphrase" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="DKIM_domain" id="$DKIM_domain">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#423-430" title="Go to source code"><var>$DKIM_domain</var></a>
+
+			<div class="description short">
+				<p>DKIM signing domain name.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>DKIM signing domain name.</p>
+
+					<h4>Example</h4>
+					<div class="list">
+							'example.com'<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$DKIM_domain" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="DKIM_private" id="$DKIM_private">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#431-436" title="Go to source code"><var>$DKIM_private</var></a>
+
+			<div class="description short">
+				<p>DKIM private key file path.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>DKIM private key file path.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$DKIM_private" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="DKIM_private_string" id="$DKIM_private_string">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#437-443" title="Go to source code"><var>$DKIM_private_string</var></a>
+
+			<div class="description short">
+				<p>DKIM private key string.
+If set, takes precedence over <code>$DKIM_private</code>.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>DKIM private key string.
+If set, takes precedence over <code>$DKIM_private</code>.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$DKIM_private_string" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="action_function" id="$action_function">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#444-463" title="Go to source code"><var>$action_function</var></a>
+
+			<div class="description short">
+				<p>Callback Action function name.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Callback Action function name.</p>
+
+<p>The function that handles the result of the send email action.
+It is called out by send() for each email sent.</p>
+
+<p>Value can be any php callable: http://www.php.net/is_callable</p>
+
+<p>Parameters: boolean $result        result of the send action string  $to            email address of the recipient string  $cc            cc email addresses string  $bcc           bcc email addresses string  $subject       the subject string  $body          the email body string  $from          email address of sender</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$action_function" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="XMailer" id="$XMailer">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#464-470" title="Go to source code"><var>$XMailer</var></a>
+
+			<div class="description short">
+				<p>What to put in the X-Mailer header.
+Options: An empty string for PHPMailer default, whitespace for none, or a string to use.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>What to put in the X-Mailer header.
+Options: An empty string for PHPMailer default, whitespace for none, or a string to use.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$XMailer" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="validator" id="$validator">
+		<td class="attributes"><code>
+			public static 
+			string|callable
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#471-480" title="Go to source code"><var>$validator</var></a>
+
+			<div class="description short">
+				<p>Which validator to use by default when validating email addresses.
+May be a callable to inject your own validator, but there are several built-in validators.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Which validator to use by default when validating email addresses.
+May be a callable to inject your own validator, but there are several built-in validators.</p>
+
+					<h4>See</h4>
+					<div class="list">
+							<code><a href="class-PHPMailer.html#_validateAddress">PHPMailer::validateAddress()</a></code><br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$validator" class="anchor">#</a>
+				<code><span class="php-quote">'auto'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="smtp" id="$smtp">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-SMTP.html">SMTP</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#481-486" title="Go to source code"><var>$smtp</var></a>
+
+			<div class="description short">
+				<p>An instance of the SMTP sender class.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An instance of the SMTP sender class.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$smtp" class="anchor">#</a>
+				<code><span class="php-keyword1">null</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="to" id="$to">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#487-492" title="Go to source code"><var>$to</var></a>
+
+			<div class="description short">
+				<p>The array of 'to' names and addresses.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The array of 'to' names and addresses.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$to" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="cc" id="$cc">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#493-498" title="Go to source code"><var>$cc</var></a>
+
+			<div class="description short">
+				<p>The array of 'cc' names and addresses.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The array of 'cc' names and addresses.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$cc" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="bcc" id="$bcc">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#499-504" title="Go to source code"><var>$bcc</var></a>
+
+			<div class="description short">
+				<p>The array of 'bcc' names and addresses.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The array of 'bcc' names and addresses.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$bcc" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ReplyTo" id="$ReplyTo">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#505-510" title="Go to source code"><var>$ReplyTo</var></a>
+
+			<div class="description short">
+				<p>The array of reply-to names and addresses.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The array of reply-to names and addresses.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$ReplyTo" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="all_recipients" id="$all_recipients">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#511-519" title="Go to source code"><var>$all_recipients</var></a>
+
+			<div class="description short">
+				<p>An array of all kinds of addresses.
+Includes all of $to, $cc, $bcc.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An array of all kinds of addresses.
+Includes all of $to, $cc, $bcc.</p>
+
+					<h4>See</h4>
+					<div class="list">
+							PHPMailer::$to @see PHPMailer::$cc @see PHPMailer::$bcc<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$all_recipients" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="RecipientsQueue" id="$RecipientsQueue">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#520-531" title="Go to source code"><var>$RecipientsQueue</var></a>
+
+			<div class="description short">
+				<p>An array of names and addresses queued for validation.
+In send(), valid and non duplicate entries are moved to $all_recipients
+and one of $to, $cc, or $bcc.
+This array is used only for addresses with IDN.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An array of names and addresses queued for validation.
+In send(), valid and non duplicate entries are moved to $all_recipients
+and one of $to, $cc, or $bcc.
+This array is used only for addresses with IDN.</p>
+
+					<h4>See</h4>
+					<div class="list">
+							PHPMailer::$to @see PHPMailer::$cc @see PHPMailer::$bcc<br>
+							<code><a href="class-PHPMailer.html#$all_recipients">PHPMailer::<var>$all_recipients</var></a></code><br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$RecipientsQueue" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ReplyToQueue" id="$ReplyToQueue">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#532-541" title="Go to source code"><var>$ReplyToQueue</var></a>
+
+			<div class="description short">
+				<p>An array of reply-to names and addresses queued for validation.
+In send(), valid and non duplicate entries are moved to $ReplyTo.
+This array is used only for addresses with IDN.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An array of reply-to names and addresses queued for validation.
+In send(), valid and non duplicate entries are moved to $ReplyTo.
+This array is used only for addresses with IDN.</p>
+
+					<h4>See</h4>
+					<div class="list">
+							<code><a href="class-PHPMailer.html#$ReplyTo">PHPMailer::<var>$ReplyTo</var></a></code><br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$ReplyToQueue" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="attachment" id="$attachment">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#542-547" title="Go to source code"><var>$attachment</var></a>
+
+			<div class="description short">
+				<p>The array of attachments.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The array of attachments.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$attachment" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="CustomHeader" id="$CustomHeader">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#548-553" title="Go to source code"><var>$CustomHeader</var></a>
+
+			<div class="description short">
+				<p>The array of custom headers.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The array of custom headers.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$CustomHeader" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="lastMessageID" id="$lastMessageID">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#554-559" title="Go to source code"><var>$lastMessageID</var></a>
+
+			<div class="description short">
+				<p>The most recent Message-ID (including angular brackets).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The most recent Message-ID (including angular brackets).</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$lastMessageID" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="message_type" id="$message_type">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#560-565" title="Go to source code"><var>$message_type</var></a>
+
+			<div class="description short">
+				<p>The message's MIME type.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The message's MIME type.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$message_type" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="boundary" id="$boundary">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#566-571" title="Go to source code"><var>$boundary</var></a>
+
+			<div class="description short">
+				<p>The array of MIME boundary strings.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The array of MIME boundary strings.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$boundary" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="language" id="$language">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#572-577" title="Go to source code"><var>$language</var></a>
+
+			<div class="description short">
+				<p>The array of available languages.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The array of available languages.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$language" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="error_count" id="$error_count">
+		<td class="attributes"><code>
+			protected  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#578-583" title="Go to source code"><var>$error_count</var></a>
+
+			<div class="description short">
+				<p>The number of errors encountered.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The number of errors encountered.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$error_count" class="anchor">#</a>
+				<code><span class="php-num">0</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="sign_cert_file" id="$sign_cert_file">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#584-589" title="Go to source code"><var>$sign_cert_file</var></a>
+
+			<div class="description short">
+				<p>The S/MIME certificate file path.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The S/MIME certificate file path.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$sign_cert_file" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="sign_key_file" id="$sign_key_file">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#590-595" title="Go to source code"><var>$sign_key_file</var></a>
+
+			<div class="description short">
+				<p>The S/MIME key file path.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The S/MIME key file path.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$sign_key_file" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="sign_extracerts_file" id="$sign_extracerts_file">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#596-601" title="Go to source code"><var>$sign_extracerts_file</var></a>
+
+			<div class="description short">
+				<p>The optional S/MIME extra certificates ("CA Chain") file path.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The optional S/MIME extra certificates ("CA Chain") file path.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$sign_extracerts_file" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="sign_key_pass" id="$sign_key_pass">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#602-608" title="Go to source code"><var>$sign_key_pass</var></a>
+
+			<div class="description short">
+				<p>The S/MIME password for the key.
+Used only if the key is encrypted.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The S/MIME password for the key.
+Used only if the key is encrypted.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$sign_key_pass" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="exceptions" id="$exceptions">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#609-614" title="Go to source code"><var>$exceptions</var></a>
+
+			<div class="description short">
+				<p>Whether to throw exceptions for errors.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Whether to throw exceptions for errors.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$exceptions" class="anchor">#</a>
+				<code><span class="php-keyword1">false</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="uniqueid" id="$uniqueid">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailer.html#615-620" title="Go to source code"><var>$uniqueid</var></a>
+
+			<div class="description short">
+				<p>Unique ID used for message ID and boundaries.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Unique ID used for message ID and boundaries.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$uniqueid" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Kotchasan API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

@@ -1,0 +1,1987 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Kotchasan\Database\Sql | Kotchasan</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Kotchasan.html">
+						Kotchasan<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Kotchasan.Cache.html">
+						Cache					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-Kotchasan.Database.html">
+						Database					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Kotchasan.Http.html">
+						Http					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Kotchasan.Log.html">
+						Log					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Kotchasan.Orm.html">
+						Orm					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Psr.html">
+						Psr<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Psr.Cache.html">
+						Cache					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Psr.Http.html">
+						Http<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Psr.Http.Message.html">
+						Message					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Psr.Log.html">
+						Log					</a>
+
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Kotchasan.Database.Db.html">Db</a></li>
+				<li><a href="class-Kotchasan.Database.DbCache.html">DbCache</a></li>
+				<li><a href="class-Kotchasan.Database.Driver.html">Driver</a></li>
+				<li><a href="class-Kotchasan.Database.PdoMysqlDriver.html">PdoMysqlDriver</a></li>
+				<li><a href="class-Kotchasan.Database.Query.html">Query</a></li>
+				<li><a href="class-Kotchasan.Database.QueryBuilder.html">QueryBuilder</a></li>
+				<li><a href="class-Kotchasan.Database.Schema.html">Schema</a></li>
+				<li class="active"><a href="class-Kotchasan.Database.Sql.html">Sql</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Kotchasan.Database.Exception.html">Exception</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Kotchasan.Database.html" title="Summary of Kotchasan\Database"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Sql</h1>
+
+
+	<div class="description">
+	<p>SQL Function</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Kotchasan.html">Kotchasan</a>\<a href="namespace-Kotchasan.Database.html">Database</a><br>
+		
+
+				<b>Author:</b>
+				Goragod Wiriya <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x61;&#100;&#x6d;&#105;&#x6e;&#64;&#x67;&#111;&#x72;&#97;&#x67;&#111;&#x64;&#46;&#x63;&#111;&#x6d;">&#x61;&#100;&#x6d;&#105;&#x6e;&#64;&#x67;&#111;&#x72;&#97;&#x67;&#111;&#x64;&#46;&#x63;&#111;&#x6d;</a><br>
+				<b>Since:</b>
+				1.0<br>
+			<b>Located at</b> <a href="source-class-Kotchasan.Database.Sql.html#13-870" title="Go to source code">Kotchasan/Database/Sql.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="AVG" id="_AVG">
+
+		<td class="attributes"><code>
+			 public static
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_AVG">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#35-49" title="Go to source code">AVG</a>( <span>string <var>$column_name</var></span>, <span>string|null <var>$alias</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$distinct</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			<p>หาค่าเฉลี่ยของคอลัมน์ที่เลือก</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>หาค่าเฉลี่ยของคอลัมน์ที่เลือก</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column_name</var></dt>
+					<dd>ชื่อคอลัมน์</dd>
+					<dt><var>$alias</var></dt>
+					<dd>ชื่อรองที่ต้องการ ถ้าไม่ระบุไม่มีชื่อรอง</dd>
+					<dt><var>$distinct</var></dt>
+					<dd>false (default) นับทุกคอลัมน์, true นับเฉพาะคอลัมน์ที่ไม่ซ้ำ</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						('id')->text() [==] 'AVG(<code>id</code>)'<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="BETWEEN" id="_BETWEEN">
+
+		<td class="attributes"><code>
+			 public static
+
+			self
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_BETWEEN">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#51-68" title="Go to source code">BETWEEN</a>( <span>string <var>$column_name</var></span>, <span>string <var>$min</var></span>, <span>string <var>$max</var></span> )</code>
+
+		<div class="description short">
+			<p>สร้างคำสั่ง BETWEEN ... AND ...</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>สร้างคำสั่ง BETWEEN ... AND ...</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column_name</var></dt>
+					<dd></dd>
+					<dt><var>$min</var></dt>
+					<dd></dd>
+					<dt><var>$max</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					self
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						('create_date', 'create_date', 'U.create_date')->text() [==] "<code>create_date</code> BETWEEN <code>create_date</code> AND U.<code>create_date</code>"<br>
+						('create_date', 'table_name.field_name', 'U.<code>create_date</code>')->text() [==] "<code>create_date</code> BETWEEN <code>table_name</code>.<code>field_name</code> AND U.<code>create_date</code>"<br>
+						('create_date', '<code>database</code>.<code>table</code>', '12-1-1')->text() [==] "<code>create_date</code> BETWEEN <code>database</code>.<code>table</code> AND '12-1-1'"<br>
+						('create_date', 0, 1)->text() [==] "<code>create_date</code> BETWEEN 0 AND 1"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="CONCAT" id="_CONCAT">
+
+		<td class="attributes"><code>
+			 public static
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_CONCAT">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#70-96" title="Go to source code">CONCAT</a>( <span>array <var>$fields</var></span>, <span>string|null <var>$alias</var> = <span class="php-keyword1">null</span></span>, <span>string|null <var>$separator</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>สร้างคำสั่ง CONCAT หรือ CONCAT_WS</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>สร้างคำสั่ง CONCAT หรือ CONCAT_WS</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fields</var></dt>
+					<dd>รายชื่อฟิลด์</dd>
+					<dt><var>$alias</var></dt>
+					<dd>ชื่อรองที่ต้องการ ถ้าไม่ระบุไม่มีชื่อรอง</dd>
+					<dt><var>$separator</var></dt>
+					<dd>null (defailt) คืนค่าคำสั่ง CONCAT, ถ้าระบุเป็นค่าอื่นคืนค่าคำสั่ง CONCAT_WS</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code><br>ถ้ารูปแบบของ $fields ไม่ใช่แอเรย์
+				</div>
+
+				<h4>Assert</h4>
+				<div class="list">
+						(array('fname', 'lname'))->text() [==] "CONCAT(<code>fname</code>, <code>lname</code>)"<br>
+						(array('U.fname', 'U.<code>lname</code>'), 'displayname')->text() [==] "CONCAT(U.<code>fname</code>, U.<code>lname</code>) AS <code>displayname</code>"<br>
+						(array('fname', 'lname'), 'displayname', ' ')->text() [==] "CONCAT_WS(' ', <code>fname</code>, <code>lname</code>) AS <code>displayname</code>"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="COUNT" id="_COUNT">
+
+		<td class="attributes"><code>
+			 public static
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_COUNT">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#98-113" title="Go to source code">COUNT</a>( <span>string <var>$column_name</var> = <span class="php-quote">'*'</span></span>, <span>string|null <var>$alias</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$distinct</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			<p>นับจำนวนเร็คคอร์ดของคอลัมน์ที่เลือก</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>นับจำนวนเร็คคอร์ดของคอลัมน์ที่เลือก</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column_name</var></dt>
+					<dd></dd>
+					<dt><var>$alias</var></dt>
+					<dd></dd>
+					<dt><var>$distinct</var></dt>
+					<dd>false (default) นับทุกคอลัมน์, true นับเฉพาะคอลัมน์ที่ไม่ซ้ำ</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						('id')->text() [==] 'COUNT(<code>id</code>)'<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="DATE" id="_DATE">
+
+		<td class="attributes"><code>
+			 public static
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_DATE">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#115-129" title="Go to source code">DATE</a>( <span>string <var>$column_name</var></span>, <span>string|null <var>$alias</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>แยกวันที่ออกจากคอลัมน์ชนิด DATETIME</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>แยกวันที่ออกจากคอลัมน์ชนิด DATETIME</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column_name</var></dt>
+					<dd></dd>
+					<dt><var>$alias</var></dt>
+					<dd>ชื่อรองที่ต้องการ ถ้าไม่ระบุไม่มีชื่อรอง</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						('create_date')->text() [==] 'DATE(<code>create_date</code>)'<br>
+						('create_date', 'date')->text() [==] 'DATE(<code>create_date</code>) AS <code>date</code>'<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="DATEDIFF" id="_DATEDIFF">
+
+		<td class="attributes"><code>
+			 public static
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_DATEDIFF">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#131-146" title="Go to source code">DATEDIFF</a>( <span>string <var>$column_name1</var></span>, <span>string <var>$column_name2</var></span>, <span>string <var>$alias</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>หาความแตกต่างระหว่างวัน (คืนค่าเป็นจำนวนวันที่แตกต่างกัน)</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>หาความแตกต่างระหว่างวัน (คืนค่าเป็นจำนวนวันที่แตกต่างกัน)</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column_name1</var></dt>
+					<dd></dd>
+					<dt><var>$column_name2</var></dt>
+					<dd></dd>
+					<dt><var>$alias</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						('create_date', Sql::NOW())->text() [==] "DATEDIFF(<code>create_date</code>, NOW())"<br>
+						('2017-04-04', 'create_date')->text() [==] "DATEDIFF('2017-04-04', <code>create_date</code>)"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="DATE_FORMAT" id="_DATE_FORMAT">
+
+		<td class="attributes"><code>
+			 public static
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_DATE_FORMAT">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#148-163" title="Go to source code">DATE_FORMAT</a>( <span>string <var>$column_name</var></span>, <span>string <var>$format</var></span>, <span>string|null <var>$alias</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>จัดรูปแบบของวันที่ตอนแสดงผล</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>จัดรูปแบบของวันที่ตอนแสดงผล</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column_name</var></dt>
+					<dd></dd>
+					<dt><var>$format</var></dt>
+					<dd></dd>
+					<dt><var>$alias</var></dt>
+					<dd>ชื่อรองที่ต้องการ ถ้าไม่ระบุไม่มีชื่อรอง</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						(Sql::NOW(), '%h:%i')->text() [==] "DATE_FORMAT(NOW(), '%h:%i')"<br>
+						('create_date', '%Y-%m-%d', 'today')->text() [==] "DATE_FORMAT(<code>create_date</code>, '%Y-%m-%d') AS <code>today</code>"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="DAY" id="_DAY">
+
+		<td class="attributes"><code>
+			 public static
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_DAY">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#165-179" title="Go to source code">DAY</a>( <span>string <var>$column_name</var></span>, <span>string|null <var>$alias</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>แยกวันที่ออกจากคอลัมน์ชนิด DATE DATETIME</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>แยกวันที่ออกจากคอลัมน์ชนิด DATE DATETIME</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column_name</var></dt>
+					<dd></dd>
+					<dt><var>$alias</var></dt>
+					<dd>ชื่อรองที่ต้องการ ถ้าไม่ระบุไม่มีชื่อรอง</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						('date')->text() [==] 'DAY(<code>date</code>)'<br>
+						('date', 'd')->text() [==] 'DAY(<code>date</code>) AS <code>d</code>'<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="DISTINCT" id="_DISTINCT">
+
+		<td class="attributes"><code>
+			 public static
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_DISTINCT">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#181-193" title="Go to source code">DISTINCT</a>( <span>string <var>$column_name</var></span> )</code>
+
+		<div class="description short">
+			<p>คืนค่าข้ออมูลที่ไม่ซ้ำกัน</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>คืนค่าข้ออมูลที่ไม่ซ้ำกัน</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column_name</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						('id')->text() [==] 'DISTINCT <code>id</code>'<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="FORMAT" id="_FORMAT">
+
+		<td class="attributes"><code>
+			 public static
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_FORMAT">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#195-210" title="Go to source code">FORMAT</a>( <span>string <var>$column_name</var></span>, <span>string <var>$format</var></span>, <span>string|null <var>$alias</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>จัดรูปแบบของคอลัมน์ตอนแสดงผล.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>จัดรูปแบบของคอลัมน์ตอนแสดงผล.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column_name</var></dt>
+					<dd></dd>
+					<dt><var>$format</var></dt>
+					<dd></dd>
+					<dt><var>$alias</var></dt>
+					<dd>ชื่อรองที่ต้องการ ถ้าไม่ระบุไม่มีชื่อรอง</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						(Sql::NOW(), 'Y-m-d')->text() [==] "FORMAT(NOW(), 'Y-m-d')"<br>
+						('create_date', 'Y-m-d', 'today')->text() [==] "FORMAT(<code>create_date</code>, 'Y-m-d') AS <code>today</code>"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GROUP_CONCAT" id="_GROUP_CONCAT">
+
+		<td class="attributes"><code>
+			 public static
+
+			self
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GROUP_CONCAT">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#212-239" title="Go to source code">GROUP_CONCAT</a>( <span>string <var>$column_name</var></span>, <span>string|null <var>$alias</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$separator</var> = <span class="php-quote">','</span></span>, <span>boolean <var>$distinct</var> = <span class="php-keyword1">false</span></span>, <span>string|array <var>$order</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>สร้างคำสั่ง GROUP_CONCAT</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>สร้างคำสั่ง GROUP_CONCAT</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column_name</var></dt>
+					<dd></dd>
+					<dt><var>$alias</var></dt>
+					<dd>ชื่อรองที่ต้องการ ถ้าไม่ระบุไม่มีชื่อรอง</dd>
+					<dt><var>$separator</var></dt>
+					<dd>ข้อความเชื่อมฟิลด์เข้าด้วยกัน ค่าเริมต้นคือ ,</dd>
+					<dt><var>$distinct</var></dt>
+					<dd>false (default) คืนค่ารายการที่ไม่ซ้ำ</dd>
+					<dt><var>$order</var></dt>
+					<dd>เรียงลำดับ</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					self
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						('C.topic', 'topic', ', ')->text() [==] "GROUP_CONCAT(C.<code>topic</code> SEPARATOR ', ') AS <code>topic</code>"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="HOUR" id="_HOUR">
+
+		<td class="attributes"><code>
+			 public static
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_HOUR">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#241-255" title="Go to source code">HOUR</a>( <span>string <var>$column_name</var></span>, <span>string|null <var>$alias</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>แยกชั่วโมงออกจากคอลัมน์ชนิด DATETIME.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>แยกชั่วโมงออกจากคอลัมน์ชนิด DATETIME.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column_name</var></dt>
+					<dd></dd>
+					<dt><var>$alias</var></dt>
+					<dd>ชื่อรองที่ต้องการ ถ้าไม่ระบุไม่มีชื่อรอง</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						('create_date')->text() [==] 'HOUR(<code>create_date</code>)'<br>
+						('create_date', 'date')->text() [==] 'HOUR(<code>create_date</code>) AS <code>date</code>'<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="IFNULL" id="_IFNULL">
+
+		<td class="attributes"><code>
+			 public static
+
+			self
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_IFNULL">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#257-272" title="Go to source code">IFNULL</a>( <span>string <var>$column_name1</var></span>, <span>string <var>$column_name2</var></span>, <span>string|null <var>$alias</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่นสร้างคำสั่ง IFNULL</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่นสร้างคำสั่ง IFNULL</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column_name1</var></dt>
+					<dd></dd>
+					<dt><var>$column_name2</var></dt>
+					<dd></dd>
+					<dt><var>$alias</var></dt>
+					<dd>ถ้าระบุจะมีการเติม alias ให้กับคำสั่ง</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					self
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						('create_date', 'U.create_date')->text() [==] "IFNULL(<code>create_date</code>, U.<code>create_date</code>)"<br>
+						('create_date', 'U.create_date', 'test')->text() [==] "IFNULL(<code>create_date</code>, U.<code>create_date</code>) AS <code>test</code>"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="ISNOTNULL" id="_ISNOTNULL">
+
+		<td class="attributes"><code>
+			 public static
+
+			self
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ISNOTNULL">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#274-286" title="Go to source code">ISNOTNULL</a>( <span>string <var>$column_name</var></span> )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่นสร้างคำสั่ง IS NOT NULL</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่นสร้างคำสั่ง IS NOT NULL</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column_name</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					self
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						('U.id')->text() [==] "U.<code>id</code> IS NOT NULL"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="ISNULL" id="_ISNULL">
+
+		<td class="attributes"><code>
+			 public static
+
+			self
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ISNULL">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#288-300" title="Go to source code">ISNULL</a>( <span>string <var>$column_name</var></span> )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่นสร้างคำสั่ง IS NULL</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่นสร้างคำสั่ง IS NULL</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column_name</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					self
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						('U.id')->text() [==] "U.<code>id</code> IS NULL"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="MAX" id="_MAX">
+
+		<td class="attributes"><code>
+			 public static
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_MAX">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#302-315" title="Go to source code">MAX</a>( <span>string <var>$column_name</var></span>, <span>string|null <var>$alias</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>หาค่าสูงสุด</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>หาค่าสูงสุด</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column_name</var></dt>
+					<dd></dd>
+					<dt><var>$alias</var></dt>
+					<dd>ชื่อรองที่ต้องการ ถ้าไม่ระบุไม่มีชื่อรอง</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						('id')->text() [==] 'MAX(<code>id</code>)'<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="MIN" id="_MIN">
+
+		<td class="attributes"><code>
+			 public static
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_MIN">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#317-330" title="Go to source code">MIN</a>( <span>string <var>$column_name</var></span>, <span>string|null <var>$alias</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>หาค่าต่ำสุด</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>หาค่าต่ำสุด</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column_name</var></dt>
+					<dd></dd>
+					<dt><var>$alias</var></dt>
+					<dd>ชื่อรองที่ต้องการ ถ้าไม่ระบุไม่มีชื่อรอง</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						('id')->text() [==] 'MIN(<code>id</code>)'<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="MINUTE" id="_MINUTE">
+
+		<td class="attributes"><code>
+			 public static
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_MINUTE">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#332-346" title="Go to source code">MINUTE</a>( <span>string <var>$column_name</var></span>, <span>string|null <var>$alias</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>แยกนาทีออกจากคอลัมน์ชนิด DATETIME.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>แยกนาทีออกจากคอลัมน์ชนิด DATETIME.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column_name</var></dt>
+					<dd></dd>
+					<dt><var>$alias</var></dt>
+					<dd>ชื่อรองที่ต้องการ ถ้าไม่ระบุไม่มีชื่อรอง</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						('create_date')->text() [==] 'MINUTE(<code>create_date</code>)'<br>
+						('create_date', 'date')->text() [==] 'MINUTE(<code>create_date</code>) AS <code>date</code>'<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="MONTH" id="_MONTH">
+
+		<td class="attributes"><code>
+			 public static
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_MONTH">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#348-362" title="Go to source code">MONTH</a>( <span>string <var>$column_name</var></span>, <span>string|null <var>$alias</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>แยกเดือนออกจากคอลัมน์ชนิด DATE DATETIME</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>แยกเดือนออกจากคอลัมน์ชนิด DATE DATETIME</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column_name</var></dt>
+					<dd></dd>
+					<dt><var>$alias</var></dt>
+					<dd>ชื่อรองที่ต้องการ ถ้าไม่ระบุไม่มีชื่อรอง</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						('date')->text() [==] 'MONTH(<code>date</code>)'<br>
+						('date', 'm')->text() [==] 'MONTH(<code>date</code>) AS <code>m</code>'<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="NEXT" id="_NEXT">
+
+		<td class="attributes"><code>
+			 public static
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_NEXT">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#364-397" title="Go to source code">NEXT</a>( <span>string <var>$field</var></span>, <span>string <var>$table_name</var></span>, <span>mixed <var>$condition</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$alias</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$operator</var> = <span class="php-quote">'AND'</span></span>, <span>string <var>$id</var> = <span class="php-quote">'id'</span></span>, <span>string <var>$id</var>,…</span> )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่นสร้าง SQL สำหรับหาค่าสูงสุด + 1
+ใช้ในการหาค่า id ถัดไป</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่นสร้าง SQL สำหรับหาค่าสูงสุด + 1
+ใช้ในการหาค่า id ถัดไป</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$field</var></dt>
+					<dd>ชื่อฟิลด์ที่ต้องการหาค่าสูงสุด</dd>
+					<dt><var>$table_name</var></dt>
+					<dd>ชื่อตาราง</dd>
+					<dt><var>$condition</var></dt>
+					<dd>(optional) query WHERE</dd>
+					<dt><var>$alias</var></dt>
+					<dd>$values     (optional) แอเรย์สำหรับรับค่า value สำหรับการ bind</dd>
+					<dt><var>$operator</var></dt>
+					<dd>$alias      (optional) ชื่อฟิลด์ที่ใช้คืนค่า ไม่ระบุ (null) หมายถึงไม่ต้องการชื่อฟิลด์</dd>
+					<dt><var>$id</var></dt>
+					<dd>$operator   (optional) เช่น AND หรือ OR</dd>
+					<dt><var>$id</var>,…</dt>
+					<dd>(optional )ชื่อฟิลด์ที่เป็น key</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						('id', '<code>world</code>')->text() [==] '(1 + IFNULL((SELECT MAX(<code>id</code>) FROM <code>world</code> AS X), 0))'<br>
+						('id', '<code>world</code>', array(array('module_id', 'D.<code>id</code>')), 'next_id')->text() [==] '(1 + IFNULL((SELECT MAX(<code>id</code>) FROM <code>world</code> AS X WHERE <code>module_id</code> = D.<code>id</code>), 0)) AS <code>next_id</code>'<br>
+						('id', '<code>world</code>', array(array('module_id', 'D.<code>id</code>')), null)->text() [==] '(1 + IFNULL((SELECT MAX(<code>id</code>) FROM <code>world</code> AS X WHERE <code>module_id</code> = D.<code>id</code>), 0))'<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="NOW" id="_NOW">
+
+		<td class="attributes"><code>
+			 public static
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_NOW">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#399-412" title="Go to source code">NOW</a>( <span>string|null <var>$alias</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>คืนค่าวันที่และเวลาปัจจุบัน</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>คืนค่าวันที่และเวลาปัจจุบัน</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$alias</var></dt>
+					<dd>ชื่อรองที่ต้องการ ถ้าไม่ระบุไม่มีชื่อรอง</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						()->text() [==] 'NOW()'<br>
+						('id')->text() [==] 'NOW() AS <code>id</code>'<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="POSITION" id="_POSITION">
+
+		<td class="attributes"><code>
+			 public static
+
+			self
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_POSITION">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#414-432" title="Go to source code">POSITION</a>( <span>string <var>$substr</var></span>, <span>string <var>$str</var></span>, <span>string|null <var>$alias</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$pos</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			<p>ค้นหาข้อความ ไม่พบคืนค่า 0, ตัวแรกคือ 1</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ค้นหาข้อความ ไม่พบคืนค่า 0, ตัวแรกคือ 1</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$substr</var></dt>
+					<dd>ข้อความที่ค้นหา ถ้าเป็นชื่อฟิลด์ต้องครอบด้วย ``</dd>
+					<dt><var>$str</var></dt>
+					<dd>ข้อความต้นฉบับ ถ้าเป็นชื่อฟิลด์ต้องครอบด้วย ``</dd>
+					<dt><var>$alias</var></dt>
+					<dd>ชื่อรองที่ต้องการ ถ้าไม่ระบุไม่มีชื่อรอง</dd>
+					<dt><var>$pos</var></dt>
+					<dd>ตำแหน่งเริ่มต้นค้นหา (default) หรือไม่ระบุ ค้นหาตั้งแต่ตัวแรก</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					self
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						('find', 'C.<code>topic</code>')->text() [==] "LOCATE('find', C.<code>topic</code>)"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="RAND" id="_RAND">
+
+		<td class="attributes"><code>
+			 public static
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_RAND">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#434-448" title="Go to source code">RAND</a>( <span>string <var>$alias</var> = <span class="php-keyword1">null</span></span>, <span>string|null <var>$alias</var>,…</span> )</code>
+
+		<div class="description short">
+			<p>สุ่มตัวเลข</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>สุ่มตัวเลข</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$alias</var></dt>
+					<dd>$column_name</dd>
+					<dt><var>$alias</var>,…</dt>
+					<dd>ชื่อรองที่ต้องการ ถ้าไม่ระบุไม่มีชื่อรอง</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						()->text() [==] 'RAND()'<br>
+						('id')->text() [==] 'RAND() AS <code>id</code>'<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SECOND" id="_SECOND">
+
+		<td class="attributes"><code>
+			 public static
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SECOND">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#450-464" title="Go to source code">SECOND</a>( <span>string <var>$column_name</var></span>, <span>string|null <var>$alias</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>แยกวินาทีออกจากคอลัมน์ชนิด DATETIME</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>แยกวินาทีออกจากคอลัมน์ชนิด DATETIME</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column_name</var></dt>
+					<dd></dd>
+					<dt><var>$alias</var></dt>
+					<dd>ชื่อรองที่ต้องการ ถ้าไม่ระบุไม่มีชื่อรอง</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						('create_date')->text() [==] 'SECOND(<code>create_date</code>)'<br>
+						('create_date', 'date')->text() [==] 'SECOND(<code>create_date</code>) AS <code>date</code>'<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="SUM" id="_SUM">
+
+		<td class="attributes"><code>
+			 public static
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_SUM">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#466-483" title="Go to source code">SUM</a>( <span>string <var>$column_name</var></span>, <span>string|null <var>$alias</var> = <span class="php-quote">''</span></span>, <span>boolean <var>$distinct</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			<p>ผลรวมของคอลัมน์ที่เลือก</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ผลรวมของคอลัมน์ที่เลือก</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column_name</var></dt>
+					<dd></dd>
+					<dt><var>$alias</var></dt>
+					<dd></dd>
+					<dt><var>$distinct</var></dt>
+					<dd>false (default) รวมทุกคอลัมน์, true รวมเฉพาะคอลัมน์ที่ไม่ซ้ำ</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						('id')->text() [==] 'SUM(<code>id</code>)'<br>
+						('table_name.<code>id</code>', 'id')->text() [==] 'SUM(<code>table_name</code>.<code>id</code>) AS <code>id</code>'<br>
+						('U.id', 'id', true)->text() [==] 'SUM(DISTINCT U.<code>id</code>) AS <code>id</code>'<br>
+						('U1.id', 'id', true)->text() [==] 'SUM(DISTINCT U1.<code>id</code>) AS <code>id</code>'<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="TIMEDIFF" id="_TIMEDIFF">
+
+		<td class="attributes"><code>
+			 public static
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_TIMEDIFF">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#485-500" title="Go to source code">TIMEDIFF</a>( <span>string <var>$column_name1</var></span>, <span>string <var>$column_name2</var></span>, <span>string <var>$alias</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>หาความแตกต่างระหว่างเวลา (คืนค่าเป็น H:m:i ที่แตกต่างกัน)</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>หาความแตกต่างระหว่างเวลา (คืนค่าเป็น H:m:i ที่แตกต่างกัน)</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column_name1</var></dt>
+					<dd></dd>
+					<dt><var>$column_name2</var></dt>
+					<dd></dd>
+					<dt><var>$alias</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						('create_date', Sql::NOW())->text() [==] "TIMEDIFF(<code>create_date</code>, NOW())"<br>
+						('2017-04-04', 'create_date')->text() [==] "TIMEDIFF('2017-04-04', <code>create_date</code>)"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="TIMESTAMPDIFF" id="_TIMESTAMPDIFF">
+
+		<td class="attributes"><code>
+			 public static
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_TIMESTAMPDIFF">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#502-518" title="Go to source code">TIMESTAMPDIFF</a>( <span>string <var>$unit</var></span>, <span>string <var>$column_name1</var></span>, <span>string <var>$column_name2</var></span>, <span>string <var>$alias</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>หาความแตกต่างระหว่างเวลา (คืนค่าตามรูปแบบ $unit)</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>หาความแตกต่างระหว่างเวลา (คืนค่าตามรูปแบบ $unit)</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$unit</var></dt>
+					<dd>FRAC_SECOND (microseconds), SECOND, MINUTE, HOUR, DAY, WEEK, MONTH, QUARTER, or YEAR</dd>
+					<dt><var>$column_name1</var></dt>
+					<dd></dd>
+					<dt><var>$column_name2</var></dt>
+					<dd></dd>
+					<dt><var>$alias</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						('HOUR', 'create_date', Sql::NOW())->text() [==] "TIMESTAMPDIFF(HOUR, <code>create_date</code>, NOW())"<br>
+						('MONTH', '2017-04-04', 'create_date')->text() [==] "TIMESTAMPDIFF(MONTH, '2017-04-04', <code>create_date</code>)"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="WHERE" id="_WHERE">
+
+		<td class="attributes"><code>
+			 public static
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_WHERE">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#520-556" title="Go to source code">WHERE</a>( <span>mixed <var>$condition</var></span>, <span>string <var>$operator</var> = <span class="php-quote">'AND'</span></span>, <span>string <var>$id</var> = <span class="php-quote">'id'</span></span> )</code>
+
+		<div class="description short">
+			<p>สร้างคำสั่ง WHERE</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>สร้างคำสั่ง WHERE</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$condition</var></dt>
+					<dd></dd>
+					<dt><var>$operator</var></dt>
+					<dd>(optional) เช่น AND หรือ OR</dd>
+					<dt><var>$id</var></dt>
+					<dd>(optional )ชื่อฟิลด์ที่เป็น key</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						WHERE(1)->text() [==] "<code>id</code> = 1"<br>
+						WHERE('1')->text() [==] "<code>id</code> = '1'"<br>
+						WHERE(0.1)->text() [==] "<code>id</code> = 0.1"<br>
+						WHERE('ทดสอบ')->text() [==] "<code>id</code> = 'ทดสอบ'"<br>
+						WHERE(null)->text() [==] "<code>id</code> = NULL"<br>
+						WHERE(0x64656)->text() [==] "<code>id</code> = 411222"<br>
+						WHERE('SELECT * FROM')->text() [==] "<code>id</code> = :id0"<br>
+						WHERE(Sql::create('EXISTS SELECT FROM WHERE'))->text() [==] "EXISTS SELECT FROM WHERE"<br>
+						WHERE(array('id', '=', 1))->text() [==] "<code>id</code> = 1"<br>
+						WHERE(array('U.id', '2017-01-01 00:00:00'))->text() [==] "U.<code>id</code> = '2017-01-01 00:00:00'"<br>
+						WHERE(array('id', 'IN', array(1, '2', null)))->text() [==] "<code>id</code> IN (1, '2', NULL)"<br>
+						WHERE(array('id', 'SELECT * FROM'))->text() [==] "<code>id</code> = :id0"<br>
+						WHERE(array('U.<code>id</code>', 'NOT IN', Sql::create('SELECT * FROM')))->text() [==] "U.<code>id</code> NOT IN SELECT * FROM"<br>
+						WHERE(array(array('id', 'IN', array(1, '2', null))))->text() [==] "<code>id</code> IN (1, '2', NULL)"<br>
+						WHERE(array(array('U.id', 1), array('U.id', '!=', '1')))->text() [==] "U.<code>id</code> = 1 AND U.<code>id</code> != '1'"<br>
+						WHERE(array(array(Sql::MONTH('create_date'), 1), array(Sql::YEAR('create_date'), 1)))->text() [==] "MONTH(<code>create_date</code>) = 1 AND YEAR(<code>create_date</code>) = 1"<br>
+						WHERE(array(array('id', array(1, 'a')), array('id', array('G.id', 'G.<code>id2</code>'))))->text() [==] "<code>id</code> IN (1, 'a') AND <code>id</code> IN (G.<code>id</code>, G.<code>id2</code>)"<br>
+						WHERE(array(array('id', array('', 'th'))))->text() [==] "<code>id</code> IN ('', 'th')"<br>
+						WHERE(array(Sql::YEAR('create_date'), Sql::YEAR('<code>create_date</code>')))->text() [==] "YEAR(<code>create_date</code>) = YEAR(<code>create_date</code>)"<br>
+						WHERE(array('ip', 'NOT IN', array('', '192.168.1.2')))->text() [==] "<code>ip</code> NOT IN ('', '192.168.1.2')"<br>
+						WHERE(array(1, 1))->text() [==] "1 = 1"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="YEAR" id="_YEAR">
+
+		<td class="attributes"><code>
+			 public static
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_YEAR">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#558-572" title="Go to source code">YEAR</a>( <span>string <var>$column_name</var></span>, <span>string|null <var>$alias</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>แยกปีออกจากคอลัมน์ชนิด DATE DATETIME.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>แยกปีออกจากคอลัมน์ชนิด DATE DATETIME.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column_name</var></dt>
+					<dd></dd>
+					<dt><var>$alias</var></dt>
+					<dd>ชื่อรองที่ต้องการ ถ้าไม่ระบุไม่มีชื่อรอง</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						('date')->text() [==] 'YEAR(<code>date</code>)'<br>
+						('date', 'y')->text() [==] 'YEAR(<code>date</code>) AS <code>y</code>'<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#574-583" title="Go to source code">__construct</a>( <span>string <var>$sql</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>class constructer</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>class constructer</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="create" id="_create">
+
+		<td class="attributes"><code>
+			 public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_create">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#585-593" title="Go to source code">create</a>( <span>string <var>$sql</var></span> )</code>
+
+		<div class="description short">
+			<p>สร้าง Object Sql</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>สร้าง Object Sql</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fieldName" id="_fieldName">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fieldName">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#595-645" title="Go to source code">fieldName</a>( <span>string <var>$column_name</var></span> )</code>
+
+		<div class="description short">
+			<p>ใส่ `` ครอบชื่อคอลัมน์
+ชื่อคอลัมน์ต้องเป็น ภาษาอังกฤษ ตัวเลข และ _ เท่านั้น
+ถ้ามีอักขระอื่นนอกจากนี้ คืนค่า ข้อความที่ส่งมา ครอบด้วย ''</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ใส่ `` ครอบชื่อคอลัมน์
+ชื่อคอลัมน์ต้องเป็น ภาษาอังกฤษ ตัวเลข และ _ เท่านั้น
+ถ้ามีอักขระอื่นนอกจากนี้ คืนค่า ข้อความที่ส่งมา ครอบด้วย ''</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column_name</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code><br>ถ้ารูปแบบของ $column_name ไม่ถูกต้อง
+				</div>
+
+				<h4>Assert</h4>
+				<div class="list">
+						('U.id') [==] 'U.<code>id</code>'<br>
+						('U1.id') [==] 'U1.<code>id</code>'<br>
+						('U1.id DESC') [==] 'U1.<code>id</code> DESC'<br>
+						('field_name') [==] '<code>field_name</code>'<br>
+						('table_name.field_name') [==] '<code>table_name</code>.<code>field_name</code>'<br>
+						('<code>table_name</code>.<code>field_name</code>') [==] '<code>table_name</code>.<code>field_name</code>'<br>
+						('table_name.<code>field_name</code>') [==] '<code>table_name</code>.<code>field_name</code>'<br>
+						('<code>table_name</code>.field_name') [==] '<code>table_name</code>.<code>field_name</code>'<br>
+						('<code>table_name</code>.field_name ASC') [==] '<code>table_name</code>.<code>field_name</code> ASC'<br>
+						('0x64656') [==] "<code>0x64656</code>"<br>
+						(0x64656) [==] 411222<br>
+						('DATE(day)') [==] "'DATE(day)'"<br>
+						('DROP table') [==] "'DROP table'"<br>
+						(array()) [throws] InvalidArgumentException<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getValues" id="_getValues">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getValues">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#647-664" title="Go to source code">getValues</a>( <span>array <var>$values</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>คืนค่าแอเร์ยเก็บพารามิเตอร์สำหรับการ bind รวมกับ $values</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>คืนค่าแอเร์ยเก็บพารามิเตอร์สำหรับการ bind รวมกับ $values</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$values</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="quoteValue" id="_quoteValue">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_quoteValue">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#666-746" title="Go to source code">quoteValue</a>( <span>mixed <var>$column_name</var></span>, <span>array <var>$value</var></span>, <span> <var>&amp; $values</var></span> )</code>
+
+		<div class="description short">
+			<p>แปลงค่า Value สำหรับใช้ใน query</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>แปลงค่า Value สำหรับใช้ใน query</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column_name</var></dt>
+					<dd>$value</dd>
+					<dt><var>$value</var></dt>
+					<dd>$values แอเรย์สำหรับรับค่า value สำหรับการ bind</dd>
+					<dt><var>$values</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code><br>ถ้ารูปแบบของ $value ไม่ถูกต้อง
+				</div>
+
+				<h4>Assert</h4>
+				<div class="list">
+						('id', 'ทดสอบ', $array) [==] "'ทดสอบ'"<br>
+						('id', 'test', $array) [==] "'test'"<br>
+						('id', 'abcde012345', $array) [==] "'abcde012345'"<br>
+						('id', 123456, $array) [==] 123456<br>
+						('id', 0.1, $array) [==] 0.1<br>
+						('id', null, $array) [==] 'NULL'<br>
+						('id', 'U.id', $array) [==] "U.<code>id</code>"<br>
+						('id', 'U.<code>id</code>', $array) [==] 'U.<code>id</code>'<br>
+						('id', 'domain.tld', $array) [==] "'domain.tld'"<br>
+						('id', 'table_name.<code>id</code>', $array) [==] '<code>table_name</code>.<code>id</code>'<br>
+						('id', '<code>table_name</code>.id', $array) [==] '<code>table_name</code>.<code>id</code>'<br>
+						('id', '<code>table_name</code>.<code>id</code>', $array) [==] '<code>table_name</code>.<code>id</code>'<br>
+						('id', 'INSERT INTO', $array) [==] ':id0'<br>
+						('id', array(1, '2', null), $array) [==] "(1, '2', NULL)"<br>
+						('id', '0x64656', $array) [==] ':id0'<br>
+						('id', 0x64656, $array) [==] 411222<br>
+						('<code>table_name</code>.<code>id</code>', '0x64656', $array) [==] ':tablenameid0'<br>
+						('U1.<code>id</code>', '0x64656', $array) [==] ':u1id0'<br>
+						('U.id', '0x64656', $array) [==] ':uid0'<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="strValue" id="_strValue">
+
+		<td class="attributes"><code>
+			 public static
+
+			self
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_strValue">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#748-759" title="Go to source code">strValue</a>( <span>string <var>$value</var></span> )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่นสำหรับรับค่าเป็นสตริงค์เท่านั้น
+ผลลัพท์จะถูกครอบด้วย '' (ฟันหนู)</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่นสำหรับรับค่าเป็นสตริงค์เท่านั้น
+ผลลัพท์จะถูกครอบด้วย '' (ฟันหนู)</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					self
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="text" id="_text">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_text">#</a>
+		<code><a href="source-class-Kotchasan.Database.Sql.html#761-780" title="Go to source code">text</a>( <span>string <var>$key</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>คืนค่าคำสั่ง SQL เป็น string
+ถ้า $sql เป็น null จะคืนค่า :$key ใช้สำหรับการ bind</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>คืนค่าคำสั่ง SQL เป็น string
+ถ้า $sql เป็น null จะคืนค่า :$key ใช้สำหรับการ bind</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="sql" id="$sql">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Kotchasan.Database.Sql.html#22-27" title="Go to source code"><var>$sql</var></a>
+
+			<div class="description short">
+				<p>คำสั่ง SQL ที่เก็บไว้</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>คำสั่ง SQL ที่เก็บไว้</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$sql" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="values" id="$values">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Kotchasan.Database.Sql.html#28-33" title="Go to source code"><var>$values</var></a>
+
+			<div class="description short">
+				<p>ตัวแปรเก็บพารามิเตอร์สำหรับการ bind.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>ตัวแปรเก็บพารามิเตอร์สำหรับการ bind.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$values" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Kotchasan API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

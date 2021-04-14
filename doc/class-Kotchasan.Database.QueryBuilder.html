@@ -1,0 +1,1729 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Kotchasan\Database\QueryBuilder | Kotchasan</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Kotchasan.html">
+						Kotchasan<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Kotchasan.Cache.html">
+						Cache					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-Kotchasan.Database.html">
+						Database					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Kotchasan.Http.html">
+						Http					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Kotchasan.Log.html">
+						Log					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Kotchasan.Orm.html">
+						Orm					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Psr.html">
+						Psr<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Psr.Cache.html">
+						Cache					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Psr.Http.html">
+						Http<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Psr.Http.Message.html">
+						Message					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Psr.Log.html">
+						Log					</a>
+
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Kotchasan.Database.Db.html">Db</a></li>
+				<li><a href="class-Kotchasan.Database.DbCache.html">DbCache</a></li>
+				<li><a href="class-Kotchasan.Database.Driver.html">Driver</a></li>
+				<li><a href="class-Kotchasan.Database.PdoMysqlDriver.html">PdoMysqlDriver</a></li>
+				<li><a href="class-Kotchasan.Database.Query.html">Query</a></li>
+				<li class="active"><a href="class-Kotchasan.Database.QueryBuilder.html">QueryBuilder</a></li>
+				<li><a href="class-Kotchasan.Database.Schema.html">Schema</a></li>
+				<li><a href="class-Kotchasan.Database.Sql.html">Sql</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Kotchasan.Database.Exception.html">Exception</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Kotchasan.Database.html" title="Summary of Kotchasan\Database"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class QueryBuilder</h1>
+
+
+	<div class="description">
+	<p>SQL Query builder.</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Kotchasan.KBase.html"><span>Kotchasan\KBase</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+			<a href="class-Kotchasan.Database.Db.html"><span>Kotchasan\Database\Db</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by">
+			<a href="class-Kotchasan.Database.Query.html"><span>Kotchasan\Database\Query</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:90px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Kotchasan\Database\QueryBuilder</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Kotchasan.html">Kotchasan</a>\<a href="namespace-Kotchasan.Database.html">Database</a><br>
+		
+
+				<b>Author:</b>
+				Goragod Wiriya <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x61;&#100;&#x6d;&#105;&#x6e;&#64;&#x67;&#111;&#x72;&#97;&#x67;&#111;&#x64;&#46;&#x63;&#111;&#x6d;">&#x61;&#100;&#x6d;&#105;&#x6e;&#64;&#x67;&#111;&#x72;&#97;&#x67;&#111;&#x64;&#46;&#x63;&#111;&#x6d;</a><br>
+				<b>Since:</b>
+				1.0<br>
+				<b>Setup:</b>
+				$driver = new PdoMysqlDriver;<br>
+				<b>Setup:</b>
+				$this = $driver->createQuery();<br>
+			<b>Located at</b> <a href="source-class-Kotchasan.Database.QueryBuilder.html#15-792" title="Go to source code">Kotchasan/Database/QueryBuilder.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#40-49" title="Go to source code">__construct</a>( <span><code><a href="class-Kotchasan.Database.Driver.html">Kotchasan\Database\Driver</a></code> <var>$db</var></span> )</code>
+
+		<div class="description short">
+			<p>Class constructor.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Class constructor.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$db</var></dt>
+					<dd>database driver</dd>
+				</dl></div>
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Kotchasan.Database.Db.html#___construct">Kotchasan\Database\Db::__construct()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="andWhere" id="_andWhere">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_andWhere">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#51-77" title="Go to source code">andWhere</a>( <span>mixed <var>$condition</var></span>, <span>string <var>$oprator</var> = <span class="php-quote">'AND'</span></span>, <span>string <var>$id</var> = <span class="php-quote">'id'</span></span> )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่นสร้างคำสั่ง WHERE ถ้ามีข้อมูล Where ก่อนหน้าจะ AND กับข้อมูลก่อนหน้า.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่นสร้างคำสั่ง WHERE ถ้ามีข้อมูล Where ก่อนหน้าจะ AND กับข้อมูลก่อนหน้า.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$condition</var></dt>
+					<dd>query string หรือ array</dd>
+					<dt><var>$oprator</var></dt>
+					<dd>defaul AND</dd>
+					<dt><var>$id</var></dt>
+					<dd>Primary Key เช่น id (default)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						where(array('U.id', 1))->andWhere(array())->text() [==] " WHERE U.<code>id</code> = 1"<br>
+						where(array('U.id', 1))->andWhere(array('U.id', 2))->text() [==] " WHERE (U.<code>id</code> = 1) AND (U.<code>id</code> = 2)"<br>
+						where(array('U.id', 1))->andWhere(array(Sql::BETWEEN('id', 0, 1), Sql::BETWEEN('id', 0, 1)), 'OR')->text() [==] " WHERE (U.<code>id</code> = 1) AND (<code>id</code> BETWEEN 0 AND 1 OR <code>id</code> BETWEEN 0 AND 1)"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="assignment" id="_assignment">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_assignment">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#79-101" title="Go to source code">assignment</a>( <span><code><a href="class-Kotchasan.Orm.Recordset.html">Kotchasan\Orm\Recordset</a></code> <var>$src</var></span> )</code>
+
+		<div class="description short">
+			<p>นำเข้า property จาก Class อื่น.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>นำเข้า property จาก Class อื่น.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$src</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="cacheOn" id="_cacheOn">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_cacheOn">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#103-116" title="Go to source code">cacheOn</a>( <span>boolean <var>$auto_save</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			<p>เปิดการใช้งานแคช
+จะมีการตรวจสอบจากแคชก่อนการสอบถามข้อมูล.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>เปิดการใช้งานแคช
+จะมีการตรวจสอบจากแคชก่อนการสอบถามข้อมูล.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$auto_save</var></dt>
+					<dd>(options) true (default) บันทึกผลลัพท์อัตโนมัติ, false ต้องบันทึกแคชเอง</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="copy" id="_copy">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_copy">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#118-126" title="Go to source code">copy</a>( )</code>
+
+		<div class="description short">
+			<p>สำเนา Class เป็นอันใหม่.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>สำเนา Class เป็นอันใหม่.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="count" id="_count">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_count">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#128-142" title="Go to source code">count</a>( )</code>
+
+		<div class="description short">
+			<p>ประมวลผลคำสั่ง SQL และคืนค่าจำนวนแถวของผลลัพท์
+คืนค่า จำนวนแถว.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ประมวลผลคำสั่ง SQL และคืนค่าจำนวนแถวของผลลัพท์
+คืนค่า จำนวนแถว.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="delete" id="_delete">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delete">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#144-161" title="Go to source code">delete</a>( <span>string <var>$table</var></span>, <span>mixed <var>$condition</var></span> )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่นสร้างคำสั่ง DELETE.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่นสร้างคำสั่ง DELETE.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd></dd>
+					<dt><var>$condition</var></dt>
+					<dd>query string หรือ array</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						delete('user', array(array('id', 1), array('name', 'test')))->text() [==] "DELETE FROM <code>user</code> WHERE <code>id</code> = 1 AND <code>name</code> = 'test'"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="execute" id="_execute">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_execute">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#163-181" title="Go to source code">execute</a>( )</code>
+
+		<div class="description short">
+			<p>ประมวลผลคำสั่ง SQL
+คืนค่า แอเรย์ของผลลัพท์ ไม่พบข้อมูล คืนค่าแอเรย์ว่าง.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ประมวลผลคำสั่ง SQL
+คืนค่า แอเรย์ของผลลัพท์ ไม่พบข้อมูล คืนค่าแอเรย์ว่าง.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="exists" id="_exists">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_exists">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#183-209" title="Go to source code">exists</a>( <span>string <var>$table</var></span>, <span>mixed <var>$condition</var></span> )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่นสร้าง SQL EXISTS.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่นสร้าง SQL EXISTS.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd>ชื่อตาราง</dd>
+					<dt><var>$condition</var></dt>
+					<dd>query WHERE</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						select()->from('user U')->exists('useronline', array('member_id', 'U.id'))->text() [==] 'SELECT * FROM <code>user</code> AS U WHERE  EXISTS (SELECT * FROM <code>useronline</code> WHERE <code>member_id</code> = U.<code>id</code>)'<br>
+						select()->from('user U')->where(array('U.id', 1))->exists('useronline', array('member_id', 'U.id'))->text() [==] 'SELECT * FROM <code>user</code> AS U WHERE U.<code>id</code> = 1 AND EXISTS (SELECT * FROM <code>useronline</code> WHERE <code>member_id</code> = U.<code>id</code>)'<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="explain" id="_explain">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_explain">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#211-221" title="Go to source code">explain</a>( )</code>
+
+		<div class="description short">
+			<p>คำสั่งสำหรับดูรายละเอียดการ Query.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>คำสั่งสำหรับดูรายละเอียดการ Query.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="first" id="_first">
+
+		<td class="attributes"><code>
+			 public 
+
+			object|array|boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_first">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#223-248" title="Go to source code">first</a>( <span>string <var>$fields</var> = <span class="php-quote">'*'</span></span> )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่นประมวลผลคำสั่ง SQL ข้อมูลต้องการผลลัพท์เพียงรายการเดียว
+คืนค่าผลลัพท์ที่พบเพียงรายการเดียว ไม่พบข้อมูลคืนค่า false.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่นประมวลผลคำสั่ง SQL ข้อมูลต้องการผลลัพท์เพียงรายการเดียว
+คืนค่าผลลัพท์ที่พบเพียงรายการเดียว ไม่พบข้อมูลคืนค่า false.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fields</var></dt>
+					<dd>(option) รายชื่อฟิลด์ field1, field2, field3, ....</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					object|array|boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="from" id="_from">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_from">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#250-271" title="Go to source code">from</a>( <span>string <var>$tables</var></span> )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่นสร้างคำสั่ง FROM.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่นสร้างคำสั่ง FROM.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tables</var></dt>
+					<dd>ชื่อตาราง table1, table2, table3, ....</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						select()->from('user')->text() [==] "SELECT * FROM <code>user</code>"<br>
+						select()->from('user a', 'user b')->text() [==] "SELECT * FROM <code>user</code> AS <code>a</code>, <code>user</code> AS <code>b</code>"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getValues" id="_getValues">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getValues">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#273-290" title="Go to source code">getValues</a>( <span>array <var>$values</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>คืนค่าแอเร์ยเก็บพารามิเตอร์สำหรับการ bind รวมกับ $values.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>คืนค่าแอเร์ยเก็บพารามิเตอร์สำหรับการ bind รวมกับ $values.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$values</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="groupBy" id="_groupBy">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_groupBy">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#292-321" title="Go to source code">groupBy</a>( <span>string <var>$fields</var></span> )</code>
+
+		<div class="description short">
+			<p>GROUP BY.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>GROUP BY.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fields</var></dt>
+					<dd>รายชื่อฟิล์ด เช่น field1, field2, ...</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						select()->from('user')->groupBy('MONTH(<code>date</code>)', 'YEAR(<code>date</code>)')->text() [==] 'SELECT * FROM <code>user</code> GROUP BY MONTH(<code>date</code>), YEAR(<code>date</code>)'<br>
+						select()->from('user')->groupBy('U.id')->text() [==] 'SELECT * FROM <code>user</code> GROUP BY U.<code>id</code>'<br>
+						select()->from('user')->groupBy(array('id', 'username'))->text() [==] 'SELECT * FROM <code>user</code> GROUP BY <code>id</code>, <code>username</code>'<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="having" id="_having">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_having">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#323-344" title="Go to source code">having</a>( <span>mixed <var>$condition</var></span>, <span>string <var>$oprator</var> = <span class="php-quote">'AND'</span></span> )</code>
+
+		<div class="description short">
+			<p>HAVING.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>HAVING.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$condition</var></dt>
+					<dd>query string หรือ array</dd>
+					<dt><var>$oprator</var></dt>
+					<dd>defaul AND</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="insert" id="_insert">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_insert">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#346-371" title="Go to source code">insert</a>( <span>string <var>$table</var></span>, <span>array <var>$datas</var></span> )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่นสร้างคำสั่ง INSERT INTO
+สามารถกำหนดค่า value เป็น query string ได้.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่นสร้างคำสั่ง INSERT INTO
+สามารถกำหนดค่า value เป็น query string ได้.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd>ชื่อตาราง</dd>
+					<dt><var>$datas</var></dt>
+					<dd>รูปแบบ array(key1=>value1, key2=>value2)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						insert('user', array('id' => 1, 'name' => 'test'))->text() [==] "INSERT INTO <code>user</code> (<code>id</code>, <code>name</code>) VALUES (1, 'test')"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="insertOrUpdate" id="_insertOrUpdate">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_insertOrUpdate">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#373-393" title="Go to source code">insertOrUpdate</a>( <span>string <var>$table</var></span>, <span>array <var>$datas</var></span> )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่นสร้างคำสั่ง INSERT INTO
+โดยทำการตรวจสอบ KEY ถ้ามีอยู่แล้วจะเป็นการ UPDATE ข้อมูล.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่นสร้างคำสั่ง INSERT INTO
+โดยทำการตรวจสอบ KEY ถ้ามีอยู่แล้วจะเป็นการ UPDATE ข้อมูล.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd>ชื่อตาราง</dd>
+					<dt><var>$datas</var></dt>
+					<dd>รูปแบบ array(key1=>value1, key2=>value2)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						insertOrUpdate('user', array('id' => 1, 'name' => 'test'))->text() [==] "INSERT INTO <code>user</code> (<code>id</code>, <code>name</code>) VALUES (1, 'test') ON DUPLICATE KEY UPDATE <code>id</code>=VALUES(<code>id</code>), <code>name</code>=VALUES(<code>name</code>)"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="join" id="_join">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_join">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#395-422" title="Go to source code">join</a>( <span>string <var>$table</var></span>, <span>string|array <var>$type</var></span>, <span>string <var>$on</var></span>, <span>mixed <var>$on</var>,…</span> )</code>
+
+		<div class="description short">
+			<p>สร้างคำสั่ง JOIN.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>สร้างคำสั่ง JOIN.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd>ชื่อตารางที่ต้องการ join เช่น table alias</dd>
+					<dt><var>$type</var></dt>
+					<dd>$table ชื่อตารางที่ต้องการ join เช่น table alias หรือ (QueryBuilder, alias)</dd>
+					<dt><var>$on</var></dt>
+					<dd>$type  เข่น INNER OUTER LEFT RIGHT</dd>
+					<dt><var>$on</var>,…</dt>
+					<dd>query string หรือ array</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						join('user U', 'INNER', 1)->text() [==] " INNER JOIN <code>user</code> AS U ON <code>id</code> = 1"<br>
+						join('user U', 'INNER', array('U.id', 'A.id'))->text() [==] " INNER JOIN <code>user</code> AS U ON U.<code>id</code> = A.<code>id</code>"<br>
+						join('user U', 'INNER', array('U.id', '=', 'A.id'))->text() [==] " INNER JOIN <code>user</code> AS U ON U.<code>id</code> = A.<code>id</code>"<br>
+						join('user U', 'INNER', array('id', '=', 1))->text() [==] " INNER JOIN <code>user</code> AS U ON <code>id</code> = 1"<br>
+						join('user U', 'INNER', array(array('U.id', 'A.id'), array('U.id', 'A.id')))->text() [==] " INNER JOIN <code>user</code> AS U ON U.<code>id</code> = A.<code>id</code> AND U.<code>id</code> = A.<code>id</code>"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="limit" id="_limit">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_limit">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#424-445" title="Go to source code">limit</a>( <span>integer <var>$count</var></span>, <span>integer <var>$start</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			<p>จำกัดผลลัพท์ และกำหนดรายการเริ่มต้น.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>จำกัดผลลัพท์ และกำหนดรายการเริ่มต้น.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$count</var></dt>
+					<dd>จำนวนผลลัท์ที่ต้องการ</dd>
+					<dt><var>$start</var></dt>
+					<dd>รายการเริ่มต้น</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						limit(10)->text() [==] " LIMIT 10"<br>
+						limit(10, 1)->text() [==] " LIMIT 1,10"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="notExists" id="_notExists">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_notExists">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#447-465" title="Go to source code">notExists</a>( <span>string <var>$table</var></span>, <span>mixed <var>$condition</var></span> )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่นสร้าง SQL NOT EXISTS.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่นสร้าง SQL NOT EXISTS.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd>ชื่อตาราง</dd>
+					<dt><var>$condition</var></dt>
+					<dd>query WHERE</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="orWhere" id="_orWhere">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_orWhere">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#467-493" title="Go to source code">orWhere</a>( <span>mixed <var>$condition</var></span>, <span>string <var>$oprator</var> = <span class="php-quote">'AND'</span></span>, <span>string <var>$id</var> = <span class="php-quote">'id'</span></span> )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่นสร้างคำสั่ง WHERE ถ้ามีข้อมูล Where ก่อนหน้าจะ OR กับข้อมูลก่อนหน้า.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่นสร้างคำสั่ง WHERE ถ้ามีข้อมูล Where ก่อนหน้าจะ OR กับข้อมูลก่อนหน้า.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$condition</var></dt>
+					<dd>query string หรือ array</dd>
+					<dt><var>$oprator</var></dt>
+					<dd>defaul AND</dd>
+					<dt><var>$id</var></dt>
+					<dd>Primary Key เช่น id (default)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						where(array('U.id', 1))->orWhere(array())->text() [==] " WHERE U.<code>id</code> = 1"<br>
+						where(array('U.id', 1))->orWhere(array('U.id', 2))->text() [==] " WHERE (U.<code>id</code> = 1) OR (U.<code>id</code> = 2)"<br>
+						where(array('U.id', 1))->orWhere(array(Sql::BETWEEN('id', 0, 1), Sql::BETWEEN('id', 0, 1)), 'OR')->text() [==] " WHERE (U.<code>id</code> = 1) OR (<code>id</code> BETWEEN 0 AND 1 OR <code>id</code> BETWEEN 0 AND 1)"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="order" id="_order">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_order">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#495-516" title="Go to source code">order</a>( <span>mixed <var>$sorts</var></span> )</code>
+
+		<div class="description short">
+			<p>สร้าง query เรียงลำดับ.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>สร้าง query เรียงลำดับ.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sorts</var></dt>
+					<dd>array('field ASC','field DESC') หรือ 'field ASC', 'field DESC', ....</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						order('id', 'id ASC')->text() [==] " ORDER BY <code>id</code>, <code>id</code> ASC"<br>
+						order('id ASC')->text() [==] " ORDER BY <code>id</code> ASC"<br>
+						order('user.id DESC')->text() [==] " ORDER BY <code>user</code>.<code>id</code> DESC"<br>
+						order('id ASCD')->text() [==] ""<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="select" id="_select">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_select">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#518-558" title="Go to source code">select</a>( <span>string <var>$fields</var> = <span class="php-quote">'*'</span></span> )</code>
+
+		<div class="description short">
+			<p>SELECT <code>field1</code>, <code>field2</code>, <code>field3</code>, ....</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>SELECT <code>field1</code>, <code>field2</code>, <code>field3</code>, ....</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fields</var></dt>
+					<dd>(option) รายชื่อฟิลด์ field1, field2, field3, ....</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						select('U.id', 'email name', 'module')->text() [==] "SELECT U.<code>id</code>,<code>email</code> AS <code>name</code>,<code>module</code>"<br>
+						select('"email" name', '0 id', '0 <code>ไอดี</code>')->text() [==] "SELECT 'email' AS <code>name</code>,0 AS <code>id</code>,0 AS <code>ไอดี</code>"<br>
+						select("'email' name", '0 AS id', '0 AS ไอดี')->text() [==] "SELECT 'email' AS <code>name</code>,0 AS <code>id</code>,0 AS <code>ไอดี</code>"<br>
+						select()->text()  [==] "SELECT *"<br>
+						select()->where(array('domain', Sql::strValue('kotchasan.com')))->text() [==] "SELECT * WHERE <code>domain</code> = 'kotchasan.com'"<br>
+						select('name <code>ชื่อ นามสกุล</code>', 'U.<code>idcard</code> AS <code>เลขประชาชน</code>')->text() [==] "SELECT <code>name</code> AS <code>ชื่อ นามสกุล</code>,U.<code>idcard</code> AS <code>เลขประชาชน</code>"<br>
+						select('table.field', '<code>table</code>.<code>field</code>')->text() [==] "SELECT <code>table</code>.<code>field</code>,<code>table</code>.<code>field</code>"<br>
+						select('table.field field', '<code>table</code>.<code>field</code> <code>field</code>')->text() [==] "SELECT <code>table</code>.<code>field</code> AS <code>field</code>,<code>table</code>.<code>field</code> AS <code>field</code>"<br>
+						select('table.field AS field', '<code>table</code>.<code>field</code> AS <code>field</code>')->text() [==] "SELECT <code>table</code>.<code>field</code> AS <code>field</code>,<code>table</code>.<code>field</code> AS <code>field</code>"<br>
+						select('U.field', 'U1.<code>field</code>', 'NULL id')->text() [==] "SELECT U.<code>field</code>,U1.<code>field</code>,NULL AS <code>id</code>"<br>
+						select('U.field field', 'U1.<code>field</code> <code>field</code>')->text() [==] "SELECT U.<code>field</code> AS <code>field</code>,U1.<code>field</code> AS <code>field</code>"<br>
+						select('U.field AS field', 'U1.<code>field</code> AS <code>field</code>')->text() [==] "SELECT U.<code>field</code> AS <code>field</code>,U1.<code>field</code> AS <code>field</code>"<br>
+						select(Sql::YEAR('create_date', 'year'), Sql::MONTH('create_date', 'month'))->text() [==] "SELECT YEAR(<code>create_date</code>) AS <code>year</code>,MONTH(<code>create_date</code>) AS <code>month</code>"<br>
+						select(array(Sql::YEAR('create_date', 'year'), Sql::MONTH('create_date', 'month')))->text() [==] "SELECT YEAR(<code>create_date</code>) AS <code>year</code>,MONTH(<code>create_date</code>) AS <code>month</code>"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="selectCount" id="_selectCount">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_selectCount">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#560-586" title="Go to source code">selectCount</a>( <span>mixed <var>$fileds</var> = <span class="php-quote">'* count'</span></span> )</code>
+
+		<div class="description short">
+			<p>สร้าง query สำหรับการนับจำนวน record.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>สร้าง query สำหรับการนับจำนวน record.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fileds</var></dt>
+					<dd>(option) 'field alias'</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						selectCount()->from('user')->text() [==] "SELECT COUNT(*) AS <code>count</code> FROM <code>user</code>"<br>
+						selectCount('id ids')->from('user')->text() [==] "SELECT COUNT(<code>id</code>) AS <code>ids</code> FROM <code>user</code>"<br>
+						selectCount('id ids', 'field alias')->from('user')->text() [==] "SELECT COUNT(<code>id</code>) AS <code>ids</code>, COUNT(<code>field</code>) AS <code>alias</code> FROM <code>user</code>"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="selectDistinct" id="_selectDistinct">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_selectDistinct">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#588-603" title="Go to source code">selectDistinct</a>( <span>string <var>$fields</var> = <span class="php-quote">'*'</span></span> )</code>
+
+		<div class="description short">
+			<p>SELECT DISTINCT <code>field1</code>, <code>field2</code>, <code>field3</code>, ....</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>SELECT DISTINCT <code>field1</code>, <code>field2</code>, <code>field3</code>, ....</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fields</var></dt>
+					<dd>(option) รายชื่อฟิลด์ field1, field2, field3, ....</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						selectDistinct('id')->from('user')->text() [==] "SELECT DISTINCT <code>id</code> FROM <code>user</code>"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="set" id="_set">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_set">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#605-657" title="Go to source code">set</a>( <span>array|string <var>$datas</var></span> )</code>
+
+		<div class="description short">
+			<p>UPDATE ..... SET.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>UPDATE ..... SET.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$datas</var></dt>
+					<dd>รูปแบบ array(key1 => value1, query_string) หรือ query_string</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						update('user')->set(array('key1' => 'value1', 'key2' => 2))->where(1)->text() [==] "UPDATE <code>user</code> SET <code>key1</code>=:Skey1, <code>key2</code>=:Skey2 WHERE <code>id</code> = 1"<br>
+						update('user U')->set(array('U.key1' => 'value1', 'U.key2' => 2))->where(array('U.id', 1))->text() [==] "UPDATE <code>user</code> AS U SET U.<code>key1</code>=:SUkey1, U.<code>key2</code>=:SUkey2 WHERE U.<code>id</code> = 1"<br>
+						update('user')->set(array('key1' => '(...)'))->text() [==] "UPDATE <code>user</code> SET <code>key1</code>=(...)"<br>
+						update('user')->set(array('key1' => 'test (...)'))->text() [==] "UPDATE <code>user</code> SET <code>key1</code>=:Skey1"<br>
+						update('user')->set('<code>reply</code>=<code>reply</code>+1')->text() [==] "UPDATE <code>user</code> SET <code>reply</code>=<code>reply</code>+1"<br>
+						update('user')->set(array('id' => 1, '<code>reply</code>=<code>reply</code>+1'))->text() [==] "UPDATE <code>user</code> SET <code>id</code>=:Sid, <code>reply</code>=<code>reply</code>+1"<br>
+						update('user')->set(array('create_date' => Sql::NOW()))->text() [==] "UPDATE <code>user</code> SET <code>create_date</code>=NOW()"<br>
+						update('user')->set(array('create_date' => Sql::create('SELECT * FROM <code>a</code>')))->text() [==] "UPDATE <code>user</code> SET <code>create_date</code>=SELECT * FROM <code>a</code>"<br>
+						update('user')->set(array('create_date' => 'U.id'))->text() [==] "UPDATE <code>user</code> SET <code>create_date</code>=U.<code>id</code>"<br>
+						update('user')->set(array('create_date' => '111.11'))->text() [==] "UPDATE <code>user</code> SET <code>create_date</code>=:Screatedate"<br>
+						update('user')->set(array('create_date' => 'user.user'))->text() [==] "UPDATE <code>user</code> SET <code>create_date</code>=:Screatedate"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="toArray" id="_toArray">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_toArray">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#659-670" title="Go to source code">toArray</a>( )</code>
+
+		<div class="description short">
+			<p>คืนค่าข้อมูลเป็น Array
+ฟังก์ชั่นนี้ใช้เรียกก่อนการสอบถามข้อมูล.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>คืนค่าข้อมูลเป็น Array
+ฟังก์ชั่นนี้ใช้เรียกก่อนการสอบถามข้อมูล.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="union" id="_union">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_union">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#672-698" title="Go to source code">union</a>( <span>array <var>$querys</var></span> )</code>
+
+		<div class="description short">
+			<p>UNION.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>UNION.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$querys</var></dt>
+					<dd>แอเรย์ของ QueryBuilder หรือ Query String ที่จะนำม่า UNION</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						(Sql::create('SELECT * FROM <code>a</code>'), Sql::create('SELECT * FROM <code>b</code>'))->text() [==] "(SELECT * FROM <code>a</code>) UNION (SELECT * FROM <code>b</code>)"<br>
+						(array(Sql::create('SELECT * FROM <code>a</code>'), Sql::create('SELECT * FROM <code>b</code>')))->text() [==] "(SELECT * FROM <code>a</code>) UNION (SELECT * FROM <code>b</code>)"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="unionAll" id="_unionAll">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_unionAll">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#700-726" title="Go to source code">unionAll</a>( <span>array <var>$querys</var></span> )</code>
+
+		<div class="description short">
+			<p>UNION ALL.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>UNION ALL.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$querys</var></dt>
+					<dd>แอเรย์ของ QueryBuilder หรือ Query String ที่จะนำม่า UNION ALL</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						(Sql::create('SELECT * FROM <code>a</code>'), Sql::create('SELECT * FROM <code>b</code>'))->text() [==] "(SELECT * FROM <code>a</code>) UNION ALL (SELECT * FROM <code>b</code>)"<br>
+						(array(Sql::create('SELECT * FROM <code>a</code>'), Sql::create('SELECT * FROM <code>b</code>')))->text() [==] "(SELECT * FROM <code>a</code>) UNION ALL (SELECT * FROM <code>b</code>)"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="update" id="_update">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_update">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#728-747" title="Go to source code">update</a>( <span>string <var>$table</var></span> )</code>
+
+		<div class="description short">
+			<p>UPDATE</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>UPDATE</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd>[$table1, $table2, ....] ชื่อตาราง</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						update('user')->set(array('key1'=>'value1', 'key2'=>2))->where(array(array('id', 1), array('id', 1)))->text() [==] "UPDATE <code>user</code> SET <code>key1</code>=:Skey1, <code>key2</code>=:Skey2 WHERE <code>id</code> = 1 AND <code>id</code> = 1"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="where" id="_where">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_where">#</a>
+		<code><a href="source-class-Kotchasan.Database.QueryBuilder.html#749-791" title="Go to source code">where</a>( <span>mixed <var>$condition</var></span>, <span>string <var>$oprator</var> = <span class="php-quote">'AND'</span></span>, <span>string <var>$id</var> = <span class="php-quote">'id'</span></span> )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่นสร้างคำสั่ง WHERE.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่นสร้างคำสั่ง WHERE.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$condition</var></dt>
+					<dd>query string หรือ array</dd>
+					<dt><var>$oprator</var></dt>
+					<dd>defaul AND</dd>
+					<dt><var>$id</var></dt>
+					<dd>Primary Key เช่น id (default)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+				<h4>Assert</h4>
+				<div class="list">
+						where(array())->text() [==] ""<br>
+						where(1)->text() [==] " WHERE <code>id</code> = 1"<br>
+						where(array('id', 1))->text() [==] " WHERE <code>id</code> = 1"<br>
+						where(array('id', '1'))->text() [==] " WHERE <code>id</code> = '1'"<br>
+						where(array('domain', 'domain.tld'))->text() [==] " WHERE <code>domain</code> = 'domain.tld'"<br>
+						where(array(1, 1))->text() [==] " WHERE 1 = 1"<br>
+						where(array('U.id', 'G.id'))->text() [==] " WHERE U.<code>id</code> = G.<code>id</code>"<br>
+						where(array('date', '2016-1-1 30:30'))->text() [==] " WHERE <code>date</code> = '2016-1-1 30:30'"<br>
+						where(array('id', '=', 1))->text() [==] " WHERE <code>id</code> = 1"<br>
+						where(Sql::create('<code>id</code>=1 OR (SELECT ....)'))->text() [==] " WHERE <code>id</code>=1 OR (SELECT ....)"<br>
+						where(array('id', '=', 1))->text() [==] " WHERE <code>id</code> = 1"<br>
+						where(array('id', 'IN', array(1, 2, '3')))->text() [==] " WHERE <code>id</code> IN (1, 2, '3')"<br>
+						where(array(array('social', '0'), Sql::create('(...)')))->text() [==] " WHERE <code>social</code> = '0' AND (...)"<br>
+						where(array(array(Sql::MONTH('create_date'), 1), array(Sql::YEAR('create_date'), 1)))->text() [==] " WHERE MONTH(<code>create_date</code>) = 1 AND YEAR(<code>create_date</code>) = 1"<br>
+						where(array(array('id', array(1, 'a')), array('id', array('G.id', 'G.<code>id2</code>'))))->text() [==] " WHERE <code>id</code> IN (1, 'a') AND <code>id</code> IN (G.<code>id</code>, G.<code>id2</code>)"<br>
+						where(array(array('id', array(1, 'a')), array('id', array('', 'th'))))->text() [==] " WHERE <code>id</code> IN (1, 'a') AND <code>id</code> IN ('', 'th')"<br>
+						where(array('ip', 'NOT IN', array('', '192.168.1.104')))->text() [==] " WHERE <code>ip</code> NOT IN ('', '192.168.1.104')"<br>
+						where(array('U.id', '(SELECT CASE END)'))->text() [==] " WHERE U.<code>id</code> = '(SELECT CASE END)'"<br>
+						where(array(array(Sql::YEAR('create_date'), Sql::YEAR('S.<code>create_date</code>'))))->text() [==] " WHERE YEAR(<code>create_date</code>) = YEAR(S.<code>create_date</code>)"<br>
+						where(array('U.id', Sql::strValue('G.id')))->text() [==] " WHERE U.<code>id</code> = 'G.id'"<br>
+						where(Sql::ISNULL('U.id'))->text() [==] " WHERE U.<code>id</code> IS NULL"<br>
+						where(array(array('create_date', 'A'), Sql::BETWEEN('id', 'ทดสอบ', 'ทดสอบ')))->text() [==] " WHERE <code>create_date</code> = 'A' AND <code>id</code> BETWEEN 'ทดสอบ' AND 'ทดสอบ'"<br>
+						where(array(array(Sql::BETWEEN('id', 0, 1), 'OR', Sql::BETWEEN('id', 0, 1)), array(Sql::BETWEEN('id', 0, 1), 'OR', Sql::BETWEEN('id', 0, 1))), 'OR')->text() [==] " WHERE <code>id</code> BETWEEN 0 AND 1 OR <code>id</code> BETWEEN 0 AND 1 OR <code>id</code> BETWEEN 0 AND 1 OR <code>id</code> BETWEEN 0 AND 1"<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Kotchasan.Database.Query.html#methods">Kotchasan\Database\Query</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Kotchasan.Database.Query.html#_aliasName">aliasName()</a>, 
+			<a href="class-Kotchasan.Database.Query.html#_buildGroup">buildGroup()</a>, 
+			<a href="class-Kotchasan.Database.Query.html#_buildJoin">buildJoin()</a>, 
+			<a href="class-Kotchasan.Database.Query.html#_buildOrder">buildOrder()</a>, 
+			<a href="class-Kotchasan.Database.Query.html#_buildSelect">buildSelect()</a>, 
+			<a href="class-Kotchasan.Database.Query.html#_buildValue">buildValue()</a>, 
+			<a href="class-Kotchasan.Database.Query.html#_buildWhere">buildWhere()</a>, 
+			<a href="class-Kotchasan.Database.Query.html#_buildWhereValues">buildWhereValues()</a>, 
+			<a href="class-Kotchasan.Database.Query.html#_debug">debug()</a>, 
+			<a href="class-Kotchasan.Database.Query.html#_fieldName">fieldName()</a>, 
+			<a href="class-Kotchasan.Database.Query.html#_fieldValue">fieldValue()</a>, 
+			<a href="class-Kotchasan.Database.Query.html#_getFullTableName">getFullTableName()</a>, 
+			<a href="class-Kotchasan.Database.Query.html#_getTableName">getTableName()</a>, 
+			<a href="class-Kotchasan.Database.Query.html#_groupAnd">groupAnd()</a>, 
+			<a href="class-Kotchasan.Database.Query.html#_groupOr">groupOr()</a>, 
+			<a href="class-Kotchasan.Database.Query.html#_quoteTableName">quoteTableName()</a>, 
+			<a href="class-Kotchasan.Database.Query.html#_text">text()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Kotchasan.Database.Db.html#methods">Kotchasan\Database\Db</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Kotchasan.Database.Db.html#_db">db()</a>, 
+			<a href="class-Kotchasan.Database.Db.html#_getSetting">getSetting()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="toArray" id="$toArray">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Kotchasan.Database.QueryBuilder.html#27-32" title="Go to source code"><var>$toArray</var></a>
+
+			<div class="description short">
+				<p>ส่งออกผลลัพท์เป็น Array.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>ส่งออกผลลัพท์เป็น Array.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$toArray" class="anchor">#</a>
+				<code><span class="php-keyword1">false</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="values" id="$values">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Kotchasan.Database.QueryBuilder.html#33-38" title="Go to source code"><var>$values</var></a>
+
+			<div class="description short">
+				<p>ตัวแปรเก็บพารามิเตอร์สำหรับการ bind.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>ตัวแปรเก็บพารามิเตอร์สำหรับการ bind.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$values" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Kotchasan.Database.Query.html#properties">Kotchasan\Database\Query</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Kotchasan.Database.Query.html#$debugger"><var>$debugger</var></a>, 
+			<a href="class-Kotchasan.Database.Query.html#$sqls"><var>$sqls</var></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Kotchasan.Database.Db.html#properties">Kotchasan\Database\Db</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Kotchasan.Database.Db.html#$db"><var>$db</var></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Kotchasan.KBase.html#properties">Kotchasan\KBase</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Kotchasan.KBase.html#$cfg"><var>$cfg</var></a>, 
+			<a href="class-Kotchasan.KBase.html#$request"><var>$request</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Kotchasan API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Kotchasan\Http\AbstractMessage | Kotchasan</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Kotchasan.html">
+						Kotchasan<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Kotchasan.Cache.html">
+						Cache					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Kotchasan.Database.html">
+						Database					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-Kotchasan.Http.html">
+						Http					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Kotchasan.Log.html">
+						Log					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Kotchasan.Orm.html">
+						Orm					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Psr.html">
+						Psr<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Psr.Cache.html">
+						Cache					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Psr.Http.html">
+						Http<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Psr.Http.Message.html">
+						Message					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Psr.Log.html">
+						Log					</a>
+
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Kotchasan.Http.AbstractMessage.html">AbstractMessage</a></li>
+				<li><a href="class-Kotchasan.Http.AbstractRequest.html">AbstractRequest</a></li>
+				<li><a href="class-Kotchasan.Http.Message.html">Message</a></li>
+				<li><a href="class-Kotchasan.Http.NotFound.html">NotFound</a></li>
+				<li><a href="class-Kotchasan.Http.Request.html">Request</a></li>
+				<li><a href="class-Kotchasan.Http.Response.html">Response</a></li>
+				<li><a href="class-Kotchasan.Http.Stream.html">Stream</a></li>
+				<li><a href="class-Kotchasan.Http.UploadedFile.html">UploadedFile</a></li>
+				<li><a href="class-Kotchasan.Http.Uri.html">Uri</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Kotchasan.Http.html" title="Summary of Kotchasan\Http"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class AbstractMessage</h1>
+
+
+	<div class="description">
+	<p>HTTP messages base class (PSR-7)</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>Kotchasan\Http\AbstractMessage</span></b>			
+			 implements 
+				<a href="class-Psr.Http.Message.MessageInterface.html"><span>Psr\Http\Message\MessageInterface</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-Kotchasan.Http.AbstractRequest.html">Kotchasan\Http\AbstractRequest</a>, 
+			<a href="class-Kotchasan.Http.Message.html">Kotchasan\Http\Message</a>
+	</div>
+
+	<div>
+		<h4>Indirect known subclasses</h4>
+			<a href="class-Kotchasan.Http.NotFound.html">Kotchasan\Http\NotFound</a>, 
+			<a href="class-Kotchasan.Http.Request.html">Kotchasan\Http\Request</a>, 
+			<a href="class-Kotchasan.Http.Response.html">Kotchasan\Http\Response</a>
+	</div>
+
+
+
+
+
+	<div class="info">
+		<b>Abstract</b><br>
+		
+		<b>Namespace:</b> <a href="namespace-Kotchasan.html">Kotchasan</a>\<a href="namespace-Kotchasan.Http.html">Http</a><br>
+		
+
+				<b>Author:</b>
+				Goragod Wiriya <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x61;&#100;&#x6d;&#105;&#x6e;&#64;&#x67;&#111;&#x72;&#97;&#x67;&#111;&#x64;&#46;&#x63;&#111;&#x6d;">&#x61;&#100;&#x6d;&#105;&#x6e;&#64;&#x67;&#111;&#x72;&#97;&#x67;&#111;&#x64;&#46;&#x63;&#111;&#x6d;</a><br>
+				<b>Since:</b>
+				1.0<br>
+			<b>Located at</b> <a href="source-class-Kotchasan.Http.AbstractMessage.html#16-261" title="Go to source code">Kotchasan/Http/AbstractMessage.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Kotchasan.Http.AbstractMessage.html#38-48" title="Go to source code">__construct</a>( <span>boolean <var>$with_header</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			<p>init Class</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>init Class</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$with_header</var></dt>
+					<dd>true คืนค่า HTTP Header ด้วย, false (default) ไม่รวม HTTP Header</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBody" id="_getBody">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Psr.Http.Message.StreamInterface.html">Psr\Http\Message\StreamInterface</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBody">#</a>
+		<code><a href="source-class-Kotchasan.Http.AbstractMessage.html#50-58" title="Go to source code">getBody</a>( )</code>
+
+		<div class="description short">
+			<p>อ่าน stream.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>อ่าน stream.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Psr.Http.Message.StreamInterface.html">Psr\Http\Message\StreamInterface</a></code>
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Psr.Http.Message.MessageInterface.html#_getBody">Psr\Http\Message\MessageInterface::getBody()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHeader" id="_getHeader">
+
+		<td class="attributes"><code>
+			 public 
+
+			string[]
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHeader">#</a>
+		<code><a href="source-class-Kotchasan.Http.AbstractMessage.html#60-71" title="Go to source code">getHeader</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			<p>อ่าน header ที่ต้องการ ผลลัพท์เป็น array
+คืนค่าแอเรย์ของ header ถ้าไม่พบคืนค่าแอเรย์ว่าง</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>อ่าน header ที่ต้องการ ผลลัพท์เป็น array
+คืนค่าแอเรย์ของ header ถ้าไม่พบคืนค่าแอเรย์ว่าง</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string[]
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Psr.Http.Message.MessageInterface.html#_getHeader">Psr\Http\Message\MessageInterface::getHeader()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHeaderLine" id="_getHeaderLine">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHeaderLine">#</a>
+		<code><a href="source-class-Kotchasan.Http.AbstractMessage.html#73-85" title="Go to source code">getHeaderLine</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			<p>อ่าน header ที่ต้องการ ผลลัพท์เป็น string
+คืนค่ารายการ header ทั้งหมดที่พบเชื่อมต่อด้วย ลูกน้ำ (,) หรือคืนค่าข้อความว่าง หากไม่พบ</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>อ่าน header ที่ต้องการ ผลลัพท์เป็น string
+คืนค่ารายการ header ทั้งหมดที่พบเชื่อมต่อด้วย ลูกน้ำ (,) หรือคืนค่าข้อความว่าง หากไม่พบ</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Psr.Http.Message.MessageInterface.html#_getHeaderLine">Psr\Http\Message\MessageInterface::getHeaderLine()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHeaders" id="_getHeaders">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHeaders">#</a>
+		<code><a href="source-class-Kotchasan.Http.AbstractMessage.html#87-95" title="Go to source code">getHeaders</a>( )</code>
+
+		<div class="description short">
+			<p>คืนค่า header ทั้งหมด ผลลัพท์เป็น array.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>คืนค่า header ทั้งหมด ผลลัพท์เป็น array.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Psr.Http.Message.MessageInterface.html#_getHeaders">Psr\Http\Message\MessageInterface::getHeaders()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getProtocolVersion" id="_getProtocolVersion">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getProtocolVersion">#</a>
+		<code><a href="source-class-Kotchasan.Http.AbstractMessage.html#97-106" title="Go to source code">getProtocolVersion</a>( )</code>
+
+		<div class="description short">
+			<p>คืนค่าเวอร์ชั่นของโปรโตคอล
+เช่น 1.1, 1.0</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>คืนค่าเวอร์ชั่นของโปรโตคอล
+เช่น 1.1, 1.0</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Psr.Http.Message.MessageInterface.html#_getProtocolVersion">Psr\Http\Message\MessageInterface::getProtocolVersion()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasHeader" id="_hasHeader">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasHeader">#</a>
+		<code><a href="source-class-Kotchasan.Http.AbstractMessage.html#108-119" title="Go to source code">hasHeader</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			<p>ตรวจสอบว่ามี header หรือไม่
+คืนค่า true ถ้ามี.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ตรวจสอบว่ามี header หรือไม่
+คืนค่า true ถ้ามี.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Psr.Http.Message.MessageInterface.html#_hasHeader">Psr\Http\Message\MessageInterface::hasHeader()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="withAddedHeader" id="_withAddedHeader">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_withAddedHeader">#</a>
+		<code><a href="source-class-Kotchasan.Http.AbstractMessage.html#121-143" title="Go to source code">withAddedHeader</a>( <span>string <var>$name</var></span>, <span>string|string[] <var>$value</var></span> )</code>
+
+		<div class="description short">
+			<p>เพิ่ม header ใหม่</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>เพิ่ม header ใหม่</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>ชื่อของ Header</dd>
+					<dt><var>$value</var></dt>
+					<dd>ค่าของ Header เป็น string หรือ แอเรย์ของ string</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code><br>ถ้าชื่อ header ไม่ถูกต้อง
+				</div>
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Psr.Http.Message.MessageInterface.html#_withAddedHeader">Psr\Http\Message\MessageInterface::withAddedHeader()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="withBody" id="_withBody">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_withBody">#</a>
+		<code><a href="source-class-Kotchasan.Http.AbstractMessage.html#145-157" title="Go to source code">withBody</a>( <span><code><a href="class-Psr.Http.Message.StreamInterface.html">Psr\Http\Message\StreamInterface</a></code> <var>$body</var></span> )</code>
+
+		<div class="description short">
+			<p>กำหนด stream</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>กำหนด stream</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$body</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code><br>when the body is not valid
+				</div>
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Psr.Http.Message.MessageInterface.html#_withBody">Psr\Http\Message\MessageInterface::withBody()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="withHeader" id="_withHeader">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_withHeader">#</a>
+		<code><a href="source-class-Kotchasan.Http.AbstractMessage.html#159-175" title="Go to source code">withHeader</a>( <span>string <var>$name</var></span>, <span>string|string[] <var>$value</var></span> )</code>
+
+		<div class="description short">
+			<p>กำหนด header แทนที่รายการเดิม</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>กำหนด header แทนที่รายการเดิม</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>ชื่อของ Header</dd>
+					<dt><var>$value</var></dt>
+					<dd>ค่าของ Header เป็น string หรือ แอเรย์ของ string</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code><br>for invalid header names or values
+				</div>
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Psr.Http.Message.MessageInterface.html#_withHeader">Psr\Http\Message\MessageInterface::withHeader()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="withHeaders" id="_withHeaders">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_withHeaders">#</a>
+		<code><a href="source-class-Kotchasan.Http.AbstractMessage.html#177-194" title="Go to source code">withHeaders</a>( <span>array <var>$headers</var></span> )</code>
+
+		<div class="description short">
+			<p>กำหนด header พร้อมกันหลายรายการ แทนที่รายการเดิม</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>กำหนด header พร้อมกันหลายรายการ แทนที่รายการเดิม</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$headers</var></dt>
+					<dd>array($key => $value, $key => $value...)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code><br>for invalid header names or values
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="withProtocolVersion" id="_withProtocolVersion">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_withProtocolVersion">#</a>
+		<code><a href="source-class-Kotchasan.Http.AbstractMessage.html#196-208" title="Go to source code">withProtocolVersion</a>( <span>string <var>$version</var></span> )</code>
+
+		<div class="description short">
+			<p>กำหนดเวอร์ชั่นของโปรโตคอล.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>กำหนดเวอร์ชั่นของโปรโตคอล.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$version</var></dt>
+					<dd>เช่น 1.1, 1.0</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Psr.Http.Message.MessageInterface.html#_withProtocolVersion">Psr\Http\Message\MessageInterface::withProtocolVersion()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="withoutHeader" id="_withoutHeader">
+
+		<td class="attributes"><code>
+			 public 
+
+			static
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_withoutHeader">#</a>
+		<code><a href="source-class-Kotchasan.Http.AbstractMessage.html#210-222" title="Go to source code">withoutHeader</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			<p>ลบ header.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ลบ header.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>ชื่อ header ที่ต้องการลบ</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					static
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Psr.Http.Message.MessageInterface.html#_withoutHeader">Psr\Http\Message\MessageInterface::withoutHeader()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="filterHeader" id="_filterHeader">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_filterHeader">#</a>
+		<code><a href="source-class-Kotchasan.Http.AbstractMessage.html#224-236" title="Go to source code">filterHeader</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			<p>ตรวจสอบความถูกต้องของ header</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ตรวจสอบความถูกต้องของ header</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code><br>ถ้า header ไม่ถูกต้อง
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRequestHeaders" id="_getRequestHeaders">
+
+		<td class="attributes"><code>
+			 protected 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRequestHeaders">#</a>
+		<code><a href="source-class-Kotchasan.Http.AbstractMessage.html#238-260" title="Go to source code">getRequestHeaders</a>( )</code>
+
+		<div class="description short">
+			<p>ฟังก์ชั่นคืนค่า HTTP Header</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>ฟังก์ชั่นคืนค่า HTTP Header</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="headers" id="$headers">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Kotchasan.Http.AbstractMessage.html#25-28" title="Go to source code"><var>$headers</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$headers" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="protocol" id="$protocol">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Kotchasan.Http.AbstractMessage.html#29-32" title="Go to source code"><var>$protocol</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$protocol" class="anchor">#</a>
+				<code><span class="php-quote">'1.1'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="stream" id="$stream">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-Psr.Http.Message.StreamInterface.html">Psr\Http\Message\StreamInterface</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Kotchasan.Http.AbstractMessage.html#33-36" title="Go to source code"><var>$stream</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$stream" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Kotchasan API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
